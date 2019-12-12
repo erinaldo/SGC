@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Componentes", "Componentes\Componentes.csproj", "{587F1754-0A23-4275-A463-A7FB751969C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilidades", "Utilidades\Utilidades.csproj", "{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formas", "Formas\Formas.csproj", "{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{CD076756-F61E-4B9A-AC2E-C14F6FC0CF4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Any|Any = Any|Any
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{587F1754-0A23-4275-A463-A7FB751969C1}.Any|Any.ActiveCfg = Any|x86
+		{587F1754-0A23-4275-A463-A7FB751969C1}.Any|Any.Build.0 = Any|x86
+		{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}.Any|Any.ActiveCfg = Any|x86
+		{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}.Any|Any.Build.0 = Any|x86
+		{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}.Any|Any.ActiveCfg = Any|x86
+		{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}.Any|Any.Build.0 = Any|x86
+		{CD076756-F61E-4B9A-AC2E-C14F6FC0CF4F}.Any|Any.ActiveCfg = Any|x86
+		{CD076756-F61E-4B9A-AC2E-C14F6FC0CF4F}.Any|Any.Build.0 = Any|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

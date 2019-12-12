@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{587F1754-0A23-4275-A463-A7FB751969C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Componentes</RootNamespace>
+    <AssemblyName>Componentes</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Any|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.1.Extensions, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CButtonEdit.Designer.cs">
+      <DependentUpon>CButtonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCheckedComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CCheckedComboBoxEdit.Designer.cs">
+      <DependentUpon>CCheckedComboBoxEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCheckEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CCheckEdit.Designer.cs">
+      <DependentUpon>CCheckEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CComboBoxEdit.Designer.cs">
+      <DependentUpon>CComboBoxEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CDateEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CDateEdit.Designer.cs">
+      <DependentUpon>CDateEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CDropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CDropDownButton.Designer.cs">
+      <DependentUpon>CDropDownButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGroupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CGroupControl.Designer.cs">
+      <DependentUpon>CGroupControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CImageSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CImageSlider.Designer.cs">
+      <DependentUpon>CImageSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLabelControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CLabelControl.Designer.cs">
+      <DependentUpon>CLabelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CListBoxControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CListBoxControl.Designer.cs">
+      <DependentUpon>CListBoxControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CMemoEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CMemoEdit.Designer.cs">
+      <DependentUpon>CMemoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPanelControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CPanelControl.Designer.cs">
+      <DependentUpon>CPanelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPictureEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CPictureEdit.Designer.cs">
+      <DependentUpon>CPictureEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CProgressBarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CProgressBarControl.Designer.cs">
+      <DependentUpon>CProgressBarControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CProgressPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CProgressPanel.Designer.cs">
+      <DependentUpon>CProgressPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRadioGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRadioGroup.Designer.cs">
+      <DependentUpon>CRadioGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSimpleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CSimpleButton.Designer.cs">
+      <DependentUpon>CSimpleButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CSpinEdit.Designer.cs">
+      <DependentUpon>CSpinEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CTextEdit.Designer.cs">
+      <DependentUpon>CTextEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CToggleSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CToggleSwitch.Designer.cs">
+      <DependentUpon>CToggleSwitch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Adicionar_x16.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Adicionar_x16.Designer.cs">
+      <DependentUpon>Adicionar_x16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Adicionar_x32.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Adicionar_x32.Designer.cs">
+      <DependentUpon>Adicionar_x32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Alterar_x16.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Alterar_x16.Designer.cs">
+      <DependentUpon>Alterar_x16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Alterar_x32.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Alterar_x32.Designer.cs">
+      <DependentUpon>Alterar_x32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Buscar_Filtro_x16.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Buscar_Filtro_x16.Designer.cs">
+      <DependentUpon>Buscar_Filtro_x16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Buscar_Filtro_x32.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Buscar_Filtro_x32.Designer.cs">
+      <DependentUpon>Buscar_Filtro_x32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Buscar_x16.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Buscar_x16.Designer.cs">
+      <DependentUpon>Buscar_x16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Buscar_x32.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Buscar_x32.Designer.cs">
+      <DependentUpon>Buscar_x32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Cancelar_x16.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Cancelar_x16.Designer.cs">
+      <DependentUpon>Cancelar_x16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Cancelar_x32.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Cancelar_x32.Designer.cs">
+      <DependentUpon>Cancelar_x32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Continuar_x16.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Continuar_x16.Designer.cs">
+      <DependentUpon>Continuar_x16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Continuar_x32.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Continuar_x32.Designer.cs">
+      <DependentUpon>Continuar_x32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Deletar_x16.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Deletar_x16.Designer.cs">
+      <DependentUpon>Deletar_x16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Deletar_x32.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Deletar_x32.Designer.cs">
+      <DependentUpon>Deletar_x32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Painel_x16.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Painel_x16.Designer.cs">
+      <DependentUpon>Painel_x16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Painel_x32.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Painel_x32.Designer.cs">
+      <DependentUpon>Painel_x32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Relatorio_x16.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Relatorio_x16.Designer.cs">
+      <DependentUpon>Relatorio_x16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Relatorio_x32.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Relatorio_x32.Designer.cs">
+      <DependentUpon>Relatorio_x32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Salvar_x16.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Salvar_x16.Designer.cs">
+      <DependentUpon>Salvar_x16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Salvar_x32.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\Salvar_x32.Designer.cs">
+      <DependentUpon>Salvar_x32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CButtonEdit.resx">
+      <DependentUpon>CButtonEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCheckedComboBoxEdit.resx">
+      <DependentUpon>CCheckedComboBoxEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCheckEdit.resx">
+      <DependentUpon>CCheckEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CComboBoxEdit.resx">
+      <DependentUpon>CComboBoxEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDateEdit.resx">
+      <DependentUpon>CDateEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDropDownButton.resx">
+      <DependentUpon>CDropDownButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGroupControl.resx">
+      <DependentUpon>CGroupControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CImageSlider.resx">
+      <DependentUpon>CImageSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLabelControl.resx">
+      <DependentUpon>CLabelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CListBoxControl.resx">
+      <DependentUpon>CListBoxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMemoEdit.resx">
+      <DependentUpon>CMemoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPanelControl.resx">
+      <DependentUpon>CPanelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPictureEdit.resx">
+      <DependentUpon>CPictureEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CProgressBarControl.resx">
+      <DependentUpon>CProgressBarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CProgressPanel.resx">
+      <DependentUpon>CProgressPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRadioGroup.resx">
+      <DependentUpon>CRadioGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSimpleButton.resx">
+      <DependentUpon>CSimpleButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSpinEdit.resx">
+      <DependentUpon>CSpinEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTextEdit.resx">
+      <DependentUpon>CTextEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CToggleSwitch.resx">
+      <DependentUpon>CToggleSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Adicionar_x16.resx">
+      <DependentUpon>Adicionar_x16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Adicionar_x32.resx">
+      <DependentUpon>Adicionar_x32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Alterar_x16.resx">
+      <DependentUpon>Alterar_x16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Alterar_x32.resx">
+      <DependentUpon>Alterar_x32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Buscar_Filtro_x16.resx">
+      <DependentUpon>Buscar_Filtro_x16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Buscar_Filtro_x32.resx">
+      <DependentUpon>Buscar_Filtro_x32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Buscar_x16.resx">
+      <DependentUpon>Buscar_x16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Buscar_x32.resx">
+      <DependentUpon>Buscar_x32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Cancelar_x16.resx">
+      <DependentUpon>Cancelar_x16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Cancelar_x32.resx">
+      <DependentUpon>Cancelar_x32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Continuar_x16.resx">
+      <DependentUpon>Continuar_x16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Continuar_x32.resx">
+      <DependentUpon>Continuar_x32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Deletar_x16.resx">
+      <DependentUpon>Deletar_x16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Deletar_x32.resx">
+      <DependentUpon>Deletar_x32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Painel_x16.resx">
+      <DependentUpon>Painel_x16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Painel_x32.resx">
+      <DependentUpon>Painel_x32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Relatorio_x16.resx">
+      <DependentUpon>Relatorio_x16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Relatorio_x32.resx">
+      <DependentUpon>Relatorio_x32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Salvar_x16.resx">
+      <DependentUpon>Salvar_x16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Salvar_x32.resx">
+      <DependentUpon>Salvar_x32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utilidades\Utilidades.csproj">
+      <Project>{81f8317c-0e10-4bc8-a78f-510d61fcd4a4}</Project>
+      <Name>Utilidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

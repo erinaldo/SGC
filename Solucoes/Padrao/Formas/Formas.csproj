@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Formas</RootNamespace>
+    <AssemblyName>Formas</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Any|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.1.Extensions, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Padrao\FCancelamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Padrao\FCancelamento.Designer.cs">
+      <DependentUpon>FCancelamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Padrao\FPadrao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Padrao\FPadrao.Designer.cs">
+      <DependentUpon>FPadrao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Padrao\FPadrao_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Padrao\FPadrao_Busca.Designer.cs">
+      <DependentUpon>FPadrao_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Padrao\FPadrao_Busca_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Padrao\FPadrao_Busca_Menu.Designer.cs">
+      <DependentUpon>FPadrao_Busca_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Padrao\FPadrao_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Padrao\FPadrao_Cadastro.Designer.cs">
+      <DependentUpon>FPadrao_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Padrao\FPadrao_Cadastro_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Padrao\FPadrao_Cadastro_Menu.Designer.cs">
+      <DependentUpon>FPadrao_Cadastro_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Padrao\FPadrao_Relatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Padrao\FPadrao_Relatorio.Designer.cs">
+      <DependentUpon>FPadrao_Relatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisa\FPesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisa\FPesquisa.Designer.cs">
+      <DependentUpon>FPesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Padrao\FCancelamento.resx">
+      <DependentUpon>FCancelamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Padrao\FPadrao.resx">
+      <DependentUpon>FPadrao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Padrao\FPadrao_Busca.resx">
+      <DependentUpon>FPadrao_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Padrao\FPadrao_Busca_Menu.resx">
+      <DependentUpon>FPadrao_Busca_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Padrao\FPadrao_Cadastro.resx">
+      <DependentUpon>FPadrao_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Padrao\FPadrao_Cadastro_Menu.resx">
+      <DependentUpon>FPadrao_Cadastro_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Padrao\FPadrao_Relatorio.resx">
+      <DependentUpon>FPadrao_Relatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisa\FPesquisa.resx">
+      <DependentUpon>FPesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SGC\Modelo\Modelo.csproj">
+      <Project>{b9afa29d-5763-4c7e-8208-abd134c4b06f}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{587f1754-0a23-4275-a463-a7fb751969c1}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilidades\Utilidades.csproj">
+      <Project>{81f8317c-0e10-4bc8-a78f-510d61fcd4a4}</Project>
+      <Name>Utilidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

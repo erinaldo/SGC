@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplicativo", "Aplicativo\Aplicativo.csproj", "{EA6C1FBF-2CD9-4456-A84F-E2FC9995C11D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilidades", "..\Padrao\Utilidades\Utilidades.csproj", "{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Componentes", "..\Padrao\Componentes\Componentes.csproj", "{587F1754-0A23-4275-A463-A7FB751969C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formas", "..\Padrao\Formas\Formas.csproj", "{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{69A93853-29E9-4AC8-A679-E93C159E0CF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extras", "Extras\Extras.csproj", "{DF524DF4-F4C3-441D-B9D9-A25C7D741618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financeiro", "Financeiro\Financeiro.csproj", "{55919A3D-FC10-4BDA-98EB-E67D08DEA9E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiscal", "Fiscal\Fiscal.csproj", "{57B4D8ED-3F41-468E-96FB-28240107B1A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graos", "Graos\Graos.csproj", "{900F79CD-B621-440D-A128-F6CE7C6D6839}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA6C1FBF-2CD9-4456-A84F-E2FC9995C11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA6C1FBF-2CD9-4456-A84F-E2FC9995C11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA6C1FBF-2CD9-4456-A84F-E2FC9995C11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA6C1FBF-2CD9-4456-A84F-E2FC9995C11D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}.Debug|Any CPU.ActiveCfg = Any|x86
+		{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}.Debug|Any CPU.Build.0 = Any|x86
+		{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}.Release|Any CPU.ActiveCfg = Any|x86
+		{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}.Release|Any CPU.Build.0 = Any|x86
+		{587F1754-0A23-4275-A463-A7FB751969C1}.Debug|Any CPU.ActiveCfg = Any|x86
+		{587F1754-0A23-4275-A463-A7FB751969C1}.Debug|Any CPU.Build.0 = Any|x86
+		{587F1754-0A23-4275-A463-A7FB751969C1}.Release|Any CPU.ActiveCfg = Any|x86
+		{587F1754-0A23-4275-A463-A7FB751969C1}.Release|Any CPU.Build.0 = Any|x86
+		{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}.Debug|Any CPU.ActiveCfg = Any|x86
+		{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}.Debug|Any CPU.Build.0 = Any|x86
+		{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}.Release|Any CPU.ActiveCfg = Any|x86
+		{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}.Release|Any CPU.Build.0 = Any|x86
+		{69A93853-29E9-4AC8-A679-E93C159E0CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A93853-29E9-4AC8-A679-E93C159E0CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A93853-29E9-4AC8-A679-E93C159E0CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A93853-29E9-4AC8-A679-E93C159E0CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF524DF4-F4C3-441D-B9D9-A25C7D741618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF524DF4-F4C3-441D-B9D9-A25C7D741618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF524DF4-F4C3-441D-B9D9-A25C7D741618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF524DF4-F4C3-441D-B9D9-A25C7D741618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55919A3D-FC10-4BDA-98EB-E67D08DEA9E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55919A3D-FC10-4BDA-98EB-E67D08DEA9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55919A3D-FC10-4BDA-98EB-E67D08DEA9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55919A3D-FC10-4BDA-98EB-E67D08DEA9E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B4D8ED-3F41-468E-96FB-28240107B1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B4D8ED-3F41-468E-96FB-28240107B1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B4D8ED-3F41-468E-96FB-28240107B1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B4D8ED-3F41-468E-96FB-28240107B1A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{900F79CD-B621-440D-A128-F6CE7C6D6839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{900F79CD-B621-440D-A128-F6CE7C6D6839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{900F79CD-B621-440D-A128-F6CE7C6D6839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{900F79CD-B621-440D-A128-F6CE7C6D6839}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VSCustomBkgrdPaint = True
+		VSUseSystemFonts = False
+		VSSkinToggleButtons = True
+		VSSkinFlatStyles = True
+		VSTextShadow = True
+		VSToolStripStyle = Mixed
+		VSTargetControls = FormsAndControls
+		VSStyle = Office2010 (Silver).vssf
+		SolutionGuid = {DEBFF54A-A05B-4BCC-9045-AE45A986A924}
+	EndGlobalSection
+EndGlobal

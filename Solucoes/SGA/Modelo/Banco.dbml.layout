@@ -1,0 +1,1484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 27, 54.375" name="Banco">
+  <DataContextMoniker Name="/BancoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="012391d1-b088-47f6-ac74-8b31c3e01291" absoluteBounds="6.25, 19.25, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_ACESSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ce4a617-90bc-4b12-872d-4637d24ce9c1" absoluteBounds="6.265, 19.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="11e72777-8068-476d-976a-29c10f6a3ea6" absoluteBounds="12.25, 42.625, 2, 1.5785953776041737">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3341c3d2-9ce6-4f7b-96d7-12931fe1715f" absoluteBounds="12.265, 43.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3bcee532-e7f7-42fe-8e9c-6c62bb2b0e1f" absoluteBounds="1.75, 41.25, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_CIDADE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f75433ce-590a-4d1e-a952-01f4b36d7dfe" absoluteBounds="1.7650000000000001, 41.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3a954ef4-9702-428b-9cb3-3d7d985a8b8a" absoluteBounds="3.5, 12, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_CLFOR_PJ" />
+      <nestedChildShapes>
+        <elementListCompartment Id="03bbc229-0780-4cd7-ae19-cd6fc5146ecc" absoluteBounds="3.515, 12.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="82febbdb-b674-4387-b349-e66bb06a0ff2" absoluteBounds="0.75, 17.875, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_CLIFOR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7bedb6be-16f1-4825-ad15-6d09b1300589" absoluteBounds="0.765, 18.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55d18756-5856-43fb-b7b9-59a1f2baf2d6" absoluteBounds="24.75, 13.25, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_CLIFOR_DADOSBANCARIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8af28b50-5174-4ccd-9f80-38cd35873166" absoluteBounds="24.765, 13.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c0c9519-979f-46a4-96de-3acfdf267001" absoluteBounds="3.5, 8.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_CLIFOR_PF" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a034d1d-ecd2-4cdc-aa66-f1382209520b" absoluteBounds="3.515, 9.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="75cdf51d-c174-402e-a120-f11e0f8e002a" absoluteBounds="9.5, 48.5, 2, 3.8862125651041595">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_CONFIGPROTOCOLO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="91b39561-a824-47f7-8302-0b2d62468dbd" absoluteBounds="9.515, 48.96, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9b801350-2d9f-4b28-af24-23d94ab48883" absoluteBounds="3.5, 4.5, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_CONTATO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c1ea840-b14d-490e-9d81-e1d34c963fd4" absoluteBounds="3.515, 4.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" absoluteBounds="0.75, 29.375, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_EMPRESA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81037d2b-cbb8-440e-a228-f2f782b35e45" absoluteBounds="0.765, 29.835, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="43c1a91e-70eb-432a-89b8-c65c2a168f69" absoluteBounds="1.5, 34, 2, 3.8862125651041737">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_ENDERECO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f3d0d960-7a6d-49b9-bc32-ad674b7ff85c" absoluteBounds="1.5150000000000001, 34.46, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8e1b778-6410-4a99-9819-14ea49406da4" absoluteBounds="1.75, 38.875, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_PAI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c615fbb2-bf39-4bc5-82a2-888836f7e6b1" absoluteBounds="1.7650000000000001, 39.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c064bc55-6dbd-41fa-9e60-9d7ad55afaa3" absoluteBounds="9, 19.25, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_REGRAESPECIAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="abcab965-f3ac-4f10-86f1-0ac8e3c4fb67" absoluteBounds="9.015, 19.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a677e2b-6037-4fd9-887e-1a2410d16626" absoluteBounds="2, 44.25, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_UF" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd0f496d-cf99-4085-8b0e-dc62f0a738ad" absoluteBounds="2.015, 44.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="676a9822-0b19-43f3-9eac-082c32c09219" absoluteBounds="0.75, 25.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_USUARIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd18859e-6015-4f2a-a11e-1a8b3591cde0" absoluteBounds="0.765, 25.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c30d74f6-9d11-463a-a0bc-c4d5c662be2a" absoluteBounds="3.5, 25.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BancoDataContext/TB_DIV_USUARIO_X_EMPRESA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d45272e-bcd3-4232-a583-498c8a8ed695" absoluteBounds="3.515, 26.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb33712f-5d85-4fda-bdb6-bdd1072734ce" absoluteBounds="18, 21.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BancoDataContext/TB_EST_CONTRATOITEM_X_ESTOQUE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e39699b-8374-4f8c-adcc-4830daf0b7f3" absoluteBounds="18.015, 21.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="008043ae-de80-447a-8ff5-3a5d9163328d" absoluteBounds="9.5, 7.25, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/BancoDataContext/TB_EST_CONVERSAOUNID" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea76e2ff-5ac6-4d20-8d95-af7afc1f00f0" absoluteBounds="9.515, 7.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7d6bb313-628d-45c0-ab7a-a4ccfd4f375b" absoluteBounds="15.25, 17.125, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/BancoDataContext/TB_EST_ESTOQUE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="858caead-e5f2-4e59-a6d8-826fa5bf2f9d" absoluteBounds="15.265, 17.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d6060b5d-0809-4a88-9caa-3f78e79b1c70" absoluteBounds="6.75, 6.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BancoDataContext/TB_EST_GENERO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6114a2e9-0d60-44cd-9bdd-81cc5f09878f" absoluteBounds="6.765, 7.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3c36b08e-9821-43d8-8452-c3fe1c261f60" absoluteBounds="6.75, 9, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BancoDataContext/TB_EST_GRUPOPRODUTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f978a91-df3a-4b88-8160-1c7d1ff2ff0a" absoluteBounds="6.765, 9.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a2792951-05e1-4736-b57a-bcde99b8b3ca" absoluteBounds="9.5, 11.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BancoDataContext/TB_EST_LOCAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f711b48-f528-4c83-abe9-5d976e835e3b" absoluteBounds="9.515, 11.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="183e8e1d-f184-4867-a0bd-c1a6f7a88699" absoluteBounds="6.75, 13.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BancoDataContext/TB_EST_MARCA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a1fb7cfb-f93b-4f85-9719-9bc2bb75dee0" absoluteBounds="6.765, 14.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3b4234bc-3ca5-4b44-b41a-7da2c764acc1" absoluteBounds="6.75, 11.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BancoDataContext/TB_EST_MODELO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e00f0111-bddf-4ee6-9ecd-fcc4e0da42f0" absoluteBounds="6.765, 11.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="32cb0140-4e23-4583-8250-e40d28ae0170" absoluteBounds="9.5, 2.625, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/BancoDataContext/TB_EST_PRODUTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="827f5736-c829-4458-82b9-df7e3db764d0" absoluteBounds="9.515, 3.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ddb336d3-e60b-4944-9fba-4de1b0e23189" absoluteBounds="21.75, 24.375, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/BancoDataContext/TB_EST_TRANSFERENCIA_X_ESTOQUE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e81bbbe5-1ea2-4b26-89b7-cd5b04bfaab0" absoluteBounds="21.765, 24.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5d400c4f-3999-415b-8088-f23b0028460a" absoluteBounds="19, 24.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/BancoDataContext/TB_EST_TRANSFERENCIASALDO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="12c81465-856f-4045-ae1b-8a437bdd4114" absoluteBounds="19.015, 25.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="64af73d4-b66a-4ec1-942d-8450262bac2a" absoluteBounds="6.75, 3.375, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/BancoDataContext/TB_EST_UNIDADE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b668e337-0613-421a-b829-d1cd6b635131" absoluteBounds="6.765, 3.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="abfce9d8-959d-4311-af27-430ac76067f9" absoluteBounds="16, 8.625, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_BANCO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a6776ac-4d19-40c4-917d-aae447de0199" absoluteBounds="16.015, 9.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="92c2afda-fc4e-4b1e-b4fc-dee157f35489" absoluteBounds="3.5, 28, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_CENTROCUSTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33d9d48b-63c9-4dc4-89c3-62d8784a3f7a" absoluteBounds="3.515, 28.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fa432018-ad3a-4239-bc8a-78fd69d18908" absoluteBounds="21.5, 15.25, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_CHEQUETED" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce613810-f204-4c31-ac1a-b33f9f39be4f" absoluteBounds="21.515, 15.71, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84b69dc4-5eab-43a7-8801-badc8eb108ac" absoluteBounds="24.25, 20.75, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_CHEQUETED_X_LIQUIDACAO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02de7200-90dd-4a30-92c2-cf843e24137f" absoluteBounds="24.265, 21.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54b0e01a-c43d-42cd-af97-ed223ff21db3" absoluteBounds="6.5, 45, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_CONDICAOPAGTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f0fdf1b-4b37-4d0e-b693-e49d92611688" absoluteBounds="6.515, 45.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09c92e89-ef5f-4d4b-b746-b19136a4d2d1" absoluteBounds="18.75, 8.375, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_CONTAGERENCIAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ab0bbbe3-e2b6-48d6-9a8c-234ac7dbed2a" absoluteBounds="18.765, 8.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="149bf66a-a0c1-4060-8634-a75cb169de02" absoluteBounds="6.25, 23, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_DUPLICATA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd9e5950-c925-4024-a7b2-3b377bcbdd50" absoluteBounds="6.265, 23.46, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5bbefda2-ca81-4828-a851-0a10b2e933d4" absoluteBounds="21.5, 8.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_FECHAMENTOCAIXA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db46eeb0-d00d-478d-bc0b-a1da65da57e8" absoluteBounds="21.515, 8.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2fb3ff4f-3e82-4a8f-81d8-c1ebb8a819d0" absoluteBounds="16.25, 14.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_HISTORICO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7cb78d31-a602-4aff-9117-7ad6ec5c6366" absoluteBounds="16.265, 15.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c30a3e3c-23da-4d25-ad5e-db9a6e8571c3" absoluteBounds="21.5, 20.375, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_LIQUIDACAO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50da2107-1f77-4360-942f-515a82df9f2e" absoluteBounds="21.515, 20.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="273c7d63-6133-4eef-b243-de2ef37836a7" absoluteBounds="15, 28.625, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_NF_X_DUP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1184b8f6-33cd-465e-b79b-1373ac0ed4a3" absoluteBounds="15.015, 29.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="df0e37bc-1cf6-44b9-b22f-83ca1137ad46" absoluteBounds="9, 26.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_PARCELA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8e41d18-7064-444d-b5be-c9d6952f2e83" absoluteBounds="9.015, 26.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a6c4de4-f613-4070-b8ab-cd071d772b3d" absoluteBounds="18.75, 18.25, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_PORTADOR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe310acc-1b0e-4087-a6f5-c70f2c2d7004" absoluteBounds="18.765, 18.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="08ca4768-fae0-4fd5-aed6-b1ebee6bbfbe" absoluteBounds="15.75, 24.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_PROGRAMACAO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0dff75f3-7623-4b2f-983e-c960da4a23fa" absoluteBounds="15.765, 24.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="88fa7c71-3600-4fe1-b61c-003f3eae2bf9" absoluteBounds="18.75, 11.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_TIPODOCTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ccff3597-2cca-4ee7-a1d7-f3ec68c122cb" absoluteBounds="18.765, 12.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7a4f0ed7-654e-42d8-adb4-9d7c42993794" absoluteBounds="3.5, 19.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIN_TIPODUP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7fc17a8d-59da-416c-aeed-065e3b95cf74" absoluteBounds="3.515, 20.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0e985ca8-e210-4bba-b7a3-5aa649a0b226" absoluteBounds="1.5, 15.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_CATEGORIAFISCAL_CLIFOR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="36f8a463-7a2e-4897-acf2-6c28cdb3b5b7" absoluteBounds="1.5150000000000001, 15.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f9ba2847-2661-41c1-89ff-c262689e86b3" absoluteBounds="6.75, 16, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_CATEGORIAFISCAL_PRODUTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7be861c1-6c70-4799-89ba-342a275e9332" absoluteBounds="6.765, 16.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="edd46f6f-71ce-4d7e-856a-a710986403d4" absoluteBounds="6.5, 31.625, 2, 1.578595377604163">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_CFOP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a4a93cda-92ba-40a6-bc5d-d90f0621dbe4" absoluteBounds="6.515, 32.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09a2e092-033f-46ef-ae80-40b50748d7a8" absoluteBounds="14.75, 35.25, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_COMPDEVOL_NF" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3fe856fd-4b16-4279-816e-daf49cc1519f" absoluteBounds="14.765, 35.71, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c969db7-6445-47d3-9365-444ee6c19c82" absoluteBounds="0.75, 10.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_CONFIGCONTRATO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="03df4f17-51e9-4f94-838e-5ef2382d9927" absoluteBounds="0.765, 11.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3faca37-6740-429f-b239-4ee366589ddf" absoluteBounds="12.25, 15.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_CONFIGCONTRATO_X_CONFIGFISCAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96ea1766-9e07-4e99-b758-637405b44cde" absoluteBounds="12.265, 15.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a9e0e94-7a24-44fb-80e3-29207256540a" absoluteBounds="20.75, 32, 2, 4.0785139973958309">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d550217-f199-4621-b5d9-861f62655196" absoluteBounds="20.765, 32.46, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d99a7f9d-fe90-41bb-8c01-de086b56bfc2" absoluteBounds="9.25, 45.25, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_CONFIGURACAO_X_OPERACAO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07b03193-e878-4d6d-9e9d-ebcaf2d4917a" absoluteBounds="9.265, 45.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dd18b539-0e66-4a43-bd44-4783c55156f7" absoluteBounds="6.5, 33.875, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_CONFIGURACAOFISCAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1b434cd-e130-4c02-9491-536afabcd986" absoluteBounds="6.515, 34.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68edada9-e658-47f6-8d21-6d2987d1dad6" absoluteBounds="3.5, 22.25, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_CONTRATO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74422b59-daed-4949-89c5-ef0b0d98559e" absoluteBounds="3.515, 22.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a4df7b76-3e00-4735-a3ab-7a1b6f1aa6a6" absoluteBounds="12.25, 17.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_CONTRATO_DADOSGERAI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c4277f88-aace-48b2-b559-1347332a8b6f" absoluteBounds="12.265, 18.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f95d3a91-a023-48b8-8375-e4c15879e704" absoluteBounds="12.25, 22, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_CONTRATO_ITEM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce81b31d-24ac-4aeb-97cf-952e933af868" absoluteBounds="12.265, 22.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e75f1835-8724-40f9-a16a-bb1e75733b2f" absoluteBounds="9.25, 22.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_CONTRATOACOMPANHAMENTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4468170a-8d0f-46ca-b7d8-36306be96b11" absoluteBounds="9.265, 23.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2373feeb-0ac7-49f1-839c-a7432f593068" absoluteBounds="15, 47.375, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_IMPOSTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54e26586-08d4-4c86-ad7c-7ea2603eda91" absoluteBounds="15.015, 47.835, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40ec8f70-c0a9-4d52-a813-484b156cf961" absoluteBounds="6.5, 42.375, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_MODELO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e6585dba-1eee-4414-b830-8975454be288" absoluteBounds="6.515, 42.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98ebfb2d-c6d0-4722-93f6-df0443b73e75" absoluteBounds="6.75, 36.875, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_NCM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bdf84614-da46-4e1d-92f7-414072abff2a" absoluteBounds="6.765, 37.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5f0b5dcb-9e90-4ad3-b617-b44cd8fd70ba" absoluteBounds="15.75, 31.75, 2, 2.15549967447917">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_NF_X_ESTOQUE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f485ff2-d1b0-4d65-b64b-b52165c12792" absoluteBounds="15.765, 32.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c83b01fb-1789-4657-97e5-208ede6e322a" absoluteBounds="9.25, 29.5, 2, 6.5784326171875023">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_NOTAFISCAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f7012df-a426-4904-83a0-5e2187ae6e5d" absoluteBounds="9.265, 29.96, 1.9700000000000002, 6.0184326171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="baf1bcba-8ad5-42db-86b4-3b52c6579b0a" absoluteBounds="17.75, 35.125, 2, 3.3093082682291737">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_NOTAFISCAL_IMPOSTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e5d9547-dedb-4d78-9e33-e78040bcd27a" absoluteBounds="17.765, 35.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e20c616-548c-4a4f-8540-4bb7b49c2e08" absoluteBounds="12, 32.5, 2, 2.7324039713541737">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_NOTAFISCAL_ITEM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f292ecb-80f1-48f8-a98d-ddfd4c51fd83" absoluteBounds="12.015, 32.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="44d563e5-b35b-4b2e-add8-f2ba43dc0b76" absoluteBounds="3.75, 51.375, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_OBSERVACAOFISCAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40b4ff26-3901-4211-acab-005ab45b4c98" absoluteBounds="3.765, 51.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a4798245-5a4a-4d9e-ac07-1894080252b2" absoluteBounds="6.5, 50.625, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_OPERACAO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="49efc425-5ac1-4106-82de-226f597b6596" absoluteBounds="6.515, 51.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="338b768c-3200-4aaf-9324-db91e9e13db0" absoluteBounds="6.5, 47.625, 2, 2.1554996744791595">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_SERIE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="99a49d02-1ce2-4a8d-9b49-96095f4050b2" absoluteBounds="6.515, 48.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c0671364-3c24-4035-9f11-1d5cb2a7059c" absoluteBounds="15, 42.75, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_SIT_TRIB_SPEAD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8cce5d3b-901e-4fbc-9679-70265710b254" absoluteBounds="15.015, 43.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="36f5cb25-cb58-4bd7-9f6c-0812600457d5" absoluteBounds="15, 45.125, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/BancoDataContext/TB_FIS_SITUACAOTRIBUTARIA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a562369d-d963-43f3-9c4f-20fd5967b617" absoluteBounds="15.015, 45.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54316c92-7177-41a0-a96f-c24b29b6e0bd" absoluteBounds="15.25, 40, 2, 1.5785953776041737">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_AMOSTRA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d461bc8-cebb-4381-b08f-72f0afd36d8e" absoluteBounds="15.265, 40.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ff0a65c8-0e9c-4250-97e5-8c1d476df7f7" absoluteBounds="18, 28.625, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_CLASSIFICACAO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c12a933b-581a-44b9-8e80-37cfd2174659" absoluteBounds="18.015, 29.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="17c29c65-4842-4f88-b46d-7c3f76a3880b" absoluteBounds="6.75, 40, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_FAZENDA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e8e8376-68bb-49ae-bf60-35ef116c47c9" absoluteBounds="6.765, 40.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6473c737-dea7-4883-a087-5860258f4c7c" absoluteBounds="6.25, 28, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_FIXACAO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bca7af9e-f266-4aec-a8e0-3120a4334e6c" absoluteBounds="6.265, 28.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="190b1fab-59fc-42fd-b8a6-1f45cf94bddf" absoluteBounds="9.5, 37.625, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_MOEGA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="56eee5e4-e492-4537-b9cf-00b0dd8c68fd" absoluteBounds="9.515, 38.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8a4cb905-4d20-43ba-a034-c63b27c47743" absoluteBounds="24.75, 28, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_PERC_DESC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7822acd3-4ea9-404b-88ed-d8c48889f9cc" absoluteBounds="24.765, 28.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" absoluteBounds="12.25, 25.875, 2, 5.8092268880208309">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_PESAGEM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ddd72fa2-6e4a-4649-b152-b6871f8f4df9" absoluteBounds="12.265, 26.335, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ef572cbb-c38f-42e0-a8dd-bdb750e88245" absoluteBounds="9.5, 13.625, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_SAFRA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="493905e1-3f45-4387-b748-b14ed2e6a3ca" absoluteBounds="9.515, 14.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de9fcccc-5cf9-47e7-849c-48e219ffbdb6" absoluteBounds="9.5, 16.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_TABDESCONTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="64f23db9-2d9a-4d8f-9730-d33c5afc07af" absoluteBounds="9.515, 16.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84041ca3-2de8-4130-8036-8c397baa904e" absoluteBounds="22, 28.25, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_TABELA_X_AMOSTRA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c447473-56c2-495c-814e-c3ae37266742" absoluteBounds="22.015, 28.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3af1ca16-3a42-4611-840f-607b403b6228" absoluteBounds="9.5, 39.875, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_TALHAO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74625a8b-0f7e-4b9f-a6a3-954c3ad8a8ef" absoluteBounds="9.515, 40.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="265e358b-f1ab-41b1-a6e1-83202811f197" absoluteBounds="12.5, 11.625, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_TAXAPADRAO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="102742f3-f319-4420-a6ff-28fc6bec266a" absoluteBounds="12.515, 12.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="735e966a-559a-43d9-8d4c-c0abd179b965" absoluteBounds="15, 21, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_TAXASCONTRATO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bae62bed-ac73-4f86-ba21-ff629be26aaa" absoluteBounds="15.015, 21.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0ab2132-7964-40e6-99a3-dc752a241f33" absoluteBounds="9.5, 42.375, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/BancoDataContext/TB_GRA_TIPOPESAGEM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1a4b5109-c8a5-46d9-a1af-0152bde97366" absoluteBounds="9.515, 42.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 17.875); (3.125 : 17.5); (3.66666666666667 : 17.5 : JumpStart); (3.83333333333333 : 17.5 : JumpEnd); (4.16666666666667 : 17.5 : JumpStart); (4.33333333333333 : 17.5 : JumpEnd); (4.5 : 17.5); (4.5 : 13.9631982421875)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_CLIFOR/TB_DIV_CLIFOR_TB_DIV_CLFOR_PJ" />
+      <nodes>
+        <classShapeMoniker Id="82febbdb-b674-4387-b349-e66bb06a0ff2" />
+        <classShapeMoniker Id="3a954ef4-9702-428b-9cb3-3d7d985a8b8a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 18.6017976888021); (2.79166666666667 : 18.6017976888021 : JumpStart); (3.08333333333333 : 18.6017976888021 : JumpEnd); (4.66666666666667 : 18.6017976888021 : JumpStart); (4.83333333333333 : 18.6017976888021 : JumpEnd); (5.66666666666667 : 18.6017976888021 : JumpStart); (5.83333333333333 : 18.6017976888021 : JumpEnd); (8.54166666666667 : 18.6017976888021 : JumpStart); (8.70833333333333 : 18.6017976888021 : JumpEnd); (10.2760396666667 : 18.6017976888021 : JumpStart); (10.4427063333333 : 18.6017976888021 : JumpEnd); (11.3697916666667 : 18.6017976888021 : JumpStart); (11.7083333333333 : 18.6017976888021 : JumpEnd); (11.7291666666667 : 18.6017976888021 : JumpStart); (11.9739583333333 : 18.6017976888021 : JumpEnd); (12 : 18.6017976888021); (12 : 17.5); (12.0104166666667 : 17.5 : JumpStart); (12.3020833333333 : 17.5 : JumpEnd); (15 : 17.5); (15 : 16.875); (15.5104166666667 : 16.875 : JumpStart); (15.6770833333333 : 16.875 : JumpEnd); (17.7916666666667 : 16.875 : JumpStart); (17.9583333333333 : 16.875 : JumpEnd); (21.25 : 16.875); (21.25 : 15); (21.2604166666667 : 15 : JumpStart); (21.4270833333333 : 15 : JumpEnd); (21.8854146666667 : 15 : JumpStart); (22.0520813333333 : 15 : JumpEnd); (22.4166666666667 : 15 : JumpStart); (22.5833333333333 : 15 : JumpEnd); (23.8229166666667 : 15 : JumpStart); (23.9895833333333 : 15 : JumpEnd); (24.5 : 15); (24.5 : 15.8478011067708); (25.75 : 15.8478011067708); (25.75 : 15.5978011067708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_CLIFOR/TB_DIV_CLIFOR_TB_DIV_CLIFOR_DADOSBANCARIO" />
+      <nodes>
+        <classShapeMoniker Id="82febbdb-b674-4387-b349-e66bb06a0ff2" />
+        <classShapeMoniker Id="55d18756-5856-43fb-b7b9-59a1f2baf2d6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 19.144650344401); (2.79166666666667 : 19.144650344401 : JumpStart); (3.08333333333333 : 19.144650344401 : JumpEnd); (4.75 : 19.144650344401); (4.75 : 14.2131982421875); (4.58333333333333 : 14.2131982421875 : JumpStart); (4.41666666666667 : 14.2131982421875 : JumpEnd); (3.25 : 14.2131982421875); (3.25 : 11.0881982421875); (4.5 : 11.0881982421875); (4.5 : 10.7131982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_CLIFOR/TB_DIV_CLIFOR_TB_DIV_CLIFOR_PF" />
+      <nodes>
+        <classShapeMoniker Id="82febbdb-b674-4387-b349-e66bb06a0ff2" />
+        <classShapeMoniker Id="8c0c9519-979f-46a4-96de-3acfdf267001" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 50.4431062825521); (13.25 : 50.4431062825521); (13.25 : 44.2035953776042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_CONFIGPROTOCOLO/TB_DIV_CONFIGPROTOCOLO_TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLO" />
+      <nodes>
+        <classShapeMoniker Id="75cdf51d-c174-402e-a120-f11e0f8e002a" />
+        <classShapeMoniker Id="11e72777-8068-476d-976a-29c10f6a3ea6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 18.238398844401); (2.79166666666667 : 18.238398844401 : JumpStart); (2.95833333333333 : 18.238398844401 : JumpEnd); (4.25 : 18.238398844401); (4.25 : 14.4631982421875); (3 : 14.4631982421875); (3 : 7.4151025390625); (4.5 : 7.4151025390625); (4.5 : 7.0401025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_CLIFOR/TB_DIV_CLIFOR_TB_DIV_CONTATO" />
+      <nodes>
+        <classShapeMoniker Id="82febbdb-b674-4387-b349-e66bb06a0ff2" />
+        <classShapeMoniker Id="9b801350-2d9f-4b28-af24-23d94ab48883" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 20.2212616452324); (2.81607443490112 : 20.2873360801335 : JumpStart); (2.93392556509888 : 20.4051872103312 : JumpEnd); (2.94107443490112 : 20.4123360801335 : JumpStart); (3.05892556509888 : 20.5301872103312 : JumpEnd); (3.125 : 20.5962616452324); (3.125 : 28.9507692307692); (2.96517556509888 : 29.1105936656704 : JumpStart); (2.84732443490112 : 29.2284447958681 : JumpEnd); (2.70076923076923 : 29.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_CLIFOR/TB_DIV_CLIFOR_TB_DIV_EMPRESA" />
+      <nodes>
+        <classShapeMoniker Id="82febbdb-b674-4387-b349-e66bb06a0ff2" />
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.45923076923077 : 32.4920068359375); (1.45923076923077 : 32.7420068359375); (2.05461538461538 : 32.7420068359375); (2.05461538461538 : 32.4920068359375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_EMPRESA/TB_DIV_EMPRESA_TB_DIV_EMPRESA" />
+      <nodes>
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.46480769230769 : 34); (2.46480769230769 : 32.4920068359375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_ENDERECO/TB_DIV_ENDERECO_TB_DIV_EMPRESA" />
+      <nodes>
+        <classShapeMoniker Id="43c1a91e-70eb-432a-89b8-c65c2a168f69" />
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.7513612283153 : 41.25); (1.5 : 40.9986387716847); (1.5 : 37.8862125651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_CIDADE/TB_DIV_CIDADE_TB_DIV_ENDERECO" />
+      <nodes>
+        <classShapeMoniker Id="3bcee532-e7f7-42fe-8e9c-6c62bb2b0e1f" />
+        <classShapeMoniker Id="43c1a91e-70eb-432a-89b8-c65c2a168f69" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 19.6829559948167); (2.79166666666667 : 19.6829559948167 : JumpStart); (3.08333333333333 : 19.6829559948167 : JumpEnd); (3.28125 : 19.6829559948167); (3.28125 : 34)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_CLIFOR/TB_DIV_CLIFOR_TB_DIV_ENDERECO" />
+      <nodes>
+        <classShapeMoniker Id="82febbdb-b674-4387-b349-e66bb06a0ff2" />
+        <classShapeMoniker Id="43c1a91e-70eb-432a-89b8-c65c2a168f69" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.625 : 38.875); (2.625 : 37.8862125651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_PAI/TB_DIV_PAI_TB_DIV_ENDERECO" />
+      <nodes>
+        <classShapeMoniker Id="d8e1b778-6410-4a99-9819-14ea49406da4" />
+        <classShapeMoniker Id="43c1a91e-70eb-432a-89b8-c65c2a168f69" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 20.4239005533854); (8.54166666666667 : 20.4239005533854 : JumpStart); (8.70833333333333 : 20.4239005533854 : JumpEnd); (9 : 20.4239005533854)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_ACESSO/TB_DIV_ACESSO_TB_DIV_REGRAESPECIAL" />
+      <nodes>
+        <classShapeMoniker Id="012391d1-b088-47f6-ac74-8b31c3e01291" />
+        <classShapeMoniker Id="c064bc55-6dbd-41fa-9e60-9d7ad55afaa3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.875 : 44.25); (2.875 : 43.0208968098958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_UF/TB_DIV_UF_TB_DIV_CIDADE" />
+      <nodes>
+        <classShapeMoniker Id="5a677e2b-6037-4fd9-887e-1a2410d16626" />
+        <classShapeMoniker Id="3bcee532-e7f7-42fe-8e9c-6c62bb2b0e1f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 25.625); (5.56607443490112 : 25.5589255650989 : JumpStart); (5.68392556509888 : 25.4410744349011 : JumpEnd); (5.875 : 25.25); (5.875 : 20.4239005533854); (5.91666666666667 : 20.4239005533854 : JumpStart); (6.20833333333333 : 20.4239005533854 : JumpEnd); (6.25 : 20.4239005533854)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_USUARIO_X_EMPRESA/TB_DIV_USUARIO_X_EMPRESA_TB_DIV_ACESSO" />
+      <nodes>
+        <classShapeMoniker Id="c30d74f6-9d11-463a-a0bc-c4d5c662be2a" />
+        <classShapeMoniker Id="012391d1-b088-47f6-ac74-8b31c3e01291" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 29.4242297692308); (2.84732443490112 : 29.3269053343296 : JumpStart); (2.96517556509888 : 29.2090542041319 : JumpEnd); (3.22232443490112 : 28.9519053343296 : JumpStart); (3.34017556509888 : 28.8340542041319 : JumpEnd); (3.375 : 28.7992297692308); (3.375 : 26.4142976888021); (3.5 : 26.4142976888021)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_EMPRESA/TB_DIV_EMPRESA_TB_DIV_USUARIO_X_EMPRESA" />
+      <nodes>
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+        <classShapeMoniker Id="c30d74f6-9d11-463a-a0bc-c4d5c662be2a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 25.957148844401); (2.82291666666667 : 25.957148844401 : JumpStart); (3.36458333333333 : 25.957148844401 : JumpEnd); (3.5 : 25.957148844401)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_USUARIO/TB_DIV_USUARIO_TB_DIV_USUARIO_X_EMPRESA" />
+      <nodes>
+        <classShapeMoniker Id="676a9822-0b19-43f3-9eac-082c32c09219" />
+        <classShapeMoniker Id="c30d74f6-9d11-463a-a0bc-c4d5c662be2a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.25 : 17.65625); (17.7916666666667 : 17.65625 : JumpStart); (17.9583333333333 : 17.65625 : JumpEnd); (18.34375 : 17.65625); (18.34375 : 21.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_ESTOQUE/TB_EST_ESTOQUE_TB_EST_CONTRATOITEM_X_ESTOQUE" />
+      <nodes>
+        <classShapeMoniker Id="7d6bb313-628d-45c0-ab7a-a4ccfd4f375b" />
+        <classShapeMoniker Id="eb33712f-5d85-4fda-bdb6-bdd1072734ce" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.70259415384615 : 29.375); (1.70259415384615 : 27.6554996744792); (1.84985953205128 : 27.6554996744792 : JumpStart); (2.01652619871795 : 27.6554996744792 : JumpEnd); (2.14296324358974 : 27.6554996744792 : JumpStart); (2.30962991025641 : 27.6554996744792 : JumpEnd); (2.4360669551282 : 27.6554996744792 : JumpStart); (2.60273362179487 : 27.6554996744792 : JumpEnd); (2.82291666666667 : 27.6554996744792 : JumpStart); (2.98958333333333 : 27.6554996744792 : JumpEnd); (3 : 27.6554996744792); (3 : 18.3950512695313); (4.66666666666667 : 18.3950512695313 : JumpStart); (4.83333333333333 : 18.3950512695313 : JumpEnd); (5.66666666666667 : 18.3950512695313 : JumpStart); (5.83333333333333 : 18.3950512695313 : JumpEnd); (8.54166666666667 : 18.3950512695313 : JumpStart); (8.70833333333333 : 18.3950512695313 : JumpEnd); (10.2760396666667 : 18.3950512695313 : JumpStart); (10.4427063333333 : 18.3950512695313 : JumpEnd); (11.1979166666667 : 18.3950512695313 : JumpStart); (11.3645833333333 : 18.3950512695313 : JumpEnd); (11.3697916666667 : 18.3950512695313 : JumpStart); (11.7083333333333 : 18.3950512695313 : JumpEnd); (11.75 : 18.3950512695313); (11.75 : 17.625); (11.7916666666667 : 17.625 : JumpStart); (12.3020833333333 : 17.625 : JumpEnd); (14.625 : 17.625); (14.625 : 18.5825507695313); (15.25 : 18.5825507695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_EMPRESA/TB_DIV_EMPRESA_TB_EST_ESTOQUE" />
+      <nodes>
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+        <classShapeMoniker Id="7d6bb313-628d-45c0-ab7a-a4ccfd4f375b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 4.37580485026042); (11.9479166666667 : 4.37580485026042 : JumpStart); (12.1145833333333 : 4.37580485026042 : JumpEnd); (15.59375 : 4.37580485026042); (15.59375 : 17.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_PRODUTO/TB_EST_PRODUTO_TB_EST_ESTOQUE" />
+      <nodes>
+        <classShapeMoniker Id="32cb0140-4e23-4583-8250-e40d28ae0170" />
+        <classShapeMoniker Id="7d6bb313-628d-45c0-ab7a-a4ccfd4f375b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 6.75); (8.81607443490112 : 6.68392556509888 : JumpStart); (8.93392556509888 : 6.56607443490112 : JumpEnd); (9.00357443490112 : 6.49642556509888 : JumpStart); (9.12142556509888 : 6.37857443490112 : JumpEnd); (9.125 : 6.375); (9.125 : 6.50160970052083); (9.12857443490112 : 6.49803526561971 : JumpStart); (9.46517556509888 : 6.16143413542195 : JumpEnd); (9.5 : 6.12660970052083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_GENERO/TB_EST_GENERO_TB_EST_PRODUTO" />
+      <nodes>
+        <classShapeMoniker Id="d6060b5d-0809-4a88-9caa-3f78e79b1c70" />
+        <classShapeMoniker Id="32cb0140-4e23-4583-8250-e40d28ae0170" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 9.06192851096755); (8.81607443490112 : 8.99585407606643 : JumpStart); (8.93392556509888 : 8.87800294586867 : JumpEnd); (9.12857443490112 : 8.68335407606643 : JumpStart); (9.24642556509888 : 8.56550294586867 : JumpEnd); (9.3125 : 8.49942851096755); (9.3125 : 4.34455285026042); (9.32291666666667 : 4.34455285026042 : JumpStart); (9.48958333333333 : 4.34455285026042 : JumpEnd); (9.5 : 4.34455285026042)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_GRUPOPRODUTO/TB_EST_GRUPOPRODUTO_TB_EST_PRODUTO" />
+      <nodes>
+        <classShapeMoniker Id="3c36b08e-9821-43d8-8452-c3fe1c261f60" />
+        <classShapeMoniker Id="32cb0140-4e23-4583-8250-e40d28ae0170" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 11.4369285109675); (8.81607443490112 : 11.3708540760664 : JumpStart); (8.93392556509888 : 11.2530029458687 : JumpEnd); (9.1875 : 10.9994285109675); (9.1875 : 5.23558127539062); (9.22916666666667 : 5.23558127539062 : JumpStart); (9.48958333333333 : 5.23558127539062 : JumpEnd); (9.5 : 5.23558127539062)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_MODELO/TB_EST_MODELO_TB_EST_PRODUTO" />
+      <nodes>
+        <classShapeMoniker Id="3b4234bc-3ca5-4b44-b41a-7da2c764acc1" />
+        <classShapeMoniker Id="32cb0140-4e23-4583-8250-e40d28ae0170" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 13.6553566034155); (8.81607443490112 : 13.5892821685143 : JumpStart); (8.93392556509888 : 13.4714310383166 : JumpEnd); (9.20669943490112 : 13.1986571685143 : JumpStart); (9.32455056509888 : 13.0808060383166 : JumpEnd); (9.40625 : 12.9991066034155); (9.40625 : 3.45352442513021); (9.5 : 3.45352442513021)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_MARCA/TB_EST_MARCA_TB_EST_PRODUTO" />
+      <nodes>
+        <classShapeMoniker Id="183e8e1d-f184-4867-a0bd-c1a6f7a88699" />
+        <classShapeMoniker Id="32cb0140-4e23-4583-8250-e40d28ae0170" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(18.46875 : 23.4054996744792); (18.46875 : 24.53125); (20.1822891666667 : 24.53125 : JumpStart); (20.3489558333333 : 24.53125 : JumpEnd); (20.4479166666667 : 24.53125 : JumpStart); (20.6145833333333 : 24.53125 : JumpEnd); (21.75 : 24.53125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_CONTRATOITEM_X_ESTOQUE/TB_EST_CONTRATOITEM_X_ESTOQUE_TB_EST_TRANSFERENCIA_X_ESTOQUE" />
+      <nodes>
+        <classShapeMoniker Id="eb33712f-5d85-4fda-bdb6-bdd1072734ce" />
+        <classShapeMoniker Id="ddb336d3-e60b-4944-9fba-4de1b0e23189" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(21 : 25.7364005533854); (21.75 : 25.7364005533854)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_TRANSFERENCIASALDO/TB_EST_TRANSFERENCIASALDO_TB_EST_TRANSFERENCIA_X_ESTOQUE" />
+      <nodes>
+        <classShapeMoniker Id="5d400c4f-3999-415b-8088-f23b0028460a" />
+        <classShapeMoniker Id="ddb336d3-e60b-4944-9fba-4de1b0e23189" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.72139320537861 : 5.14589680989583); (8.81607443490112 : 5.24057803941835 : JumpStart); (9.12142556509888 : 5.54592916961611 : JumpEnd); (9.15625 : 5.58075360451723); (9.15625 : 8.23159912109375); (9.18229166666667 : 8.23159912109375 : JumpStart); (9.48958333333333 : 8.23159912109375 : JumpEnd); (9.5 : 8.23159912109375)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_UNIDADE/TB_EST_UNIDADE_TB_EST_CONVERSAOUNID" />
+      <nodes>
+        <classShapeMoniker Id="64af73d4-b66a-4ec1-942d-8450262bac2a" />
+        <classShapeMoniker Id="008043ae-de80-447a-8ff5-3a5d9163328d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 5.09958004717548); (8.81607443490112 : 5.1656544820766 : JumpStart); (9.12142556509888 : 5.47100561227436 : JumpEnd); (9.234375 : 5.58395504717548); (9.234375 : 8.23159912109375); (9.32291666666667 : 8.23159912109375 : JumpStart); (9.48958333333333 : 8.23159912109375 : JumpEnd); (9.5 : 8.23159912109375)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_UNIDADE/TB_EST_UNIDADE_TB_EST_CONVERSAOUNID1" />
+      <nodes>
+        <classShapeMoniker Id="64af73d4-b66a-4ec1-942d-8450262bac2a" />
+        <classShapeMoniker Id="008043ae-de80-447a-8ff5-3a5d9163328d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 3.89903863769531); (8.79166666666667 : 3.89903863769531 : JumpStart); (8.95833333333333 : 3.89903863769531 : JumpEnd); (9.32291666666667 : 3.89903863769531 : JumpStart); (9.48958333333333 : 3.89903863769531 : JumpEnd); (9.5 : 3.89903863769531)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_UNIDADE/TB_EST_UNIDADE_TB_EST_PRODUTO" />
+      <nodes>
+        <classShapeMoniker Id="64af73d4-b66a-4ec1-942d-8450262bac2a" />
+        <classShapeMoniker Id="32cb0140-4e23-4583-8250-e40d28ae0170" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.09375 : 10.3958968098958); (16.09375 : 14.0729484049479); (21.1041666666667 : 14.0729484049479 : JumpStart); (21.2708333333333 : 14.0729484049479 : JumpEnd); (21.8854146666667 : 14.0729484049479 : JumpStart); (22.0520813333333 : 14.0729484049479 : JumpEnd); (23.8229166666667 : 14.0729484049479 : JumpStart); (23.9895833333333 : 14.0729484049479 : JumpEnd); (24.75 : 14.0729484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_BANCO/TB_FIN_BANCO_TB_DIV_CLIFOR_DADOSBANCARIO" />
+      <nodes>
+        <classShapeMoniker Id="abfce9d8-959d-4311-af27-430ac76067f9" />
+        <classShapeMoniker Id="55d18756-5856-43fb-b7b9-59a1f2baf2d6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.20863627929687 : 29.9631982421875); (4.20863627929687 : 30.2131982421875); (4.80523818359375 : 30.2131982421875); (4.80523818359375 : 29.9631982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_CENTROCUSTO/TB_FIN_CENTROCUSTO_TB_FIN_CENTROCUSTO" />
+      <nodes>
+        <classShapeMoniker Id="92c2afda-fc4e-4b1e-b4fc-dee157f35489" />
+        <classShapeMoniker Id="92c2afda-fc4e-4b1e-b4fc-dee157f35489" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 18.8732240166016); (2.79166666666667 : 18.8732240166016 : JumpStart); (3.08333333333333 : 18.8732240166016 : JumpEnd); (4.66666666666667 : 18.8732240166016 : JumpStart); (4.83333333333333 : 18.8732240166016 : JumpEnd); (5.66666666666667 : 18.8732240166016 : JumpStart); (5.83333333333333 : 18.8732240166016 : JumpEnd); (8.54166666666667 : 18.8732240166016 : JumpStart); (8.70833333333333 : 18.8732240166016 : JumpEnd); (10.2760396666667 : 18.8732240166016 : JumpStart); (10.4427063333333 : 18.8732240166016 : JumpEnd); (11.3697916666667 : 18.8732240166016 : JumpStart); (12.1145833333333 : 18.8732240166016 : JumpEnd); (12.125 : 18.8732240166016); (12.125 : 17.375); (12.1354166666667 : 17.375 : JumpStart); (12.3020833333333 : 17.375 : JumpEnd); (14.75 : 17.375); (14.75 : 16.625); (15.5104166666667 : 16.625 : JumpStart); (15.6770833333333 : 16.625 : JumpEnd); (17.7916666666667 : 16.625 : JumpStart); (17.9583333333333 : 16.625 : JumpEnd); (21 : 16.625); (21 : 14.75); (21.1041666666667 : 14.75 : JumpStart); (21.4270833333333 : 14.75 : JumpEnd); (21.8854146666667 : 14.75 : JumpStart); (22.0520813333333 : 14.75 : JumpEnd); (22.5 : 14.75); (22.5 : 15.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_CLIFOR/TB_DIV_CLIFOR_TB_FIN_CHEQUETED" />
+      <nodes>
+        <classShapeMoniker Id="82febbdb-b674-4387-b349-e66bb06a0ff2" />
+        <classShapeMoniker Id="fa432018-ad3a-4239-bc8a-78fd69d18908" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(18 : 9.51044840494792); (18.5 : 9.51044840494792); (18.5 : 10.9728011067708); (20.9782061282051 : 10.9728011067708 : JumpStart); (21.1448727948718 : 10.9728011067708 : JumpEnd); (21.968748 : 10.9728011067708); (21.968748 : 15.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_BANCO/TB_FIN_BANCO_TB_FIN_CHEQUETED" />
+      <nodes>
+        <classShapeMoniker Id="abfce9d8-959d-4311-af27-430ac76067f9" />
+        <classShapeMoniker Id="fa432018-ad3a-4239-bc8a-78fd69d18908" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(23.5 : 17.2997054036458); (23.8229166666667 : 17.2997054036458 : JumpStart); (23.9895833333333 : 17.2997054036458 : JumpEnd); (24.375 : 17.2997054036458); (24.375 : 20.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_CHEQUETED/TB_FIN_CHEQUETED_TB_FIN_CHEQUETED_X_LIQUIDACAO" />
+      <nodes>
+        <classShapeMoniker Id="fa432018-ad3a-4239-bc8a-78fd69d18908" />
+        <classShapeMoniker Id="84b69dc4-5eab-43a7-8801-badc8eb108ac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(18 : 9.00522420247396); (18.75 : 9.00522420247396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_BANCO/TB_FIN_BANCO_TB_FIN_CONTAGERENCIAL" />
+      <nodes>
+        <classShapeMoniker Id="abfce9d8-959d-4311-af27-430ac76067f9" />
+        <classShapeMoniker Id="09c92e89-ef5f-4d4b-b746-b19136a4d2d1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 19.3848276722005); (2.79166666666667 : 19.3848276722005 : JumpStart); (3.08333333333333 : 19.3848276722005 : JumpEnd); (5.66666666666667 : 19.3848276722005 : JumpStart); (5.83333333333333 : 19.3848276722005 : JumpEnd); (6 : 19.3848276722005); (6 : 21.8478011067708); (6.04166666666667 : 21.8478011067708 : JumpStart); (6.20833333333333 : 21.8478011067708 : JumpEnd); (7.25 : 21.8478011067708); (7.25 : 23)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_CLIFOR/TB_DIV_CLIFOR_TB_FIN_DUPLICATA" />
+      <nodes>
+        <classShapeMoniker Id="82febbdb-b674-4387-b349-e66bb06a0ff2" />
+        <classShapeMoniker Id="149bf66a-a0c1-4060-8634-a75cb169de02" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.90625 : 34); (2.90625 : 24.9239005533854); (2.91666666666667 : 24.9239005533854 : JumpStart); (3.36458333333333 : 24.9239005533854 : JumpEnd); (5.54166666666667 : 24.9239005533854 : JumpStart); (5.70833333333333 : 24.9239005533854 : JumpEnd); (5.79166666666667 : 24.9239005533854 : JumpStart); (6.14583333333333 : 24.9239005533854 : JumpEnd); (6.25 : 24.9239005533854)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_ENDERECO/TB_DIV_ENDERECO_TB_FIN_DUPLICATA" />
+      <nodes>
+        <classShapeMoniker Id="43c1a91e-70eb-432a-89b8-c65c2a168f69" />
+        <classShapeMoniker Id="149bf66a-a0c1-4060-8634-a75cb169de02" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 31.3526020390625); (2.82291666666667 : 31.3526020390625 : JumpStart); (2.98958333333333 : 31.3526020390625 : JumpEnd); (3.19791666666667 : 31.3526020390625 : JumpStart); (3.36458333333333 : 31.3526020390625 : JumpEnd); (6 : 31.3526020390625); (6 : 27.0689111328125); (6.04166666666667 : 27.0689111328125 : JumpStart); (6.20833333333333 : 27.0689111328125 : JumpEnd); (7.25 : 27.0689111328125); (7.25 : 26.6939111328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_EMPRESA/TB_DIV_EMPRESA_TB_FIN_DUPLICATA" />
+      <nodes>
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+        <classShapeMoniker Id="149bf66a-a0c1-4060-8634-a75cb169de02" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 25.40625); (2.82291666666667 : 25.40625 : JumpStart); (3.36458333333333 : 25.40625 : JumpEnd); (5.54166666666667 : 25.40625 : JumpStart); (5.80208333333333 : 25.40625 : JumpEnd); (5.82291666666667 : 25.40625 : JumpStart); (6.14583333333333 : 25.40625 : JumpEnd); (6.25 : 25.40625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_USUARIO/TB_DIV_USUARIO_TB_FIN_DUPLICATA" />
+      <nodes>
+        <classShapeMoniker Id="676a9822-0b19-43f3-9eac-082c32c09219" />
+        <classShapeMoniker Id="149bf66a-a0c1-4060-8634-a75cb169de02" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 28.0634254047476); (5.9375 : 27.6259254047476); (5.9375 : 23.9306982766927); (5.97916666666667 : 23.9306982766927 : JumpStart); (6.14583333333333 : 23.9306982766927 : JumpEnd); (6.25 : 23.9306982766927)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_CENTROCUSTO/TB_FIN_CENTROCUSTO_TB_FIN_DUPLICATA" />
+      <nodes>
+        <classShapeMoniker Id="92c2afda-fc4e-4b1e-b4fc-dee157f35489" />
+        <classShapeMoniker Id="149bf66a-a0c1-4060-8634-a75cb169de02" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.50150915249399 : 45); (6.37154377815536 : 44.8705555627157 : JumpStart); (6.15970622184464 : 44.6595671097383 : JumpEnd); (6.125 : 44.625); (6.125 : 26.8189111328125); (6.25 : 26.6939111328125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_CONDICAOPAGTO/TB_FIN_CONDICAOPAGTO_TB_FIN_DUPLICATA" />
+      <nodes>
+        <classShapeMoniker Id="54b0e01a-c43d-42cd-af97-ed223ff21db3" />
+        <classShapeMoniker Id="149bf66a-a0c1-4060-8634-a75cb169de02" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(20.75 : 9.45274983723958); (21.5 : 9.45274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_CONTAGERENCIAL/TB_FIN_CONTAGERENCIAL_TB_FIN_FECHAMENTOCAIXA" />
+      <nodes>
+        <classShapeMoniker Id="09c92e89-ef5f-4d4b-b746-b19136a4d2d1" />
+        <classShapeMoniker Id="5bbefda2-ca81-4828-a851-0a10b2e933d4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.875 : 16.2035953776042); (17.875 : 27.5809554036458); (19 : 27.5809554036458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_HISTORICO/TB_FIN_HISTORICO_TB_EST_TRANSFERENCIASALDO" />
+      <nodes>
+        <classShapeMoniker Id="2fb3ff4f-3e82-4a8f-81d8-c1ebb8a819d0" />
+        <classShapeMoniker Id="5d400c4f-3999-415b-8088-f23b0028460a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.25 : 15.4142976888021); (15.6770833333333 : 15.4142976888021 : JumpStart); (15.5104166666667 : 15.4142976888021 : JumpEnd); (14.5 : 15.4142976888021); (14.5 : 17.2035953776042); (12.3020833333333 : 17.2035953776042 : JumpStart); (11.8854166666667 : 17.2035953776042 : JumpEnd); (11.875 : 17.2035953776042); (11.875 : 19); (11.8333333333333 : 19 : JumpStart); (11.3697916666667 : 19 : JumpEnd); (10.4427063333333 : 19 : JumpStart); (10.2760396666667 : 19 : JumpEnd); (8.70833333333333 : 19 : JumpStart); (8.54166666666667 : 19 : JumpEnd); (6.125 : 19); (6.125 : 22.625); (7.16666666666667 : 22.625 : JumpStart); (7.33333333333333 : 22.625 : JumpEnd); (7.781252 : 22.625); (7.781252 : 23)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_HISTORICO/TB_FIN_HISTORICO_TB_FIN_DUPLICATA" />
+      <nodes>
+        <classShapeMoniker Id="2fb3ff4f-3e82-4a8f-81d8-c1ebb8a819d0" />
+        <classShapeMoniker Id="149bf66a-a0c1-4060-8634-a75cb169de02" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(23.5 : 21.9239005533854); (23.8229166666667 : 21.9239005533854 : JumpStart); (23.9895833333333 : 21.9239005533854 : JumpEnd); (24.25 : 21.9239005533854)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_LIQUIDACAO/TB_FIN_LIQUIDACAO_TB_FIN_CHEQUETED_X_LIQUIDACAO" />
+      <nodes>
+        <classShapeMoniker Id="c30a3e3c-23da-4d25-ad5e-db9a6e8571c3" />
+        <classShapeMoniker Id="84b69dc4-5eab-43a7-8801-badc8eb108ac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 25.25); (1.75 : 21.75); (2.16666666666667 : 21.75 : JumpStart); (2.33333333333333 : 21.75 : JumpEnd); (2.79166666666667 : 21.75 : JumpStart); (3.36458333333333 : 21.75 : JumpEnd); (5.66666666666667 : 21.75 : JumpStart); (6.20833333333333 : 21.75 : JumpEnd); (8.54166666666667 : 21.75 : JumpStart); (8.70833333333333 : 21.75 : JumpEnd); (11.3697916666667 : 21.75 : JumpStart); (12.2395833333333 : 21.75 : JumpEnd); (13.1666666666667 : 21.75 : JumpStart); (13.3333333333333 : 21.75 : JumpEnd); (14.4166666666667 : 21.75 : JumpStart); (14.7083333333333 : 21.75 : JumpEnd); (14.75 : 21.75); (14.75 : 20.75); (17.3229166666667 : 20.75 : JumpStart); (17.4895833333333 : 20.75 : JumpEnd); (17.7916666666667 : 20.75 : JumpStart); (17.9583333333333 : 20.75 : JumpEnd); (18.2604166666667 : 20.75 : JumpStart); (18.4270833333333 : 20.75 : JumpEnd); (20.3229166666667 : 20.75 : JumpStart); (20.4895833333333 : 20.75 : JumpEnd); (21.125 : 20.75); (21.125 : 22.0296541341146); (21.5 : 22.0296541341146)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_USUARIO/TB_DIV_USUARIO_TB_FIN_LIQUIDACAO" />
+      <nodes>
+        <classShapeMoniker Id="676a9822-0b19-43f3-9eac-082c32c09219" />
+        <classShapeMoniker Id="c30a3e3c-23da-4d25-ad5e-db9a6e8571c3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(20.75 : 10.6612616452324); (21.1875 : 11.0987616452324); (21.1875 : 22.8882332011719); (21.5 : 22.8882332011719)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_CONTAGERENCIAL/TB_FIN_CONTAGERENCIAL_TB_FIN_LIQUIDACAO" />
+      <nodes>
+        <classShapeMoniker Id="09c92e89-ef5f-4d4b-b746-b19136a4d2d1" />
+        <classShapeMoniker Id="c30a3e3c-23da-4d25-ad5e-db9a6e8571c3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 24.6249995); (8.54166666666667 : 24.6249995 : JumpStart); (8.70833333333333 : 24.6249995 : JumpEnd); (9 : 24.6249995); (9 : 25.1554996744792); (11.3697916666667 : 25.1554996744792 : JumpStart); (12.2395833333333 : 25.1554996744792 : JumpEnd); (12.6354146666667 : 25.1554996744792 : JumpStart); (12.8020813333333 : 25.1554996744792 : JumpEnd); (13.1666666666667 : 25.1554996744792 : JumpStart); (13.3333333333333 : 25.1554996744792 : JumpEnd); (14.4166666666667 : 25.1554996744792 : JumpStart); (14.7083333333333 : 25.1554996744792 : JumpEnd); (14.7916666666667 : 25.1554996744792 : JumpStart); (14.9583333333333 : 25.1554996744792 : JumpEnd); (15.5 : 25.1554996744792); (15.5 : 27.4824039713542); (16 : 27.4824039713542); (16 : 28.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_DUPLICATA/TB_FIN_DUPLICATA_TB_FIN_NF_X_DUP" />
+      <nodes>
+        <classShapeMoniker Id="149bf66a-a0c1-4060-8634-a75cb169de02" />
+        <classShapeMoniker Id="273c7d63-6133-4eef-b243-de2ef37836a7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 26.4719555664063); (8.29166666666667 : 26.4719555664063 : JumpStart); (8.45833333333333 : 26.4719555664063 : JumpEnd); (8.54166666666667 : 26.4719555664063 : JumpStart); (8.89583333333333 : 26.4719555664063 : JumpEnd); (9 : 26.4719555664063)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_DUPLICATA/TB_FIN_DUPLICATA_TB_FIN_PARCELA" />
+      <nodes>
+        <classShapeMoniker Id="149bf66a-a0c1-4060-8634-a75cb169de02" />
+        <classShapeMoniker Id="df0e37bc-1cf6-44b9-b22f-83ca1137ad46" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(20.40625 : 20.0208968098958); (20.40625 : 20.96875); (21.0416666666667 : 20.96875 : JumpStart); (21.4270833333333 : 20.96875 : JumpEnd); (21.5 : 20.96875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_PORTADOR/TB_FIN_PORTADOR_TB_FIN_LIQUIDACAO" />
+      <nodes>
+        <classShapeMoniker Id="9a6c4de4-f613-4070-b8ab-cd071d772b3d" />
+        <classShapeMoniker Id="c30a3e3c-23da-4d25-ad5e-db9a6e8571c3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.40625 : 24.5); (17.40625 : 20.5625); (17.7916666666667 : 20.5625 : JumpStart); (17.9583333333333 : 20.5625 : JumpEnd); (18.2604166666667 : 20.5625 : JumpStart); (18.4270833333333 : 20.5625 : JumpEnd); (20.3229166666667 : 20.5625 : JumpStart); (20.4895833333333 : 20.5625 : JumpEnd); (21.1041666666667 : 20.5625 : JumpStart); (21.4270833333333 : 20.5625 : JumpEnd); (21.5 : 20.5625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_PROGRAMACAO/TB_FIN_PROGRAMACAO_TB_FIN_LIQUIDACAO" />
+      <nodes>
+        <classShapeMoniker Id="08ca4768-fae0-4fd5-aed6-b1ebee6bbfbe" />
+        <classShapeMoniker Id="c30a3e3c-23da-4d25-ad5e-db9a6e8571c3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.22629657692308 : 27.4054996744792); (2.22629657692308 : 27.7804996744792); (2.4360669551282 : 27.7804996744792 : JumpStart); (2.60273362179487 : 27.7804996744792 : JumpEnd); (2.82291666666667 : 27.7804996744792 : JumpStart); (2.98958333333333 : 27.7804996744792 : JumpEnd); (3.04166666666667 : 27.7804996744792 : JumpStart); (3.45833333333333 : 27.7804996744792 : JumpEnd); (5.69959239693509 : 27.7804996744792 : JumpStart); (5.86625906360176 : 27.7804996744792 : JumpEnd); (5.88541666666667 : 27.7804996744792 : JumpStart); (6.20833333333333 : 27.7804996744792 : JumpEnd); (8.41666666666667 : 27.7804996744792 : JumpStart); (8.70833333333333 : 27.7804996744792 : JumpEnd); (8.75 : 27.7804996744792); (8.75 : 25.625); (8.85416666666667 : 25.625 : JumpStart); (9.17708333333333 : 25.625 : JumpEnd); (11.3697916666667 : 25.625 : JumpStart); (12.2395833333333 : 25.625 : JumpEnd); (12.6354146666667 : 25.625 : JumpStart); (12.8020813333333 : 25.625 : JumpEnd); (13.1666666666667 : 25.625 : JumpStart); (13.3333333333333 : 25.625 : JumpEnd); (14.4166666666667 : 25.625 : JumpStart); (14.7083333333333 : 25.625 : JumpEnd); (14.7916666666667 : 25.625 : JumpStart); (14.9583333333333 : 25.625 : JumpEnd); (15.125 : 25.625); (15.125 : 26.1939513229167); (15.4166666666667 : 26.1939513229167 : JumpStart); (15.5833333333333 : 26.1939513229167 : JumpEnd); (15.75 : 26.1939513229167)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_USUARIO/TB_DIV_USUARIO_TB_FIN_PROGRAMACAO" />
+      <nodes>
+        <classShapeMoniker Id="676a9822-0b19-43f3-9eac-082c32c09219" />
+        <classShapeMoniker Id="08ca4768-fae0-4fd5-aed6-b1ebee6bbfbe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.09375 : 26.25); (9.09375 : 25.3902498372396); (11.3697916666667 : 25.3902498372396 : JumpStart); (12.2395833333333 : 25.3902498372396 : JumpEnd); (12.6354146666667 : 25.3902498372396 : JumpStart); (12.8020813333333 : 25.3902498372396 : JumpEnd); (13.1666666666667 : 25.3902498372396 : JumpStart); (13.3333333333333 : 25.3902498372396 : JumpEnd); (14.4166666666667 : 25.3902498372396 : JumpStart); (14.7083333333333 : 25.3902498372396 : JumpEnd); (14.7916666666667 : 25.3902498372396 : JumpStart); (14.9583333333333 : 25.3902498372396 : JumpEnd); (15.4166666666667 : 25.3902498372396 : JumpStart); (15.5833333333333 : 25.3902498372396 : JumpEnd); (15.75 : 25.3902498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_PARCELA/TB_FIN_PARCELA_TB_FIN_PROGRAMACAO" />
+      <nodes>
+        <classShapeMoniker Id="df0e37bc-1cf6-44b9-b22f-83ca1137ad46" />
+        <classShapeMoniker Id="08ca4768-fae0-4fd5-aed6-b1ebee6bbfbe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(20.75 : 13.4909267869591); (21.1285744349011 : 13.8695012218603 : JumpStart); (21.2464255650989 : 13.987352352058 : JumpEnd); (21.34375 : 14.0846767869591); (21.34375 : 21.4992020670573); (21.5 : 21.4992020670573)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_TIPODOCTO/TB_FIN_TIPODOCTO_TB_FIN_LIQUIDACAO" />
+      <nodes>
+        <classShapeMoniker Id="88fa7c71-3600-4fe1-b61c-003f3eae2bf9" />
+        <classShapeMoniker Id="c30a3e3c-23da-4d25-ad5e-db9a6e8571c3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 21.1732367741887); (5.69107443490112 : 21.3643112090898 : JumpStart); (5.80892556509888 : 21.4821623392876 : JumpEnd); (5.90625 : 21.5794867741887); (5.90625 : 26.0500805664063); (5.97916666666667 : 26.0500805664063 : JumpStart); (6.14583333333333 : 26.0500805664063 : JumpEnd); (6.25 : 26.0500805664063)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_TIPODUP/TB_FIN_TIPODUP_TB_FIN_DUPLICATA" />
+      <nodes>
+        <classShapeMoniker Id="7a4f0ed7-654e-42d8-adb4-9d7c42993794" />
+        <classShapeMoniker Id="149bf66a-a0c1-4060-8634-a75cb169de02" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.0937475 : 16.8285953776042); (2.0937475 : 17.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CATEGORIAFISCAL_CLIFOR/TB_FIS_CATEGORIAFISCAL_CLIFOR_TB_DIV_CLIFOR" />
+      <nodes>
+        <classShapeMoniker Id="0e985ca8-e210-4bba-b7a3-5aa649a0b226" />
+        <classShapeMoniker Id="82febbdb-b674-4387-b349-e66bb06a0ff2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 16.0145706496394); (8.81607443490112 : 15.9484962147383 : JumpStart); (8.93392556509888 : 15.8306450845405 : JumpEnd); (9.265625 : 15.4989456496394); (9.265625 : 5.68109548795573); (9.32291666666667 : 5.68109548795573 : JumpStart); (9.48958333333333 : 5.68109548795573 : JumpEnd); (9.5 : 5.68109548795573)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CATEGORIAFISCAL_PRODUTO/TB_FIS_CATEGORIAFISCAL_PRODUTO_TB_EST_PRODUTO" />
+      <nodes>
+        <classShapeMoniker Id="f9ba2847-2661-41c1-89ff-c262689e86b3" />
+        <classShapeMoniker Id="32cb0140-4e23-4583-8250-e40d28ae0170" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 10.9190991210937); (2.91666666666667 : 10.9190991210937 : JumpStart); (3.08333333333333 : 10.9190991210937 : JumpEnd); (4.41666666666667 : 10.9190991210937 : JumpStart); (4.58333333333333 : 10.9190991210937 : JumpEnd); (8.79166666666667 : 10.9190991210937 : JumpStart); (8.95833333333333 : 10.9190991210937 : JumpEnd); (9.18229166666667 : 10.9190991210937 : JumpStart); (9.48958333333333 : 10.9190991210937 : JumpEnd); (11.7291666666667 : 10.9190991210937 : JumpStart); (12.2708333333333 : 10.9190991210937 : JumpEnd); (12.34375 : 10.9190991210937); (12.34375 : 15.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONFIGCONTRATO/TB_FIS_CONFIGCONTRATO_TB_FIS_CONFIGCONTRATO_X_CONFIGFISCAL" />
+      <nodes>
+        <classShapeMoniker Id="6c969db7-6445-47d3-9365-444ee6c19c82" />
+        <classShapeMoniker Id="e3faca37-6740-429f-b239-4ee366589ddf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 30.9463497890625); (2.82291666666667 : 30.9463497890625 : JumpStart); (2.98958333333333 : 30.9463497890625 : JumpEnd); (3.19791666666667 : 30.9463497890625 : JumpStart); (3.36458333333333 : 30.9463497890625 : JumpEnd); (5.91666666666667 : 30.9463497890625 : JumpStart); (6.20833333333333 : 30.9463497890625 : JumpEnd); (8.54166666666667 : 30.9463497890625 : JumpStart); (8.83333333333333 : 30.9463497890625 : JumpEnd); (9 : 30.9463497890625); (9 : 29.25); (9.63541466666667 : 29.25 : JumpStart); (9.80208133333333 : 29.25 : JumpEnd); (10.1666666666667 : 29.25 : JumpStart); (10.3333333333333 : 29.25 : JumpEnd); (10.6979186666667 : 29.25 : JumpStart); (10.8645853333333 : 29.25 : JumpEnd); (11.4791666666667 : 29.25 : JumpStart); (11.9583333333333 : 29.25 : JumpEnd); (12 : 29.25); (12 : 31.9342268880208); (14.0729166666667 : 31.9342268880208 : JumpStart); (14.2395833333333 : 31.9342268880208 : JumpEnd); (14.5416666666667 : 31.9342268880208 : JumpStart); (14.7083333333333 : 31.9342268880208 : JumpEnd); (15.1666666666667 : 31.9342268880208 : JumpStart); (15.3333333333333 : 31.9342268880208 : JumpEnd); (15.5 : 31.9342268880208); (15.5 : 31.2228011067708); (16.1666661666667 : 31.2228011067708 : JumpStart); (16.3333328333333 : 31.2228011067708 : JumpEnd); (19.8229166666667 : 31.2228011067708 : JumpStart); (19.9895833333333 : 31.2228011067708 : JumpEnd); (20.8697886666667 : 31.2228011067708 : JumpStart); (21.0364553333333 : 31.2228011067708 : JumpEnd); (21.1354146666667 : 31.2228011067708 : JumpStart); (21.3020813333333 : 31.2228011067708 : JumpEnd); (21.75 : 31.2228011067708); (21.75 : 32)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_EMPRESA/TB_DIV_EMPRESA_TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <nodes>
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+        <classShapeMoniker Id="1a9e0e94-7a24-44fb-80e3-29207256540a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4 : 44.6690991210938); (6.13541666666667 : 44.6690991210938 : JumpStart); (6.39583333333333 : 44.6690991210938 : JumpEnd); (8.79166666666667 : 44.6690991210938 : JumpStart); (9.20833333333333 : 44.6690991210938 : JumpEnd); (13.1666666666667 : 44.6690991210938 : JumpStart); (13.3333333333333 : 44.6690991210938 : JumpEnd); (18.6666666666667 : 44.6690991210938 : JumpStart); (18.8333333333333 : 44.6690991210938 : JumpEnd); (19.1979191666667 : 44.6690991210938 : JumpStart); (19.3645858333333 : 44.6690991210938 : JumpEnd); (21.4010404166667 : 44.6690991210938 : JumpStart); (21.5677070833333 : 44.6690991210938 : JumpEnd); (21.75 : 44.6690991210938); (21.75 : 36.0785139973958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_UF/TB_DIV_UF_TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <nodes>
+        <classShapeMoniker Id="5a677e2b-6037-4fd9-887e-1a2410d16626" />
+        <classShapeMoniker Id="1a9e0e94-7a24-44fb-80e3-29207256540a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4 : 44.5036461816406); (6.04166666666667 : 44.5036461816406 : JumpStart); (6.39583333333333 : 44.5036461816406 : JumpEnd); (8.79166666666667 : 44.5036461816406 : JumpStart); (9.20833333333333 : 44.5036461816406 : JumpEnd); (13.1666666666667 : 44.5036461816406 : JumpStart); (13.3333333333333 : 44.5036461816406 : JumpEnd); (18.6666666666667 : 44.5036461816406 : JumpStart); (18.8333333333333 : 44.5036461816406 : JumpEnd); (19.1979191666667 : 44.5036461816406 : JumpStart); (19.3645858333333 : 44.5036461816406 : JumpEnd); (21.2187475 : 44.5036461816406); (21.2187475 : 36.0785139973958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_UF/TB_DIV_UF_TB_FIS_CONFIGURACAO_IMPOSTO1" />
+      <nodes>
+        <classShapeMoniker Id="5a677e2b-6037-4fd9-887e-1a2410d16626" />
+        <classShapeMoniker Id="1a9e0e94-7a24-44fb-80e3-29207256540a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 16.0392976888021); (3.66666666666667 : 16.0392976888021 : JumpStart); (3.83333333333333 : 16.0392976888021 : JumpEnd); (4.16666666666667 : 16.0392976888021 : JumpStart); (4.33333333333333 : 16.0392976888021 : JumpEnd); (4.41666666666667 : 16.0392976888021 : JumpStart); (4.58333333333333 : 16.0392976888021 : JumpEnd); (4.66666666666667 : 16.0392976888021 : JumpStart); (4.83333333333333 : 16.0392976888021 : JumpEnd); (6.5 : 16.0392976888021); (6.5 : 18.2035953776042); (8.54166666666667 : 18.2035953776042 : JumpStart); (8.70833333333333 : 18.2035953776042 : JumpEnd); (10.2760396666667 : 18.2035953776042 : JumpStart); (10.4427063333333 : 18.2035953776042 : JumpEnd); (11.1979166666667 : 18.2035953776042 : JumpStart); (11.3645833333333 : 18.2035953776042 : JumpEnd); (11.3697916666667 : 18.2035953776042 : JumpStart); (11.5364583333333 : 18.2035953776042 : JumpEnd); (11.625 : 18.2035953776042); (11.625 : 21.1170068359375); (11.6666666666667 : 21.1170068359375 : JumpStart); (12.2708333333333 : 21.1170068359375 : JumpEnd); (14.5 : 21.1170068359375); (14.5 : 28); (14.5416666666667 : 28 : JumpStart); (14.7083333333333 : 28 : JumpEnd); (14.7916666666667 : 28 : JumpStart); (14.9583333333333 : 28 : JumpEnd); (15.9166666666667 : 28 : JumpStart); (16.0833333333333 : 28 : JumpEnd); (21.218748 : 28); (21.218748 : 32)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CATEGORIAFISCAL_CLIFOR/TB_FIS_CATEGORIAFISCAL_CLIFOR_TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <nodes>
+        <classShapeMoniker Id="0e985ca8-e210-4bba-b7a3-5aa649a0b226" />
+        <classShapeMoniker Id="1a9e0e94-7a24-44fb-80e3-29207256540a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 16.8278350136218); (8.79166666666667 : 16.8278350136218 : JumpStart); (8.95833333333333 : 16.8278350136218 : JumpEnd); (9.25 : 16.8278350136218); (9.25 : 18.0785953776042); (10.2760396666667 : 18.0785953776042 : JumpStart); (10.4427063333333 : 18.0785953776042 : JumpEnd); (11.1979166666667 : 18.0785953776042 : JumpStart); (11.3645833333333 : 18.0785953776042 : JumpEnd); (11.3697916666667 : 18.0785953776042 : JumpStart); (11.6458333333333 : 18.0785953776042 : JumpEnd); (11.6666666666667 : 18.0785953776042 : JumpStart); (12.0520833333333 : 18.0785953776042 : JumpEnd); (12.0625 : 18.0785953776042); (12.0625 : 21.3670068359375); (12.0729166666667 : 21.3670068359375 : JumpStart); (12.2708333333333 : 21.3670068359375 : JumpEnd); (14.4166666666667 : 21.3670068359375 : JumpStart); (14.8333333333333 : 21.3670068359375 : JumpEnd); (14.875 : 21.3670068359375); (14.875 : 28.125); (15.9166666666667 : 28.125 : JumpStart); (16.0833333333333 : 28.125 : JumpEnd); (20.953122 : 28.125); (20.953122 : 32)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CATEGORIAFISCAL_PRODUTO/TB_FIS_CATEGORIAFISCAL_PRODUTO_TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <nodes>
+        <classShapeMoniker Id="f9ba2847-2661-41c1-89ff-c262689e86b3" />
+        <classShapeMoniker Id="1a9e0e94-7a24-44fb-80e3-29207256540a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 34.7604484049479); (8.54166666666667 : 34.7604484049479 : JumpStart); (8.70833333333333 : 34.7604484049479 : JumpEnd); (8.75 : 34.7604484049479); (8.75 : 29); (9.63541466666667 : 29 : JumpStart); (9.80208133333333 : 29 : JumpEnd); (10.6979186666667 : 29 : JumpStart); (10.8645853333333 : 29 : JumpEnd); (11.1666666666667 : 29 : JumpStart); (11.3333333333333 : 29 : JumpEnd); (11.4791666666667 : 29 : JumpStart); (11.8958333333333 : 29 : JumpEnd); (11.9375 : 29); (11.9375 : 17.2660953776042); (11.9479166666667 : 17.2660953776042 : JumpStart); (12.3020833333333 : 17.2660953776042 : JumpEnd); (13.25 : 17.2660953776042); (13.25 : 17.0785953776042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONFIGURACAOFISCAL/TB_FIS_CONFIGURACAOFISCAL_TB_FIS_CONFIGCONTRATO_X_CONFIGFISCAL" />
+      <nodes>
+        <classShapeMoniker Id="dd18b539-0e66-4a43-bd44-4783c55156f7" />
+        <classShapeMoniker Id="e3faca37-6740-429f-b239-4ee366589ddf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.5 : 35.6458968098958); (7.5 : 36.3284326171875); (7.94791866666667 : 36.3284326171875 : JumpStart); (8.11458533333333 : 36.3284326171875 : JumpEnd); (8.79166666666667 : 36.3284326171875 : JumpStart); (8.95833333333333 : 36.3284326171875 : JumpEnd); (9.36978866666667 : 36.3284326171875 : JumpStart); (9.53645533333333 : 36.3284326171875 : JumpEnd); (9.63541466666667 : 36.3284326171875 : JumpStart); (9.80208133333333 : 36.3284326171875 : JumpEnd); (10.1666666666667 : 36.3284326171875 : JumpStart); (10.3333333333333 : 36.3284326171875 : JumpEnd); (11.3229166666667 : 36.3284326171875 : JumpStart); (11.4895833333333 : 36.3284326171875 : JumpEnd); (11.7916666666667 : 36.3284326171875 : JumpStart); (11.9583333333333 : 36.3284326171875 : JumpEnd); (14.0729166666667 : 36.3284326171875 : JumpStart); (14.2395833333333 : 36.3284326171875 : JumpEnd); (14.5 : 36.3284326171875); (14.5 : 34.5152498372396); (14.8697891666667 : 34.5152498372396 : JumpStart); (15.0364558333333 : 34.5152498372396 : JumpEnd); (19.8229166666667 : 34.5152498372396 : JumpStart); (19.9895833333333 : 34.5152498372396 : JumpEnd); (20.75 : 34.5152498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONFIGURACAOFISCAL/TB_FIS_CONFIGURACAOFISCAL_TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <nodes>
+        <classShapeMoniker Id="dd18b539-0e66-4a43-bd44-4783c55156f7" />
+        <classShapeMoniker Id="1a9e0e94-7a24-44fb-80e3-29207256540a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.031252 : 35.6458968098958); (8.031252 : 36.625); (8.79166666666667 : 36.625 : JumpStart); (8.95833333333333 : 36.625 : JumpEnd); (9 : 36.625); (9 : 46.0392976888021); (9.25 : 46.0392976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONFIGURACAOFISCAL/TB_FIS_CONFIGURACAOFISCAL_TB_FIS_CONFIGURACAO_X_OPERACAO" />
+      <nodes>
+        <classShapeMoniker Id="dd18b539-0e66-4a43-bd44-4783c55156f7" />
+        <classShapeMoniker Id="d99a7f9d-fe90-41bb-8c01-de086b56bfc2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 23.4028491383464); (5.66666666666667 : 23.4028491383464 : JumpStart); (5.98958333333333 : 23.4028491383464 : JumpEnd); (6.25 : 23.4028491383464)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONTRATO/TB_FIS_CONTRATO_TB_FIN_DUPLICATA" />
+      <nodes>
+        <classShapeMoniker Id="68edada9-e658-47f6-8d21-6d2987d1dad6" />
+        <classShapeMoniker Id="149bf66a-a0c1-4060-8634-a75cb169de02" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.25 : 20.2228011067708); (2.25 : 23.4239005533854); (2.91666666666667 : 23.4239005533854 : JumpStart); (3.36458333333333 : 23.4239005533854 : JumpEnd); (3.5 : 23.4239005533854)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_CLIFOR/TB_DIV_CLIFOR_TB_FIS_CONTRATO" />
+      <nodes>
+        <classShapeMoniker Id="82febbdb-b674-4387-b349-e66bb06a0ff2" />
+        <classShapeMoniker Id="68edada9-e658-47f6-8d21-6d2987d1dad6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 29.4057682307692); (2.84732443490112 : 29.3084437958681 : JumpStart); (2.96517556509888 : 29.1905926656703 : JumpEnd); (3.21875 : 28.9370182307692); (3.21875 : 24.0421028300781); (3.5 : 24.0421028300781)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_EMPRESA/TB_DIV_EMPRESA_TB_FIS_CONTRATO" />
+      <nodes>
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+        <classShapeMoniker Id="68edada9-e658-47f6-8d21-6d2987d1dad6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.2187475 : 25.25); (1.2187475 : 22.8056977766927); (1.66666666666667 : 22.8056977766927 : JumpStart); (1.83333333333333 : 22.8056977766927 : JumpEnd); (2.16666666666667 : 22.8056977766927 : JumpStart); (2.33333333333333 : 22.8056977766927 : JumpEnd); (2.79166666666667 : 22.8056977766927 : JumpStart); (3.36458333333333 : 22.8056977766927 : JumpEnd); (3.5 : 22.8056977766927)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_USUARIO/TB_DIV_USUARIO_TB_FIS_CONTRATO" />
+      <nodes>
+        <classShapeMoniker Id="676a9822-0b19-43f3-9eac-082c32c09219" />
+        <classShapeMoniker Id="68edada9-e658-47f6-8d21-6d2987d1dad6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 13.8670068359375); (1.75 : 15); (3.75 : 15); (3.75 : 17.875); (2.875 : 17.875); (2.875 : 23.1147991650391); (2.91666666666667 : 23.1147991650391 : JumpStart); (3.36458333333333 : 23.1147991650391 : JumpEnd); (3.5 : 23.1147991650391)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONFIGCONTRATO/TB_FIS_CONFIGCONTRATO_TB_FIS_CONTRATO" />
+      <nodes>
+        <classShapeMoniker Id="6c969db7-6445-47d3-9365-444ee6c19c82" />
+        <classShapeMoniker Id="68edada9-e658-47f6-8d21-6d2987d1dad6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 22.3115374615385); (5.62403746153846 : 22.1875); (5.66666666666667 : 22.1875 : JumpStart); (5.98958333333333 : 22.1875 : JumpEnd); (6.04166666666667 : 22.1875 : JumpStart); (6.20833333333333 : 22.1875 : JumpEnd); (7.16666666666667 : 22.1875 : JumpStart); (7.33333333333333 : 22.1875 : JumpEnd); (8.54166666666667 : 22.1875 : JumpStart); (8.70833333333333 : 22.1875 : JumpEnd); (11.3697916666667 : 22.1875 : JumpStart); (11.8333333333333 : 22.1875 : JumpEnd); (11.875 : 22.1875); (11.875 : 21.2420068359375); (11.8785744349011 : 21.2384324010364 : JumpStart); (12.2464255650989 : 20.8705812708386 : JumpEnd); (12.25 : 20.8670068359375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONTRATO/TB_FIS_CONTRATO_TB_FIS_CONTRATO_DADOSGERAI" />
+      <nodes>
+        <classShapeMoniker Id="68edada9-e658-47f6-8d21-6d2987d1dad6" />
+        <classShapeMoniker Id="a4df7b76-3e00-4735-a3ab-7a1b6f1aa6a6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 24.0200512695313); (14.4166666666667 : 24.0200512695313 : JumpStart); (14.7083333333333 : 24.0200512695313 : JumpEnd); (14.7916666666667 : 24.0200512695313 : JumpStart); (14.9583333333333 : 24.0200512695313 : JumpEnd); (17.3229166666667 : 24.0200512695313 : JumpStart); (17.4895833333333 : 24.0200512695313 : JumpEnd); (17.7916666666667 : 24.0200512695313 : JumpStart); (17.9583333333333 : 24.0200512695313 : JumpEnd); (18.3854166666667 : 24.0200512695313 : JumpStart); (18.5520833333333 : 24.0200512695313 : JumpEnd); (19.2656275 : 24.0200512695313); (19.2656275 : 23.4054996744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONTRATO_ITEM/TB_FIS_CONTRATO_ITEM_TB_EST_CONTRATOITEM_X_ESTOQUE" />
+      <nodes>
+        <classShapeMoniker Id="f95d3a91-a023-48b8-8375-e4c15879e704" />
+        <classShapeMoniker Id="eb33712f-5d85-4fda-bdb6-bdd1072734ce" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 24.2600281347656); (14.4166666666667 : 24.2600281347656 : JumpStart); (14.7083333333333 : 24.2600281347656 : JumpEnd); (14.7916666666667 : 24.2600281347656 : JumpStart); (14.9583333333333 : 24.2600281347656 : JumpEnd); (17.3229166666667 : 24.2600281347656 : JumpStart); (17.4895833333333 : 24.2600281347656 : JumpEnd); (17.7916666666667 : 24.2600281347656 : JumpStart); (17.9583333333333 : 24.2600281347656 : JumpEnd); (18.3854166666667 : 24.2600281347656 : JumpStart); (18.5520833333333 : 24.2600281347656 : JumpEnd); (20.1822891666667 : 24.2600281347656 : JumpStart); (20.3489558333333 : 24.2600281347656 : JumpEnd); (20.53125 : 24.2600281347656); (20.53125 : 24.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONTRATO_ITEM/TB_FIS_CONTRATO_ITEM_TB_EST_TRANSFERENCIASALDO" />
+      <nodes>
+        <classShapeMoniker Id="f95d3a91-a023-48b8-8375-e4c15879e704" />
+        <classShapeMoniker Id="5d400c4f-3999-415b-8088-f23b0028460a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 23.7800744042969); (14.4166666666667 : 23.7800744042969 : JumpStart); (14.7083333333333 : 23.7800744042969 : JumpEnd); (14.7916666666667 : 23.7800744042969 : JumpStart); (14.9583333333333 : 23.7800744042969 : JumpEnd); (17.3229166666667 : 23.7800744042969 : JumpStart); (17.4895833333333 : 23.7800744042969 : JumpEnd); (17.7916666666667 : 23.7800744042969 : JumpStart); (17.9583333333333 : 23.7800744042969 : JumpEnd); (18.3854166666667 : 23.7800744042969 : JumpStart); (18.5520833333333 : 23.7800744042969 : JumpEnd); (19.1822941666667 : 23.7800744042969 : JumpStart); (19.3489608333333 : 23.7800744042969 : JumpEnd); (20.2656225 : 23.7800744042969); (20.2656225 : 24.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONTRATO_ITEM/TB_FIS_CONTRATO_ITEM_TB_EST_TRANSFERENCIASALDO1" />
+      <nodes>
+        <classShapeMoniker Id="f95d3a91-a023-48b8-8375-e4c15879e704" />
+        <classShapeMoniker Id="5d400c4f-3999-415b-8088-f23b0028460a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 6.03122408513622); (11.9723244349011 : 6.50354852003734 : JumpStart); (12.0901755650989 : 6.6213996502351 : JumpEnd); (12.09375 : 6.62497408513622); (12.09375 : 23.4599514856771); (12.25 : 23.4599514856771)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_PRODUTO/TB_EST_PRODUTO_TB_FIS_CONTRATO_ITEM" />
+      <nodes>
+        <classShapeMoniker Id="32cb0140-4e23-4583-8250-e40d28ae0170" />
+        <classShapeMoniker Id="f95d3a91-a023-48b8-8375-e4c15879e704" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 4.4993093424354); (8.79166666666667 : 4.49930934243539 : JumpStart); (8.95833333333333 : 4.4993093424354 : JumpEnd); (9 : 4.4993093424354); (9 : 6.37660970052083); (9.07291666666667 : 6.37660970052083 : JumpStart); (9.48958333333333 : 6.37660970052083 : JumpEnd); (11.6651282051282 : 6.37660970052083 : JumpStart); (11.928718948718 : 6.37660970052083 : JumpEnd); (11.9479166666667 : 6.37660970052083 : JumpStart); (12.1145833333333 : 6.37660970052083 : JumpEnd); (12.1875 : 6.37660970052083); (12.1875 : 21.625); (13.25 : 21.625); (13.25 : 22)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_UNIDADE/TB_EST_UNIDADE_TB_FIS_CONTRATO_ITEM" />
+      <nodes>
+        <classShapeMoniker Id="64af73d4-b66a-4ec1-942d-8450262bac2a" />
+        <classShapeMoniker Id="f95d3a91-a023-48b8-8375-e4c15879e704" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 22.4370212307692); (5.79166666666667 : 22.4370212307692 : JumpStart); (5.98958333333333 : 22.4370212307692 : JumpEnd); (6.04166666666667 : 22.4370212307692 : JumpStart); (6.20833333333333 : 22.4370212307692 : JumpEnd); (7.16666666666667 : 22.4370212307692 : JumpStart); (7.33333333333333 : 22.4370212307692 : JumpEnd); (8.54166666666667 : 22.4370212307692 : JumpStart); (8.70833333333333 : 22.4370212307692 : JumpEnd); (11.3697916666667 : 22.4370212307692 : JumpStart); (12.2395833333333 : 22.4370212307692 : JumpEnd); (12.25 : 22.4370212307692)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONTRATO/TB_FIS_CONTRATO_TB_FIS_CONTRATO_ITEM" />
+      <nodes>
+        <classShapeMoniker Id="68edada9-e658-47f6-8d21-6d2987d1dad6" />
+        <classShapeMoniker Id="f95d3a91-a023-48b8-8375-e4c15879e704" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.281252 : 25.25); (2.281252 : 24.7228011067708); (2.91666666666667 : 24.7228011067708 : JumpStart); (3.36458333333333 : 24.7228011067708 : JumpEnd); (5.54166666666667 : 24.7228011067708 : JumpStart); (5.70833333333333 : 24.7228011067708 : JumpEnd); (5.75 : 24.7228011067708); (5.75 : 22.75); (5.79166666666667 : 22.75 : JumpStart); (5.98958333333333 : 22.75 : JumpEnd); (7.16666666666667 : 22.75 : JumpStart); (7.33333333333333 : 22.75 : JumpEnd); (7.69791866666667 : 22.75 : JumpStart); (7.86458533333333 : 22.75 : JumpEnd); (8.54166666666667 : 22.75 : JumpStart); (8.70833333333333 : 22.75 : JumpEnd); (8.875 : 22.75); (8.875 : 23.68750025); (9.25 : 23.68750025)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_USUARIO/TB_DIV_USUARIO_TB_FIS_CONTRATOACOMPANHAMENTO" />
+      <nodes>
+        <classShapeMoniker Id="676a9822-0b19-43f3-9eac-082c32c09219" />
+        <classShapeMoniker Id="e75f1835-8724-40f9-a16a-bb1e75733b2f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 22.90625); (5.66666666666667 : 22.90625 : JumpStart); (5.98958333333333 : 22.90625 : JumpEnd); (7.16666666666667 : 22.90625 : JumpStart); (7.33333333333333 : 22.90625 : JumpEnd); (7.69791866666667 : 22.90625 : JumpStart); (7.86458533333333 : 22.90625 : JumpEnd); (8.54166666666667 : 22.90625 : JumpStart); (8.70833333333333 : 22.90625 : JumpEnd); (8.79166666666667 : 22.90625 : JumpStart); (9.02083333333333 : 22.90625 : JumpEnd); (9.25 : 22.90625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONTRATO/TB_FIS_CONTRATO_TB_FIS_CONTRATOACOMPANHAMENTO" />
+      <nodes>
+        <classShapeMoniker Id="68edada9-e658-47f6-8d21-6d2987d1dad6" />
+        <classShapeMoniker Id="e75f1835-8724-40f9-a16a-bb1e75733b2f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 49.1258048502604); (22.2812525 : 49.1258048502604); (22.2812525 : 36.0785139973958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_IMPOSTO/TB_FIS_IMPOSTO_TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <nodes>
+        <classShapeMoniker Id="2373feeb-0ac7-49f1-839c-a7432f593068" />
+        <classShapeMoniker Id="1a9e0e94-7a24-44fb-80e3-29207256540a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.09375 : 32.4920068359375); (1.09375 : 43.6146468098958); (1.21354416666667 : 43.6146468098958 : JumpStart); (1.38021083333333 : 43.6146468098958 : JumpEnd); (2.79166666666667 : 43.6146468098958 : JumpStart); (2.95833333333333 : 43.6146468098958 : JumpEnd); (6.04166666666667 : 43.6146468098958 : JumpStart); (6.39583333333333 : 43.6146468098958 : JumpEnd); (6.5 : 43.6146468098958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_EMPRESA/TB_DIV_EMPRESA_TB_FIS_MODELO" />
+      <nodes>
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+        <classShapeMoniker Id="40ec8f70-c0a9-4d52-a813-484b156cf961" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.1250005 : 36.875); (7.1250005 : 35.8958968098958); (7.41666666666667 : 35.8958968098958 : JumpStart); (7.58333333333333 : 35.8958968098958 : JumpEnd); (7.94791866666667 : 35.8958968098958 : JumpStart); (8.11458533333333 : 35.8958968098958 : JumpEnd); (8.625 : 35.8958968098958); (8.625 : 17.8285953776042); (8.875 : 17.8285953776042); (8.875 : 3.0080102125651); (9.5 : 3.0080102125651)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_NCM/TB_FIS_NCM_TB_EST_PRODUTO" />
+      <nodes>
+        <classShapeMoniker Id="98ebfb2d-c6d0-4722-93f6-df0443b73e75" />
+        <classShapeMoniker Id="32cb0140-4e23-4583-8250-e40d28ae0170" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.25 : 19.6651025390625); (16.25 : 20.5); (14.625 : 20.5); (14.625 : 32.91986278125); (15.75 : 32.91986278125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_ESTOQUE/TB_EST_ESTOQUE_TB_FIS_NF_X_ESTOQUE" />
+      <nodes>
+        <classShapeMoniker Id="7d6bb313-628d-45c0-ab7a-a4ccfd4f375b" />
+        <classShapeMoniker Id="5f0b5dcb-9e90-4ad3-b617-b44cd8fd70ba" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 32.7892163085938); (11.3229166666667 : 32.7892163085938 : JumpStart); (11.4895833333333 : 32.7892163085938 : JumpEnd); (11.75 : 32.7892163085938); (11.75 : 32.25); (11.7916666666667 : 32.25 : JumpStart); (12.1145833333333 : 32.25 : JumpEnd); (12.9635436666667 : 32.25 : JumpStart); (13.1302103333333 : 32.25 : JumpEnd); (14.0729166666667 : 32.25 : JumpStart); (14.2395833333333 : 32.25 : JumpEnd); (14.5416666666667 : 32.25 : JumpStart); (14.7083333333333 : 32.25 : JumpEnd); (15.25 : 32.25); (15.25 : 31.5); (15.4166666666667 : 31.5 : JumpStart); (15.5833333333333 : 31.5 : JumpEnd); (16.2499995 : 31.5); (16.2499995 : 30.3958968098958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_NOTAFISCAL/TB_FIS_NOTAFISCAL_TB_FIN_NF_X_DUP" />
+      <nodes>
+        <classShapeMoniker Id="c83b01fb-1789-4657-97e5-208ede6e322a" />
+        <classShapeMoniker Id="273c7d63-6133-4eef-b243-de2ef37836a7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 18.0566994222005); (2.79166666666667 : 18.0566994222005 : JumpStart); (2.95833333333333 : 18.0566994222005 : JumpEnd); (4.16666666666667 : 18.0566994222005 : JumpStart); (4.33333333333333 : 18.0566994222005 : JumpEnd); (4.66666666666667 : 18.0566994222005 : JumpStart); (4.83333333333333 : 18.0566994222005 : JumpEnd); (5.75 : 18.0566994222005); (5.75 : 22.5); (5.79166666666667 : 22.5 : JumpStart); (5.98958333333333 : 22.5 : JumpEnd); (6.04166666666667 : 22.5 : JumpStart); (6.20833333333333 : 22.5 : JumpEnd); (7.16666666666667 : 22.5 : JumpStart); (7.33333333333333 : 22.5 : JumpEnd); (8.54166666666667 : 22.5 : JumpStart); (8.70833333333333 : 22.5 : JumpEnd); (8.9375 : 22.5); (8.9375 : 26); (9.01041666666667 : 26 : JumpStart); (9.17708333333333 : 26 : JumpEnd); (11.25 : 26); (11.25 : 29.125); (10.8645853333333 : 29.125 : JumpStart); (10.6979186666667 : 29.125 : JumpEnd); (10.25 : 29.125); (10.25 : 29.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_CLIFOR/TB_DIV_CLIFOR_TB_FIS_NOTAFISCAL" />
+      <nodes>
+        <classShapeMoniker Id="82febbdb-b674-4387-b349-e66bb06a0ff2" />
+        <classShapeMoniker Id="c83b01fb-1789-4657-97e5-208ede6e322a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 35.7396468098958); (6.04166666666667 : 35.7396468098958 : JumpStart); (6.39583333333333 : 35.7396468098958 : JumpEnd); (7.41666666666667 : 35.7396468098958 : JumpStart); (7.58333333333333 : 35.7396468098958 : JumpEnd); (7.94791866666667 : 35.7396468098958 : JumpStart); (8.11458533333333 : 35.7396468098958 : JumpEnd); (8.54166666666667 : 35.7396468098958 : JumpStart); (8.70833333333333 : 35.7396468098958 : JumpEnd); (9.25 : 35.7396468098958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_ENDERECO/TB_DIV_ENDERECO_TB_FIS_NOTAFISCAL" />
+      <nodes>
+        <classShapeMoniker Id="43c1a91e-70eb-432a-89b8-c65c2a168f69" />
+        <classShapeMoniker Id="c83b01fb-1789-4657-97e5-208ede6e322a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 36.0496647135417); (6.04166666666667 : 36.0496647135417 : JumpStart); (6.39583333333333 : 36.0496647135417 : JumpEnd); (7.04166716666667 : 36.0496647135417 : JumpStart); (7.20833383333333 : 36.0496647135417 : JumpEnd); (7.41666666666667 : 36.0496647135417 : JumpStart); (7.58333333333333 : 36.0496647135417 : JumpEnd); (7.94791866666667 : 36.0496647135417 : JumpStart); (8.11458533333333 : 36.0496647135417 : JumpEnd); (9.25 : 36.0496647135417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_ENDERECO/TB_DIV_ENDERECO_TB_FIS_NOTAFISCAL1" />
+      <nodes>
+        <classShapeMoniker Id="43c1a91e-70eb-432a-89b8-c65c2a168f69" />
+        <classShapeMoniker Id="c83b01fb-1789-4657-97e5-208ede6e322a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 26.7125762594401); (2.82291666666667 : 26.7125762594401 : JumpStart); (3.36458333333333 : 26.7125762594401 : JumpEnd); (3.4375 : 26.7125762594401); (3.4375 : 27.4535953776042); (5.85416666666667 : 27.4535953776042 : JumpStart); (6.20833333333333 : 27.4535953776042 : JumpEnd); (8.41666666666667 : 27.4535953776042 : JumpStart); (8.83333333333333 : 27.4535953776042 : JumpEnd); (8.875 : 27.4535953776042); (8.875 : 28.6554996744792); (9.718748 : 28.6554996744792); (9.718748 : 29.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_USUARIO/TB_DIV_USUARIO_TB_FIS_NOTAFISCAL" />
+      <nodes>
+        <classShapeMoniker Id="676a9822-0b19-43f3-9eac-082c32c09219" />
+        <classShapeMoniker Id="c83b01fb-1789-4657-97e5-208ede6e322a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 45.519649344401); (8.79166666666667 : 45.519649344401 : JumpStart); (9.08333333333333 : 45.519649344401 : JumpEnd); (9.125 : 45.519649344401); (9.125 : 36.4534326171875); (9.36978866666667 : 36.4534326171875 : JumpStart); (9.53645533333333 : 36.4534326171875 : JumpEnd); (9.63541466666667 : 36.4534326171875 : JumpStart); (9.80208133333333 : 36.4534326171875 : JumpEnd); (10.25 : 36.4534326171875); (10.25 : 36.0784326171875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIN_CONDICAOPAGTO/TB_FIN_CONDICAOPAGTO_TB_FIS_NOTAFISCAL" />
+      <nodes>
+        <classShapeMoniker Id="54b0e01a-c43d-42cd-af97-ed223ff21db3" />
+        <classShapeMoniker Id="c83b01fb-1789-4657-97e5-208ede6e322a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 34.255224202474); (8.54166666666667 : 34.255224202474 : JumpStart); (8.83333333333333 : 34.255224202474 : JumpEnd); (9.25 : 34.255224202474)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONFIGURACAOFISCAL/TB_FIS_CONFIGURACAOFISCAL_TB_FIS_NOTAFISCAL" />
+      <nodes>
+        <classShapeMoniker Id="dd18b539-0e66-4a43-bd44-4783c55156f7" />
+        <classShapeMoniker Id="c83b01fb-1789-4657-97e5-208ede6e322a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 24.2642491917318); (5.625 : 24.2642491917318); (5.625 : 26.9439111328125); (5.85416666666667 : 26.9439111328125 : JumpStart); (6.20833333333333 : 26.9439111328125 : JumpEnd); (7.16666666666667 : 26.9439111328125 : JumpStart); (7.33333333333333 : 26.9439111328125 : JumpEnd); (8.5 : 26.9439111328125); (8.5 : 28.7804996744792); (8.54166666666667 : 28.7804996744792 : JumpStart); (8.77083333333333 : 28.7804996744792 : JumpEnd); (9.63541466666667 : 28.7804996744792 : JumpStart); (9.80208133333333 : 28.7804996744792 : JumpEnd); (10.781252 : 28.7804996744792); (10.781252 : 29.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONTRATO/TB_FIS_CONTRATO_TB_FIS_NOTAFISCAL" />
+      <nodes>
+        <classShapeMoniker Id="68edada9-e658-47f6-8d21-6d2987d1dad6" />
+        <classShapeMoniker Id="c83b01fb-1789-4657-97e5-208ede6e322a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 32.4142976888021); (8.54166666666667 : 32.4142976888021 : JumpStart); (8.83333333333333 : 32.4142976888021 : JumpEnd); (9.25 : 32.4142976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CFOP/TB_FIS_CFOP_TB_FIS_NOTAFISCAL" />
+      <nodes>
+        <classShapeMoniker Id="edd46f6f-71ce-4d7e-856a-a710986403d4" />
+        <classShapeMoniker Id="c83b01fb-1789-4657-97e5-208ede6e322a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 43.2604484049479); (8.79166666666667 : 43.2604484049479 : JumpStart); (9.20833333333333 : 43.2604484049479 : JumpEnd); (9.25 : 43.2604484049479); (9.25 : 36.7034326171875); (9.36978866666667 : 36.7034326171875 : JumpStart); (9.53645533333333 : 36.7034326171875 : JumpEnd); (9.718748 : 36.7034326171875); (9.718748 : 36.0784326171875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_MODELO/TB_FIS_MODELO_TB_FIS_NOTAFISCAL" />
+      <nodes>
+        <classShapeMoniker Id="40ec8f70-c0a9-4d52-a813-484b156cf961" />
+        <classShapeMoniker Id="c83b01fb-1789-4657-97e5-208ede6e322a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 48.2191499251302); (18.75 : 48.2191499251302); (18.75 : 38.4343082682292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_IMPOSTO/TB_FIS_IMPOSTO_TB_FIS_NOTAFISCAL_IMPOSTO" />
+      <nodes>
+        <classShapeMoniker Id="2373feeb-0ac7-49f1-839c-a7432f593068" />
+        <classShapeMoniker Id="baf1bcba-8ad5-42db-86b4-3b52c6579b0a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 34.8738269042969); (14.0729166666667 : 34.8738269042969 : JumpStart); (14.2395833333333 : 34.8738269042969 : JumpEnd); (14.4166666666667 : 34.8738269042969 : JumpStart); (14.5833333333333 : 34.8738269042969 : JumpEnd); (14.8697891666667 : 34.8738269042969 : JumpStart); (15.0364558333333 : 34.8738269042969 : JumpEnd); (15.21875 : 34.8738269042969); (15.21875 : 35.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_NOTAFISCAL_ITEM/TB_FIS_NOTAFISCAL_ITEM_TB_FIS_COMPDEVOL_NF" />
+      <nodes>
+        <classShapeMoniker Id="7e20c616-548c-4a4f-8540-4bb7b49c2e08" />
+        <classShapeMoniker Id="09a2e092-033f-46ef-ae80-40b50748d7a8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 34.2416247558594); (14.0729166666667 : 34.2416247558594 : JumpStart); (14.2395833333333 : 34.2416247558594 : JumpEnd); (14.9531225 : 34.2416247558594); (14.9531225 : 35.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_NOTAFISCAL_ITEM/TB_FIS_NOTAFISCAL_ITEM_TB_FIS_COMPDEVOL_NF1" />
+      <nodes>
+        <classShapeMoniker Id="7e20c616-548c-4a4f-8540-4bb7b49c2e08" />
+        <classShapeMoniker Id="09a2e092-033f-46ef-ae80-40b50748d7a8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 33.4751812278646); (14.0729166666667 : 33.4751812278646 : JumpStart); (14.2395833333333 : 33.4751812278646 : JumpEnd); (15.75 : 33.4751812278646)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_NOTAFISCAL_ITEM/TB_FIS_NOTAFISCAL_ITEM_TB_FIS_NF_X_ESTOQUE" />
+      <nodes>
+        <classShapeMoniker Id="7e20c616-548c-4a4f-8540-4bb7b49c2e08" />
+        <classShapeMoniker Id="5f0b5dcb-9e90-4ad3-b617-b44cd8fd70ba" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 34.6632858707682); (14.0729166666667 : 34.6632858707682 : JumpStart); (14.2395833333333 : 34.6632858707682 : JumpEnd); (14.4166666666667 : 34.6632858707682 : JumpStart); (14.5833333333333 : 34.6632858707682 : JumpEnd); (14.8697891666667 : 34.6632858707682 : JumpStart); (15.0364558333333 : 34.6632858707682 : JumpEnd); (18.78125 : 34.6632858707682); (18.78125 : 35.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_NOTAFISCAL_ITEM/TB_FIS_NOTAFISCAL_ITEM_TB_FIS_NOTAFISCAL_IMPOSTO" />
+      <nodes>
+        <classShapeMoniker Id="7e20c616-548c-4a4f-8540-4bb7b49c2e08" />
+        <classShapeMoniker Id="baf1bcba-8ad5-42db-86b4-3b52c6579b0a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 3.46914992513021); (12.03125 : 3.46914992513021); (12.03125 : 32.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_PRODUTO/TB_EST_PRODUTO_TB_FIS_NOTAFISCAL_ITEM" />
+      <nodes>
+        <classShapeMoniker Id="32cb0140-4e23-4583-8250-e40d28ae0170" />
+        <classShapeMoniker Id="7e20c616-548c-4a4f-8540-4bb7b49c2e08" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 4.79944469480544); (8.79166666666667 : 4.79944469480544 : JumpStart); (9.02083333333333 : 4.79944469480544 : JumpEnd); (9.0625 : 4.79944469480544); (9.0625 : 6.62660970052083); (9.07291666666667 : 6.62660970052083 : JumpStart); (9.48958333333333 : 6.62660970052083 : JumpEnd); (11.8125 : 6.62660970052083); (11.8125 : 32.125); (11.9479166666667 : 32.125 : JumpStart); (12.1145833333333 : 32.125 : JumpEnd); (13.046877 : 32.125); (13.046877 : 32.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_UNIDADE/TB_EST_UNIDADE_TB_FIS_NOTAFISCAL_ITEM" />
+      <nodes>
+        <classShapeMoniker Id="64af73d4-b66a-4ec1-942d-8450262bac2a" />
+        <classShapeMoniker Id="7e20c616-548c-4a4f-8540-4bb7b49c2e08" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 34.073310139974); (11.3229166666667 : 34.073310139974 : JumpStart); (11.4895833333333 : 34.073310139974 : JumpEnd); (11.7916666666667 : 34.073310139974 : JumpStart); (11.9583333333333 : 34.073310139974 : JumpEnd); (12 : 34.073310139974)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_NOTAFISCAL/TB_FIS_NOTAFISCAL_TB_FIS_NOTAFISCAL_ITEM" />
+      <nodes>
+        <classShapeMoniker Id="c83b01fb-1789-4657-97e5-208ede6e322a" />
+        <classShapeMoniker Id="7e20c616-548c-4a4f-8540-4bb7b49c2e08" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.2968775 : 32.4920068359375); (1.2968775 : 52.2604484049479); (3.75 : 52.2604484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_EMPRESA/TB_DIV_EMPRESA_TB_FIS_OBSERVACAOFISCAL" />
+      <nodes>
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+        <classShapeMoniker Id="44d563e5-b35b-4b2e-add8-f2ba43dc0b76" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 53.2876611328125); (9.34375 : 53.2876611328125); (9.34375 : 46.8285953776042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_OPERACAO/TB_FIS_OPERACAO_TB_FIS_CONFIGURACAO_X_OPERACAO" />
+      <nodes>
+        <classShapeMoniker Id="a4798245-5a4a-4d9e-ac07-1894080252b2" />
+        <classShapeMoniker Id="d99a7f9d-fe90-41bb-8c01-de086b56bfc2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 51.9250785664062); (8.875 : 51.9250785664062); (8.875 : 36.2034326171875); (9.36978866666667 : 36.2034326171875 : JumpStart); (9.53645533333333 : 36.2034326171875 : JumpEnd); (9.63541466666667 : 36.2034326171875 : JumpStart); (9.80208133333333 : 36.2034326171875 : JumpEnd); (10.1666666666667 : 36.2034326171875 : JumpStart); (10.3333333333333 : 36.2034326171875 : JumpEnd); (10.781252 : 36.2034326171875); (10.781252 : 36.0784326171875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_OPERACAO/TB_FIS_OPERACAO_TB_FIS_NOTAFISCAL" />
+      <nodes>
+        <classShapeMoniker Id="a4798245-5a4a-4d9e-ac07-1894080252b2" />
+        <classShapeMoniker Id="c83b01fb-1789-4657-97e5-208ede6e322a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5 : 33.1780949907352); (6.3125 : 33.3655949907352); (6.3125 : 50.4698076923077); (6.5 : 50.6573076923077)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CFOP/TB_FIS_CFOP_TB_FIS_OPERACAO" />
+      <nodes>
+        <classShapeMoniker Id="edd46f6f-71ce-4d7e-856a-a710986403d4" />
+        <classShapeMoniker Id="a4798245-5a4a-4d9e-ac07-1894080252b2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.55707129442107 : 33.2035953776042); (6.21875 : 33.5419166720252); (6.21875 : 50.3099048461538); (6.53384515384615 : 50.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CFOP/TB_FIS_CFOP_TB_FIS_OPERACAO1" />
+      <nodes>
+        <classShapeMoniker Id="edd46f6f-71ce-4d7e-856a-a710986403d4" />
+        <classShapeMoniker Id="a4798245-5a4a-4d9e-ac07-1894080252b2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 52.2604484049479); (6.5 : 52.2604484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_OBSERVACAOFISCAL/TB_FIS_OBSERVACAOFISCAL_TB_FIS_OPERACAO" />
+      <nodes>
+        <classShapeMoniker Id="44d563e5-b35b-4b2e-add8-f2ba43dc0b76" />
+        <classShapeMoniker Id="a4798245-5a4a-4d9e-ac07-1894080252b2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 48.7027498372396); (8.79166666666667 : 48.7027498372396 : JumpStart); (8.95833333333333 : 48.7027498372396 : JumpEnd); (9.0625 : 48.7027498372396); (9.0625 : 36.8284326171875); (9.16666666666667 : 36.8284326171875 : JumpStart); (9.33333333333333 : 36.8284326171875 : JumpEnd); (9.453122 : 36.8284326171875); (9.453122 : 36.0784326171875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_SERIE/TB_FIS_SERIE_TB_FIS_NOTAFISCAL" />
+      <nodes>
+        <classShapeMoniker Id="338b768c-3200-4aaf-9324-db91e9e13db0" />
+        <classShapeMoniker Id="c83b01fb-1789-4657-97e5-208ede6e322a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(0.8906225 : 32.4920068359375); (0.8906225 : 48.7027498372396); (1.21354416666667 : 48.7027498372396 : JumpStart); (1.38021083333333 : 48.7027498372396 : JumpEnd); (6.13541666666667 : 48.7027498372396 : JumpStart); (6.39583333333333 : 48.7027498372396 : JumpEnd); (6.5 : 48.7027498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_EMPRESA/TB_DIV_EMPRESA_TB_FIS_SERIE" />
+      <nodes>
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+        <classShapeMoniker Id="338b768c-3200-4aaf-9324-db91e9e13db0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 43.5392976888021); (18.6666666666667 : 43.5392976888021 : JumpStart); (18.8333333333333 : 43.5392976888021 : JumpEnd); (19.1979191666667 : 43.5392976888021 : JumpStart); (19.3645858333333 : 43.5392976888021 : JumpEnd); (20.95312125 : 43.5392976888021); (20.95312125 : 36.0785139973958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_SIT_TRIB_SPEAD/TB_FIS_SIT_TRIB_SPEAD_TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <nodes>
+        <classShapeMoniker Id="c0671364-3c24-4035-9f11-1d5cb2a7059c" />
+        <classShapeMoniker Id="1a9e0e94-7a24-44fb-80e3-29207256540a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 43.113396344401); (18.2187475 : 43.113396344401); (18.2187475 : 38.4343082682292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_SIT_TRIB_SPEAD/TB_FIS_SIT_TRIB_SPEAD_TB_FIS_NOTAFISCAL_IMPOSTO" />
+      <nodes>
+        <classShapeMoniker Id="c0671364-3c24-4035-9f11-1d5cb2a7059c" />
+        <classShapeMoniker Id="baf1bcba-8ad5-42db-86b4-3b52c6579b0a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 45.9142976888021); (18.6666666666667 : 45.9142976888021 : JumpStart); (18.8333333333333 : 45.9142976888021 : JumpEnd); (21.48437375 : 45.9142976888021); (21.48437375 : 36.0785139973958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_SITUACAOTRIBUTARIA/TB_FIS_SITUACAOTRIBUTARIA_TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <nodes>
+        <classShapeMoniker Id="36f5cb25-cb58-4bd7-9f6c-0812600457d5" />
+        <classShapeMoniker Id="1a9e0e94-7a24-44fb-80e3-29207256540a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 45.488396344401); (18.6666666666667 : 45.488396344401 : JumpStart); (18.8333333333333 : 45.488396344401 : JumpEnd); (19.2812525 : 45.488396344401); (19.2812525 : 38.4343082682292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_SITUACAOTRIBUTARIA/TB_FIS_SITUACAOTRIBUTARIA_TB_FIS_NOTAFISCAL_IMPOSTO" />
+      <nodes>
+        <classShapeMoniker Id="36f5cb25-cb58-4bd7-9f6c-0812600457d5" />
+        <classShapeMoniker Id="baf1bcba-8ad5-42db-86b4-3b52c6579b0a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.25 : 40.7892976888021); (18.1354141666667 : 40.7892976888021 : JumpStart); (18.3020808333333 : 40.7892976888021 : JumpEnd); (18.6666666666667 : 40.7892976888021 : JumpStart); (18.8333333333333 : 40.7892976888021 : JumpEnd); (19.1979191666667 : 40.7892976888021 : JumpStart); (19.3645858333333 : 40.7892976888021 : JumpEnd); (19.90625 : 40.7892976888021); (19.90625 : 30.9728011067708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_AMOSTRA/TB_GRA_AMOSTRA_TB_GRA_CLASSIFICACAO" />
+      <nodes>
+        <classShapeMoniker Id="54316c92-7177-41a0-a96f-c24b29b6e0bd" />
+        <classShapeMoniker Id="ff0a65c8-0e9c-4250-97e5-8c1d476df7f7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 24.5039539529247); (5.56607443490112 : 24.5700283878258 : JumpStart); (5.68392556509888 : 24.6878795180236 : JumpEnd); (5.81607443490112 : 24.8200283878258 : JumpStart); (5.96517556509888 : 24.9691295180236 : JumpEnd); (5.96875 : 24.9727039529247); (5.96875 : 29.2700512695313); (6.04166666666667 : 29.2700512695313 : JumpStart); (6.20833333333333 : 29.2700512695313 : JumpEnd); (6.25 : 29.2700512695313)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONTRATO/TB_FIS_CONTRATO_TB_GRA_FIXACAO" />
+      <nodes>
+        <classShapeMoniker Id="68edada9-e658-47f6-8d21-6d2987d1dad6" />
+        <classShapeMoniker Id="6473c737-dea7-4883-a087-5860258f4c7c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 30.7155989583333); (14.5416666666667 : 30.7155989583333 : JumpStart); (14.8333333333333 : 30.7155989583333 : JumpEnd); (16.1666661666667 : 30.7155989583333 : JumpStart); (16.3333328333333 : 30.7155989583333 : JumpEnd); (18 : 30.7155989583333)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_PESAGEM/TB_GRA_PESAGEM_TB_GRA_CLASSIFICACAO" />
+      <nodes>
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+        <classShapeMoniker Id="ff0a65c8-0e9c-4250-97e5-8c1d476df7f7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.22629757692308 : 27.4054996744792); (1.22629757692308 : 27.875); (1.61926082051282 : 27.875 : JumpStart); (1.78592748717949 : 27.875 : JumpEnd); (2.82291666666667 : 27.875 : JumpStart); (2.98958333333333 : 27.875 : JumpEnd); (3.04166666666667 : 27.875 : JumpStart); (3.45833333333333 : 27.875 : JumpEnd); (5.60509207141426 : 27.875 : JumpStart); (5.77175873808093 : 27.875 : JumpEnd); (5.88541666666667 : 27.875 : JumpStart); (6.20833333333333 : 27.875 : JumpEnd); (8.375 : 27.875); (8.375 : 28.8902498372396); (8.54166666666667 : 28.8902498372396 : JumpStart); (8.77083333333333 : 28.8902498372396 : JumpEnd); (9.63541466666667 : 28.8902498372396 : JumpStart); (9.80208133333333 : 28.8902498372396 : JumpEnd); (10.6979186666667 : 28.8902498372396 : JumpStart); (10.8645853333333 : 28.8902498372396 : JumpEnd); (11.1666666666667 : 28.8902498372396 : JumpStart); (11.3333333333333 : 28.8902498372396 : JumpEnd); (11.4791666666667 : 28.8902498372396 : JumpStart); (12.1145833333333 : 28.8902498372396 : JumpEnd); (12.25 : 28.8902498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_USUARIO/TB_DIV_USUARIO_TB_GRA_PESAGEM" />
+      <nodes>
+        <classShapeMoniker Id="676a9822-0b19-43f3-9eac-082c32c09219" />
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.51940028846154 : 27.4054996744792); (2.51940028846154 : 27.9375); (2.82291666666667 : 27.9375 : JumpStart); (2.98958333333333 : 27.9375 : JumpEnd); (3.04166666666667 : 27.9375 : JumpStart); (3.45833333333333 : 27.9375 : JumpEnd); (5.54259207141426 : 27.9375 : JumpStart); (5.70925873808093 : 27.9375 : JumpEnd); (5.88541666666667 : 27.9375 : JumpStart); (6.20833333333333 : 27.9375 : JumpEnd); (8.41666666666667 : 27.9375 : JumpStart); (8.77083333333333 : 27.9375 : JumpEnd); (8.8125 : 27.9375); (8.8125 : 26.09375); (9.01041666666667 : 26.09375 : JumpStart); (9.17708333333333 : 26.09375 : JumpEnd); (11.1666666666667 : 26.09375 : JumpStart); (11.3333333333333 : 26.09375 : JumpEnd); (11.4791666666667 : 26.09375 : JumpStart); (12.2395833333333 : 26.09375 : JumpEnd); (12.25 : 26.09375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_USUARIO/TB_DIV_USUARIO_TB_GRA_PESAGEM1" />
+      <nodes>
+        <classShapeMoniker Id="676a9822-0b19-43f3-9eac-082c32c09219" />
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 18.7375108527018); (2.79166666666667 : 18.7375108527018 : JumpStart); (3.08333333333333 : 18.7375108527018 : JumpEnd); (4.66666666666667 : 18.7375108527018 : JumpStart); (4.83333333333333 : 18.7375108527018 : JumpEnd); (5.66666666666667 : 18.7375108527018 : JumpStart); (5.83333333333333 : 18.7375108527018 : JumpEnd); (8.54166666666667 : 18.7375108527018 : JumpStart); (8.70833333333333 : 18.7375108527018 : JumpEnd); (10.2760396666667 : 18.7375108527018 : JumpStart); (10.4427063333333 : 18.7375108527018 : JumpEnd); (11.3697916666667 : 18.7375108527018 : JumpStart); (11.7083333333333 : 18.7375108527018 : JumpEnd); (11.75 : 18.7375108527018); (11.75 : 24.9824039713542); (11.8072916666667 : 24.9824039713542 : JumpStart); (12.2395833333333 : 24.9824039713542 : JumpEnd); (12.6354146666667 : 24.9824039713542 : JumpStart); (12.8020813333333 : 24.9824039713542 : JumpEnd); (13.25 : 24.9824039713542); (13.25 : 25.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_CLIFOR/TB_DIV_CLIFOR_TB_GRA_PESAGEM" />
+      <nodes>
+        <classShapeMoniker Id="82febbdb-b674-4387-b349-e66bb06a0ff2" />
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(0.988149288461539 : 29.375); (0.988149288461539 : 27.5625); (1.14296424358974 : 27.5625 : JumpStart); (1.30963091025641 : 27.5625 : JumpEnd); (1.84985953205128 : 27.5625 : JumpStart); (2.01652619871795 : 27.5625 : JumpEnd); (2.14296324358974 : 27.5625 : JumpStart); (2.30962991025641 : 27.5625 : JumpEnd); (2.4360669551282 : 27.5625 : JumpStart); (2.60273362179487 : 27.5625 : JumpEnd); (2.82291666666667 : 27.5625 : JumpStart); (3.45833333333333 : 27.5625 : JumpEnd); (5.88541666666667 : 27.5625 : JumpStart); (6.20833333333333 : 27.5625 : JumpEnd); (8.41666666666667 : 27.5625 : JumpStart); (8.58333333333333 : 27.5625 : JumpEnd); (8.6875 : 27.5625); (8.6875 : 29.34375); (8.91666666666667 : 29.34375 : JumpStart); (9.08333333333333 : 29.34375 : JumpEnd); (9.63541466666667 : 29.34375 : JumpStart); (9.80208133333333 : 29.34375 : JumpEnd); (10.1666666666667 : 29.34375 : JumpStart); (10.3333333333333 : 29.34375 : JumpEnd); (10.6979186666667 : 29.34375 : JumpStart); (10.8645853333333 : 29.34375 : JumpEnd); (11.3229166666667 : 29.34375 : JumpStart); (12.1145833333333 : 29.34375 : JumpEnd); (12.25 : 29.34375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_EMPRESA/TB_DIV_EMPRESA_TB_GRA_PESAGEM" />
+      <nodes>
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.93319286538462 : 27.4054996744792); (1.93319286538462 : 27.75); (2.4360669551282 : 27.75 : JumpStart); (2.60273362179487 : 27.75 : JumpEnd); (2.82291666666667 : 27.75 : JumpStart); (2.98958333333333 : 27.75 : JumpEnd); (3.04166666666667 : 27.75 : JumpStart); (3.45833333333333 : 27.75 : JumpEnd); (5.73009207141426 : 27.75 : JumpStart); (6.20833333333333 : 27.75 : JumpEnd); (8.41666666666667 : 27.75 : JumpStart); (8.89583333333333 : 27.75 : JumpEnd); (8.9375 : 27.75); (8.9375 : 28.5617496744792); (11.1666666666667 : 28.5617496744792 : JumpStart); (11.3333333333333 : 28.5617496744792 : JumpEnd); (11.4791666666667 : 28.5617496744792 : JumpStart); (12.1145833333333 : 28.5617496744792 : JumpEnd); (12.25 : 28.5617496744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_USUARIO/TB_DIV_USUARIO_TB_GRA_PESAGEM2" />
+      <nodes>
+        <classShapeMoniker Id="676a9822-0b19-43f3-9eac-082c32c09219" />
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 12.8140227279647); (11.7535744349011 : 13.0675971628659 : JumpStart); (11.8714255650989 : 13.1854482930636 : JumpEnd); (11.890625 : 13.2046477279647); (11.890625 : 27.3277498372396); (11.9479166666667 : 27.3277498372396 : JumpStart); (12.1145833333333 : 27.3277498372396 : JumpEnd); (12.25 : 27.3277498372396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_LOCAL/TB_EST_LOCAL_TB_GRA_PESAGEM" />
+      <nodes>
+        <classShapeMoniker Id="a2792951-05e1-4736-b57a-bcde99b8b3ca" />
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.4984615384615 : 6.12660970052083); (11.96875 : 6.59689816205929); (11.96875 : 30.5452404440104); (12.25 : 30.5452404440104)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_PRODUTO/TB_EST_PRODUTO_TB_GRA_PESAGEM" />
+      <nodes>
+        <classShapeMoniker Id="32cb0140-4e23-4583-8250-e40d28ae0170" />
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 23.6980262075195); (5.66666666666667 : 23.6980262075195 : JumpStart); (5.98958333333333 : 23.6980262075195 : JumpEnd); (6.0625 : 23.6980262075195); (6.0625 : 26.8189111328125); (7.16666666666667 : 26.8189111328125 : JumpStart); (7.33333333333333 : 26.8189111328125 : JumpEnd); (8.375 : 26.8189111328125); (8.375 : 26); (8.54166666666667 : 26 : JumpStart); (8.83333333333333 : 26 : JumpEnd); (9.01041666666667 : 26 : JumpStart); (9.17708333333333 : 26 : JumpEnd); (11.625 : 26); (11.625 : 24.8574039713542); (11.6666666666667 : 24.8574039713542 : JumpStart); (12.2395833333333 : 24.8574039713542 : JumpEnd); (12.718748 : 24.8574039713542); (12.718748 : 25.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONTRATO/TB_FIS_CONTRATO_TB_GRA_PESAGEM" />
+      <nodes>
+        <classShapeMoniker Id="68edada9-e658-47f6-8d21-6d2987d1dad6" />
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.40625 : 37.625); (11.40625 : 29.1875); (11.4791666666667 : 29.1875 : JumpStart); (12.1145833333333 : 29.1875 : JumpEnd); (12.25 : 29.1875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_MOEGA/TB_GRA_MOEGA_TB_GRA_PESAGEM" />
+      <nodes>
+        <classShapeMoniker Id="190b1fab-59fc-42fd-b8a6-1f45cf94bddf" />
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 15.3659267869591); (11.5035744349011 : 15.3695012218603 : JumpStart); (11.6214255650989 : 15.487352352058 : JumpEnd); (11.7535744349011 : 15.6195012218603 : JumpStart); (12.1526755650989 : 16.018602352058 : JumpEnd); (12.21875 : 16.0846767869591); (12.21875 : 19.9022509179688); (12.25 : 19.9022509179688)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_SAFRA/TB_GRA_SAFRA_TB_FIS_CONTRATO_DADOSGERAI" />
+      <nodes>
+        <classShapeMoniker Id="ef572cbb-c38f-42e0-a8dd-bdb750e88245" />
+        <classShapeMoniker Id="a4df7b76-3e00-4735-a3ab-7a1b6f1aa6a6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 15.3945335815805); (11.5035744349011 : 15.3981080164817 : JumpStart); (11.6214255650989 : 15.5159591466794 : JumpEnd); (11.7535744349011 : 15.6481080164817 : JumpStart); (12.1526755650989 : 16.0472091466794 : JumpEnd); (12.15625 : 16.0507835815805); (12.15625 : 26.7107499186198); (12.25 : 26.7107499186198)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_SAFRA/TB_GRA_SAFRA_TB_GRA_PESAGEM" />
+      <nodes>
+        <classShapeMoniker Id="ef572cbb-c38f-42e0-a8dd-bdb750e88245" />
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.28125 : 17.9535953776042); (11.28125 : 18.4984244791667); (11.3697916666667 : 18.4984244791667 : JumpStart); (11.7083333333333 : 18.4984244791667 : JumpEnd); (11.7291666666667 : 18.4984244791667 : JumpStart); (12.2395833333333 : 18.4984244791667 : JumpEnd); (12.25 : 18.4984244791667)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_TABDESCONTO/TB_GRA_TABDESCONTO_TB_FIS_CONTRATO_DADOSGERAI" />
+      <nodes>
+        <classShapeMoniker Id="de9fcccc-5cf9-47e7-849c-48e219ffbdb6" />
+        <classShapeMoniker Id="a4df7b76-3e00-4735-a3ab-7a1b6f1aa6a6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.453125 : 17.9535953776042); (11.453125 : 25.9375); (11.4791666666667 : 25.9375 : JumpStart); (12.2395833333333 : 25.9375 : JumpEnd); (12.25 : 25.9375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_TABDESCONTO/TB_GRA_TABDESCONTO_TB_GRA_PESAGEM" />
+      <nodes>
+        <classShapeMoniker Id="de9fcccc-5cf9-47e7-849c-48e219ffbdb6" />
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(24 : 29.1354484049479); (24.75 : 29.1354484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_TABELA_X_AMOSTRA/TB_GRA_TABELA_X_AMOSTRA_TB_GRA_PERC_DESC" />
+      <nodes>
+        <classShapeMoniker Id="84041ca3-2de8-4130-8036-8c397baa904e" />
+        <classShapeMoniker Id="8a4cb905-4d20-43ba-a034-c63b27c47743" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.359373 : 17.9535953776042); (10.359373 : 19.125); (11.3697916666667 : 19.125 : JumpStart); (11.6458333333333 : 19.125 : JumpEnd); (11.6875 : 19.125); (11.6875 : 31.8092268880208); (11.7291666666667 : 31.8092268880208 : JumpStart); (12.1145833333333 : 31.8092268880208 : JumpEnd); (14.0729166666667 : 31.8092268880208 : JumpStart); (14.2395833333333 : 31.8092268880208 : JumpEnd); (14.5416666666667 : 31.8092268880208 : JumpStart); (14.7083333333333 : 31.8092268880208 : JumpEnd); (14.75 : 31.8092268880208); (14.75 : 28.375); (15.9166666666667 : 28.375 : JumpStart); (16.0833333333333 : 28.375 : JumpEnd); (20.8697886666667 : 28.375 : JumpStart); (21.0364553333333 : 28.375 : JumpEnd); (21.1354146666667 : 28.375 : JumpStart); (21.3020813333333 : 28.375 : JumpEnd); (21.625 : 28.375); (21.625 : 29.1354484049479); (22 : 29.1354484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_TABDESCONTO/TB_GRA_TABDESCONTO_TB_GRA_TABELA_X_AMOSTRA" />
+      <nodes>
+        <classShapeMoniker Id="de9fcccc-5cf9-47e7-849c-48e219ffbdb6" />
+        <classShapeMoniker Id="84041ca3-2de8-4130-8036-8c397baa904e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 5.20351446769832); (11.9479166666667 : 5.20351446769832 : JumpStart); (12.1145833333333 : 5.20351446769832 : JumpEnd); (15.5104166666667 : 5.20351446769832 : JumpStart); (15.6770833333333 : 5.20351446769832 : JumpEnd); (23.90625 : 5.20351446769832); (23.90625 : 28.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_PRODUTO/TB_EST_PRODUTO_TB_GRA_TABELA_X_AMOSTRA" />
+      <nodes>
+        <classShapeMoniker Id="32cb0140-4e23-4583-8250-e40d28ae0170" />
+        <classShapeMoniker Id="84041ca3-2de8-4130-8036-8c397baa904e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.25 : 40.363396344401); (18.1354141666667 : 40.363396344401 : JumpStart); (18.3020808333333 : 40.363396344401 : JumpEnd); (18.6666666666667 : 40.363396344401 : JumpStart); (18.8333333333333 : 40.363396344401 : JumpEnd); (19.1979191666667 : 40.363396344401 : JumpStart); (19.3645858333333 : 40.363396344401 : JumpEnd); (19.8229166666667 : 40.363396344401 : JumpStart); (19.9895833333333 : 40.363396344401 : JumpEnd); (20.8697879166667 : 40.363396344401 : JumpStart); (21.0364545833333 : 40.363396344401 : JumpEnd); (21.1354141666667 : 40.363396344401 : JumpStart); (21.3020808333333 : 40.363396344401 : JumpEnd); (21.4010404166667 : 40.363396344401 : JumpStart); (21.5677070833333 : 40.363396344401 : JumpEnd); (21.6666666666667 : 40.363396344401 : JumpStart); (21.8333333333333 : 40.363396344401 : JumpEnd); (22.1979191666667 : 40.363396344401 : JumpStart); (22.3645858333333 : 40.363396344401 : JumpEnd); (23.40625 : 40.363396344401); (23.40625 : 30.0208968098958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_AMOSTRA/TB_GRA_AMOSTRA_TB_GRA_TABELA_X_AMOSTRA" />
+      <nodes>
+        <classShapeMoniker Id="54316c92-7177-41a0-a96f-c24b29b6e0bd" />
+        <classShapeMoniker Id="84041ca3-2de8-4130-8036-8c397baa904e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 40.7604484049479); (11.7916666666667 : 40.7604484049479 : JumpStart); (11.9583333333333 : 40.7604484049479 : JumpEnd); (14.15625 : 40.7604484049479); (14.15625 : 31.6842268880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_TALHAO/TB_GRA_TALHAO_TB_GRA_PESAGEM" />
+      <nodes>
+        <classShapeMoniker Id="3af1ca16-3a42-4611-840f-607b403b6228" />
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 40.7892976888021); (8.79166666666667 : 40.7892976888021 : JumpStart); (9.33333333333333 : 40.7892976888021 : JumpEnd); (9.5 : 40.7892976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_FAZENDA/TB_GRA_FAZENDA_TB_GRA_TALHAO" />
+      <nodes>
+        <classShapeMoniker Id="17c29c65-4842-4f88-b46d-7c3f76a3880b" />
+        <classShapeMoniker Id="3af1ca16-3a42-4611-840f-607b403b6228" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 30.7432236640625); (2.82291666666667 : 30.7432236640625 : JumpStart); (2.98958333333333 : 30.7432236640625 : JumpEnd); (3.19791666666667 : 30.7432236640625 : JumpStart); (3.36458333333333 : 30.7432236640625 : JumpEnd); (5.91666666666667 : 30.7432236640625 : JumpStart); (6.20833333333333 : 30.7432236640625 : JumpEnd); (8.54166666666667 : 30.7432236640625 : JumpStart); (8.83333333333333 : 30.7432236640625 : JumpEnd); (8.91666666666667 : 30.7432236640625 : JumpStart); (9.08333333333333 : 30.7432236640625 : JumpEnd); (9.125 : 30.7432236640625); (9.125 : 29.4375); (11.3229166666667 : 29.4375 : JumpStart); (11.4895833333333 : 29.4375 : JumpEnd); (11.5625 : 29.4375); (11.5625 : 14.7324039713542); (11.7291666666667 : 14.7324039713542 : JumpStart); (12.4270833333333 : 14.7324039713542 : JumpEnd); (13.5 : 14.7324039713542); (13.5 : 14.3574039713542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_DIV_EMPRESA/TB_DIV_EMPRESA_TB_GRA_TAXAPADRAO" />
+      <nodes>
+        <classShapeMoniker Id="0d7dd4e7-967e-4663-ab9b-d0c4bc210dfd" />
+        <classShapeMoniker Id="265e358b-f1ab-41b1-a6e1-83202811f197" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 4.19917399006535); (8.9375 : 4.19917399006535); (8.9375 : 6.50160970052083); (8.97916666666667 : 6.50160970052083 : JumpStart); (9.48958333333333 : 6.50160970052083 : JumpEnd); (11.7901282051282 : 6.50160970052083 : JumpStart); (12.2708333333333 : 6.50160970052083 : JumpEnd); (13.5 : 6.50160970052083); (13.5 : 11.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_EST_UNIDADE/TB_EST_UNIDADE_TB_GRA_TAXAPADRAO" />
+      <nodes>
+        <classShapeMoniker Id="64af73d4-b66a-4ec1-942d-8450262bac2a" />
+        <classShapeMoniker Id="265e358b-f1ab-41b1-a6e1-83202811f197" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 22.7700512695313); (14.4166666666667 : 22.7700512695313 : JumpStart); (14.7083333333333 : 22.7700512695313 : JumpEnd); (14.7916666666667 : 22.7700512695313 : JumpStart); (14.9583333333333 : 22.7700512695313 : JumpEnd); (15 : 22.7700512695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_FIS_CONTRATO_ITEM/TB_FIS_CONTRATO_ITEM_TB_GRA_TAXASCONTRATO" />
+      <nodes>
+        <classShapeMoniker Id="f95d3a91-a023-48b8-8375-e4c15879e704" />
+        <classShapeMoniker Id="735e966a-559a-43d9-8d4c-c0abd179b965" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 43.4142976888021); (12.25 : 43.4142976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_TIPOPESAGEM/TB_GRA_TIPOPESAGEM_TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLO" />
+      <nodes>
+        <classShapeMoniker Id="d0ab2132-7964-40e6-99a3-dc752a241f33" />
+        <classShapeMoniker Id="11e72777-8068-476d-976a-29c10f6a3ea6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.5 : 42.375); (10.5 : 41.8958968098958); (11.875 : 41.8958968098958); (11.875 : 27.9447497558594); (11.8854166666667 : 27.9447497558594 : JumpStart); (12.1145833333333 : 27.9447497558594 : JumpEnd); (12.25 : 27.9447497558594)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BancoDataContext/TB_GRA_TIPOPESAGEM/TB_GRA_TIPOPESAGEM_TB_GRA_PESAGEM" />
+      <nodes>
+        <classShapeMoniker Id="d0ab2132-7964-40e6-99a3-dc752a241f33" />
+        <classShapeMoniker Id="d3632fa0-ced4-4a42-98e3-82dbac00c637" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

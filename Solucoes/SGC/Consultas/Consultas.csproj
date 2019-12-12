@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA521FE9-E62B-4467-816D-708F48721446}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Consultas</RootNamespace>
+    <AssemblyName>Consultas</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Any|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C_ALOCACAORECURSO.cs" />
+    <Compile Include="C_COMUNICADO.cs" />
+    <Compile Include="C_CONFIGEMAIL.cs" />
+    <Compile Include="C_CONHECIMENTO.cs" />
+    <Compile Include="C_EQUIPAMENTO.cs" />
+    <Compile Include="C_EQUIPAMENTOUSUARIO.cs" />
+    <Compile Include="C_EVENTO.cs" />
+    <Compile Include="C_SALVASENHA.cs" />
+    <Compile Include="C_CHAMADO.cs" />
+    <Compile Include="C_ITEM.cs" />
+    <Compile Include="C_MARCA.cs" />
+    <Compile Include="C_MENU.cs" />
+    <Compile Include="C_PRIORIDADE.cs" />
+    <Compile Include="C_DEPARTAMENTO.cs" />
+    <Compile Include="C_CATEGORIA.cs" />
+    <Compile Include="C_CLIFOR.cs" />
+    <Compile Include="C_GRUPOPRODUTO.cs" />
+    <Compile Include="C_GRUPOUSUARIO.cs" />
+    <Compile Include="C_MODELO.cs" />
+    <Compile Include="C_CARGO.cs" />
+    <Compile Include="C_STATUS.cs" />
+    <Compile Include="C_TRANSFERENCIACATEGORIA.cs" />
+    <Compile Include="C_TRANSFERENCIAUSUARIO.cs" />
+    <Compile Include="C_USUARIO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Padrao\Utilidades\Utilidades.csproj">
+      <Project>{81f8317c-0e10-4bc8-a78f-510d61fcd4a4}</Project>
+      <Name>Utilidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{b9e15bee-1056-4763-9b78-37dca0289c4a}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{b9afa29d-5763-4c7e-8208-abd134c4b06f}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

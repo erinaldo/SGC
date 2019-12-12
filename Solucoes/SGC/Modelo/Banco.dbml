@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SGC" Class="BancoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\LORENSOFT;Initial Catalog=SGC;Integrated Security=True" SettingsObjectName="Modelo.Properties.Settings" SettingsPropertyName="SGCConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TB_DIV_USUARIO_X_GRUPO" Member="TB_DIV_USUARIO_X_GRUPOs">
+    <Type Name="TB_DIV_USUARIO_X_GRUPO">
+      <Column Name="ID_GRUPOUSUARIO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_GRUPOUSUARIO_TB_DIV_USUARIO_X_GRUPO" Member="TB_DIV_GRUPOUSUARIO" ThisKey="ID_GRUPOUSUARIO" OtherKey="ID_GRUPOUSUARIO" Type="TB_DIV_GRUPOUSUARIO" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_USUARIO_X_GRUPO" Member="TB_DIV_USUARIO" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_ALOCACAORECURSO" Member="TB_DIV_ALOCACAORECURSOs">
+    <Type Name="TB_DIV_ALOCACAORECURSO">
+      <Column Name="ID_ALOCACAO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_GRUPOUSUARIO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_EQUIPAMENTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="DT_INICIO_HMS" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_FINAL_HMS" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_EQUIPAMENTO_TB_DIV_ALOCACAORECURSO" Member="TB_DIV_EQUIPAMENTO" ThisKey="ID_EQUIPAMENTO" OtherKey="ID_EQUIPAMENTO" Type="TB_DIV_EQUIPAMENTO" IsForeignKey="true" />
+      <Association Name="TB_DIV_GRUPOUSUARIO_TB_DIV_ALOCACAORECURSO" Member="TB_DIV_GRUPOUSUARIO" ThisKey="ID_GRUPOUSUARIO" OtherKey="ID_GRUPOUSUARIO" Type="TB_DIV_GRUPOUSUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_ANEXO" Member="TB_DIV_ANEXOs">
+    <Type Name="TB_DIV_ANEXO">
+      <Column Name="ID_ANEXO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ANEXO" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NM_ANEXO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="EXTENSAO" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_ANEXO_TB_DIV_ANEXO_X_CHAMADO" Member="TB_DIV_ANEXO_X_CHAMADOs" ThisKey="ID_ANEXO" OtherKey="ID_ANEXO" Type="TB_DIV_ANEXO_X_CHAMADO" />
+      <Association Name="TB_DIV_ANEXO_TB_DIV_COMUNICADO_X_ANEXO" Member="TB_DIV_COMUNICADO_X_ANEXOs" ThisKey="ID_ANEXO" OtherKey="ID_ANEXO" Type="TB_DIV_COMUNICADO_X_ANEXO" />
+      <Association Name="TB_DIV_ANEXO_TB_DIV_CONHECIMENTO_X_ANEXO" Member="TB_DIV_CONHECIMENTO_X_ANEXOs" ThisKey="ID_ANEXO" OtherKey="ID_ANEXO" Type="TB_DIV_CONHECIMENTO_X_ANEXO" />
+      <Association Name="TB_DIV_ANEXO_TB_DIV_EQUIPAMENTO_X_ANEXO" Member="TB_DIV_EQUIPAMENTO_X_ANEXOs" ThisKey="ID_ANEXO" OtherKey="ID_ANEXO" Type="TB_DIV_EQUIPAMENTO_X_ANEXO" />
+      <Association Name="TB_DIV_ANEXO_TB_DIV_EVENTO_X_ANEXO" Member="TB_DIV_EVENTO_X_ANEXOs" ThisKey="ID_ANEXO" OtherKey="ID_ANEXO" Type="TB_DIV_EVENTO_X_ANEXO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_ANEXO_X_CHAMADO" Member="TB_DIV_ANEXO_X_CHAMADOs">
+    <Type Name="TB_DIV_ANEXO_X_CHAMADO">
+      <Column Name="ID_CHAMADO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_ANEXO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_ANEXO_TB_DIV_ANEXO_X_CHAMADO" Member="TB_DIV_ANEXO" ThisKey="ID_ANEXO" OtherKey="ID_ANEXO" Type="TB_DIV_ANEXO" IsForeignKey="true" />
+      <Association Name="TB_DIV_CHAMADO_TB_DIV_ANEXO_X_CHAMADO" Member="TB_DIV_CHAMADO" ThisKey="ID_CHAMADO" OtherKey="ID_CHAMADO" Type="TB_DIV_CHAMADO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CARGO" Member="TB_DIV_CARGOs">
+    <Type Name="TB_DIV_CARGO">
+      <Column Name="ID_CARGO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_CARGO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CARGO_TB_DIV_USUARIO" Member="TB_DIV_USUARIOs" ThisKey="ID_CARGO" OtherKey="ID_CARGO" Type="TB_DIV_USUARIO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CATEGORIA" Member="TB_DIV_CATEGORIAs">
+    <Type Name="TB_DIV_CATEGORIA">
+      <Column Name="ID_CATEGORIA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_DEPARTAMENTO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DS_CATEGORIA" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="CLASSIFICACAO" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="GRAVIDADE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="TEMPO_HORA_MIN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TEMPO_HORA_MAX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIPO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CATEGORIA_TB_DIV_CHAMADO" Member="TB_DIV_CHAMADOs" ThisKey="ID_CATEGORIA" OtherKey="ID_CATEGORIA" Type="TB_DIV_CHAMADO" />
+      <Association Name="TB_DIV_CATEGORIA_TB_DIV_CONHECIMENTO" Member="TB_DIV_CONHECIMENTOs" ThisKey="ID_CATEGORIA" OtherKey="ID_CATEGORIA" Type="TB_DIV_CONHECIMENTO" />
+      <Association Name="TB_DIV_CATEGORIA_TB_DIV_TRANSF_CATEGORIA" Member="TB_DIV_TRANSF_CATEGORIAs" ThisKey="ID_CATEGORIA" OtherKey="ID_CATEGORIA_NEW" Type="TB_DIV_TRANSF_CATEGORIA" />
+      <Association Name="TB_DIV_CATEGORIA_TB_DIV_TRANSF_CATEGORIA1" Member="TB_DIV_TRANSF_CATEGORIAs1" ThisKey="ID_CATEGORIA" OtherKey="ID_CATEGORIA_OLD" Type="TB_DIV_TRANSF_CATEGORIA" />
+      <Association Name="TB_DIV_DEPARTAMENTO_TB_DIV_CATEGORIA" Member="TB_DIV_DEPARTAMENTO" ThisKey="ID_DEPARTAMENTO" OtherKey="ID_DEPARTAMENTO" Type="TB_DIV_DEPARTAMENTO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CHAMADO" Member="TB_DIV_CHAMADOs">
+    <Type Name="TB_DIV_CHAMADO">
+      <Column Name="ID_CHAMADO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CATEGORIA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOGIN_SOLICITANTE" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="LOGIN_ATENDENTE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ID_DEPARTAMENTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_CHAMADO" Type="System.String" DbType="VarChar(1024)" CanBeNull="true" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DS_SOLUCAO" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DS_RESUMO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DS_SUGESTAO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="NOTA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ESTIMATIVA_TEMPO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PRIORIDADE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_CHAMADO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CHAMADO" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DT_PREVISTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_FINALIZADO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ATENDIMENTO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_REQUERIDO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CHAMADO_TB_DIV_ANEXO_X_CHAMADO" Member="TB_DIV_ANEXO_X_CHAMADOs" ThisKey="ID_CHAMADO" OtherKey="ID_CHAMADO" Type="TB_DIV_ANEXO_X_CHAMADO" />
+      <Association Name="TB_DIV_CHAMADO_TB_DIV_TRANSF_CATEGORIA" Member="TB_DIV_TRANSF_CATEGORIAs" ThisKey="ID_CHAMADO" OtherKey="ID_CHAMADO" Type="TB_DIV_TRANSF_CATEGORIA" />
+      <Association Name="TB_DIV_CHAMADO_TB_DIV_EVENTO" Member="TB_DIV_EVENTOs" ThisKey="ID_CHAMADO" OtherKey="ID_CHAMADO" Type="TB_DIV_EVENTO" />
+      <Association Name="TB_DIV_CATEGORIA_TB_DIV_CHAMADO" Member="TB_DIV_CATEGORIA" ThisKey="ID_CATEGORIA" OtherKey="ID_CATEGORIA" Type="TB_DIV_CATEGORIA" IsForeignKey="true" />
+      <Association Name="TB_DIV_DEPARTAMENTO_TB_DIV_CHAMADO" Member="TB_DIV_DEPARTAMENTO" ThisKey="ID_DEPARTAMENTO" OtherKey="ID_DEPARTAMENTO" Type="TB_DIV_DEPARTAMENTO" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_CHAMADO" Member="TB_DIV_USUARIO" ThisKey="LOGIN_SOLICITANTE" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_CHAMADO1" Member="TB_DIV_USUARIO1" ThisKey="LOGIN_ATENDENTE" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CLIFOR" Member="TB_DIV_CLIFORs">
+    <Type Name="TB_DIV_CLIFOR">
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NM_CLIFOR" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_USUARIO" Member="TB_DIV_USUARIOs" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_USUARIO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_COMUNICADO" Member="TB_DIV_COMUNICADOs">
+    <Type Name="TB_DIV_COMUNICADO">
+      <Column Name="ID_COMUNICADO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LOGIN_COMUNICADOR" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DS_COMUNICADO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="ST_GRUPO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_COMUNICADO_TB_DIV_COMUNICADO_X_ANEXO" Member="TB_DIV_COMUNICADO_X_ANEXOs" ThisKey="ID_COMUNICADO" OtherKey="ID_COMUNICADO" Type="TB_DIV_COMUNICADO_X_ANEXO" />
+      <Association Name="TB_DIV_COMUNICADO_TB_DIV_COMUNICADO_X_GRUPOUSUARIO" Member="TB_DIV_COMUNICADO_X_GRUPOUSUARIOs" ThisKey="ID_COMUNICADO" OtherKey="ID_COMUNICADO" Type="TB_DIV_COMUNICADO_X_GRUPOUSUARIO" />
+      <Association Name="TB_DIV_COMUNICADO_TB_DIV_COMUNICADO_X_USUARIO" Member="TB_DIV_COMUNICADO_X_USUARIOs" ThisKey="ID_COMUNICADO" OtherKey="ID_COMUNICADO" Type="TB_DIV_COMUNICADO_X_USUARIO" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_COMUNICADO" Member="TB_DIV_USUARIO" ThisKey="LOGIN_COMUNICADOR" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_COMUNICADO_X_ANEXO" Member="TB_DIV_COMUNICADO_X_ANEXOs">
+    <Type Name="TB_DIV_COMUNICADO_X_ANEXO">
+      <Column Name="ID_COMUNICADO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_ANEXO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_ANEXO_TB_DIV_COMUNICADO_X_ANEXO" Member="TB_DIV_ANEXO" ThisKey="ID_ANEXO" OtherKey="ID_ANEXO" Type="TB_DIV_ANEXO" IsForeignKey="true" />
+      <Association Name="TB_DIV_COMUNICADO_TB_DIV_COMUNICADO_X_ANEXO" Member="TB_DIV_COMUNICADO" ThisKey="ID_COMUNICADO" OtherKey="ID_COMUNICADO" Type="TB_DIV_COMUNICADO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_COMUNICADO_X_GRUPOUSUARIO" Member="TB_DIV_COMUNICADO_X_GRUPOUSUARIOs">
+    <Type Name="TB_DIV_COMUNICADO_X_GRUPOUSUARIO">
+      <Column Name="ID_COMUNICADO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_GRUPOUSUARIO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_COMUNICADO_TB_DIV_COMUNICADO_X_GRUPOUSUARIO" Member="TB_DIV_COMUNICADO" ThisKey="ID_COMUNICADO" OtherKey="ID_COMUNICADO" Type="TB_DIV_COMUNICADO" IsForeignKey="true" />
+      <Association Name="TB_DIV_GRUPOUSUARIO_TB_DIV_COMUNICADO_X_GRUPOUSUARIO" Member="TB_DIV_GRUPOUSUARIO" ThisKey="ID_GRUPOUSUARIO" OtherKey="ID_GRUPOUSUARIO" Type="TB_DIV_GRUPOUSUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_COMUNICADO_X_USUARIO" Member="TB_DIV_COMUNICADO_X_USUARIOs">
+    <Type Name="TB_DIV_COMUNICADO_X_USUARIO">
+      <Column Name="ID_COMUNICADO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_COMUNICADO_TB_DIV_COMUNICADO_X_USUARIO" Member="TB_DIV_COMUNICADO" ThisKey="ID_COMUNICADO" OtherKey="ID_COMUNICADO" Type="TB_DIV_COMUNICADO" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_COMUNICADO_X_USUARIO" Member="TB_DIV_USUARIO" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CONFIG_EMAIL" Member="TB_DIV_CONFIG_EMAILs">
+    <Type Name="TB_DIV_CONFIG_EMAIL">
+      <Column Name="DS_CONFIGURACAO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="SMTP" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="PORTA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SSL" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="SENHA" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="ST_ENVIAR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CONHECIMENTO" Member="TB_DIV_CONHECIMENTOs">
+    <Type Name="TB_DIV_CONHECIMENTO">
+      <Column Name="ID_CONHECIMENTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CATEGORIA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOGIN_CAD" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DS_CONHECIMENTO" Type="System.String" DbType="VarChar(1024)" CanBeNull="true" />
+      <Column Name="DS_TITULO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_LANCTO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CONHECIMENTO_TB_DIV_CONHECIMENTO_X_ANEXO" Member="TB_DIV_CONHECIMENTO_X_ANEXOs" ThisKey="ID_CONHECIMENTO" OtherKey="ID_CONHECIMENTO" Type="TB_DIV_CONHECIMENTO_X_ANEXO" />
+      <Association Name="TB_DIV_CATEGORIA_TB_DIV_CONHECIMENTO" Member="TB_DIV_CATEGORIA" ThisKey="ID_CATEGORIA" OtherKey="ID_CATEGORIA" Type="TB_DIV_CATEGORIA" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_CONHECIMENTO" Member="TB_DIV_USUARIO" ThisKey="LOGIN_CAD" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CONHECIMENTO_X_ANEXO" Member="TB_DIV_CONHECIMENTO_X_ANEXOs">
+    <Type Name="TB_DIV_CONHECIMENTO_X_ANEXO">
+      <Column Name="ID_CONHECIMENTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_ANEXO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_ANEXO_TB_DIV_CONHECIMENTO_X_ANEXO" Member="TB_DIV_ANEXO" ThisKey="ID_ANEXO" OtherKey="ID_ANEXO" Type="TB_DIV_ANEXO" IsForeignKey="true" />
+      <Association Name="TB_DIV_CONHECIMENTO_TB_DIV_CONHECIMENTO_X_ANEXO" Member="TB_DIV_CONHECIMENTO" ThisKey="ID_CONHECIMENTO" OtherKey="ID_CONHECIMENTO" Type="TB_DIV_CONHECIMENTO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_DEPARTAMENTO" Member="TB_DIV_DEPARTAMENTOs">
+    <Type Name="TB_DIV_DEPARTAMENTO">
+      <Column Name="ID_DEPARTAMENTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_DEPARTAMENTO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_DEPARTAMENTO_TB_DIV_CATEGORIA" Member="TB_DIV_CATEGORIAs" ThisKey="ID_DEPARTAMENTO" OtherKey="ID_DEPARTAMENTO" Type="TB_DIV_CATEGORIA" />
+      <Association Name="TB_DIV_DEPARTAMENTO_TB_DIV_CHAMADO" Member="TB_DIV_CHAMADOs" ThisKey="ID_DEPARTAMENTO" OtherKey="ID_DEPARTAMENTO" Type="TB_DIV_CHAMADO" />
+      <Association Name="TB_DIV_DEPARTAMENTO_TB_DIV_USUARIO" Member="TB_DIV_USUARIOs" ThisKey="ID_DEPARTAMENTO" OtherKey="ID_DEPARTAMENTO" Type="TB_DIV_USUARIO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_EQUIPAMENTO" Member="TB_DIV_EQUIPAMENTOs">
+    <Type Name="TB_DIV_EQUIPAMENTO">
+      <Column Name="ID_EQUIPAMENTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_GRUPO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_MODELO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NR_IDENTIFICACAO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="ST_ATIVO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_VALIDADE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_AQUISICAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_EQUIPAMENTO_TB_DIV_ALOCACAORECURSO" Member="TB_DIV_ALOCACAORECURSOs" ThisKey="ID_EQUIPAMENTO" OtherKey="ID_EQUIPAMENTO" Type="TB_DIV_ALOCACAORECURSO" />
+      <Association Name="TB_DIV_EQUIPAMENTO_TB_DIV_EQUIPAMENTO_X_ANEXO" Member="TB_DIV_EQUIPAMENTO_X_ANEXOs" ThisKey="ID_EQUIPAMENTO" OtherKey="ID_EQUIPAMENTO" Type="TB_DIV_EQUIPAMENTO_X_ANEXO" />
+      <Association Name="TB_DIV_EQUIPAMENTO_TB_DIV_EQUIPAMENTO_X_ITEM" Member="TB_DIV_EQUIPAMENTO_X_ITEMs" ThisKey="ID_EQUIPAMENTO" OtherKey="ID_EQUIPAMENTO" Type="TB_DIV_EQUIPAMENTO_X_ITEM" />
+      <Association Name="TB_DIV_EQUIPAMENTO_TB_DIV_EQUIPAMENTO_X_USUARIO" Member="TB_DIV_EQUIPAMENTO_X_USUARIOs" ThisKey="ID_EQUIPAMENTO" OtherKey="ID_EQUIPAMENTO" Type="TB_DIV_EQUIPAMENTO_X_USUARIO" />
+      <Association Name="TB_DIV_GRUPOPRODUTO_TB_DIV_EQUIPAMENTO" Member="TB_DIV_GRUPOPRODUTO" ThisKey="ID_GRUPO" OtherKey="ID_GRUPO" Type="TB_DIV_GRUPOPRODUTO" IsForeignKey="true" />
+      <Association Name="TB_DIV_MODELO_TB_DIV_EQUIPAMENTO" Member="TB_DIV_MODELO" ThisKey="ID_MODELO" OtherKey="ID_MODELO" Type="TB_DIV_MODELO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_EQUIPAMENTO_X_ANEXO" Member="TB_DIV_EQUIPAMENTO_X_ANEXOs">
+    <Type Name="TB_DIV_EQUIPAMENTO_X_ANEXO">
+      <Column Name="ID_EQUIPAMENTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_ANEXO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_ANEXO_TB_DIV_EQUIPAMENTO_X_ANEXO" Member="TB_DIV_ANEXO" ThisKey="ID_ANEXO" OtherKey="ID_ANEXO" Type="TB_DIV_ANEXO" IsForeignKey="true" />
+      <Association Name="TB_DIV_EQUIPAMENTO_TB_DIV_EQUIPAMENTO_X_ANEXO" Member="TB_DIV_EQUIPAMENTO" ThisKey="ID_EQUIPAMENTO" OtherKey="ID_EQUIPAMENTO" Type="TB_DIV_EQUIPAMENTO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_EQUIPAMENTO_X_ITEM" Member="TB_DIV_EQUIPAMENTO_X_ITEMs">
+    <Type Name="TB_DIV_EQUIPAMENTO_X_ITEM">
+      <Column Name="ID_ITEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_EQUIPAMENTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_EQUIPAMENTO_TB_DIV_EQUIPAMENTO_X_ITEM" Member="TB_DIV_EQUIPAMENTO" ThisKey="ID_EQUIPAMENTO" OtherKey="ID_EQUIPAMENTO" Type="TB_DIV_EQUIPAMENTO" IsForeignKey="true" />
+      <Association Name="TB_DIV_ITEM_TB_DIV_EQUIPAMENTO_X_ITEM" Member="TB_DIV_ITEM" ThisKey="ID_ITEM" OtherKey="ID_ITEM" Type="TB_DIV_ITEM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_EQUIPAMENTO_X_USUARIO" Member="TB_DIV_EQUIPAMENTO_X_USUARIOs">
+    <Type Name="TB_DIV_EQUIPAMENTO_X_USUARIO">
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_EQUIPAMENTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(1024) NOT NULL" CanBeNull="false" />
+      <Column Name="ST_USOCOMPARTILHADO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="LOGIN_CANCELAMENTO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DS_CANCELAMENTO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_EQUIPAMENTO_TB_DIV_EQUIPAMENTO_X_USUARIO" Member="TB_DIV_EQUIPAMENTO" ThisKey="ID_EQUIPAMENTO" OtherKey="ID_EQUIPAMENTO" Type="TB_DIV_EQUIPAMENTO" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_EQUIPAMENTO_X_USUARIO" Member="TB_DIV_USUARIO" ThisKey="LOGIN_CANCELAMENTO" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_EQUIPAMENTO_X_USUARIO1" Member="TB_DIV_USUARIO1" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_EVENTO_X_ANEXO" Member="TB_DIV_EVENTO_X_ANEXOs">
+    <Type Name="TB_DIV_EVENTO_X_ANEXO">
+      <Column Name="ID_EVENTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CHAMADO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_ANEXO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_ANEXO_TB_DIV_EVENTO_X_ANEXO" Member="TB_DIV_ANEXO" ThisKey="ID_ANEXO" OtherKey="ID_ANEXO" Type="TB_DIV_ANEXO" IsForeignKey="true" />
+      <Association Name="TB_DIV_EVENTO_TB_DIV_EVENTO_X_ANEXO" Member="TB_DIV_EVENTO" ThisKey="ID_EVENTO,ID_CHAMADO" OtherKey="ID_EVENTO,ID_CHAMADO" Type="TB_DIV_EVENTO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_GRUPOPRODUTO" Member="TB_DIV_GRUPOPRODUTOs">
+    <Type Name="TB_DIV_GRUPOPRODUTO">
+      <Column Name="ID_GRUPO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_GRUPO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_GRUPOPRODUTO_TB_DIV_EQUIPAMENTO" Member="TB_DIV_EQUIPAMENTOs" ThisKey="ID_GRUPO" OtherKey="ID_GRUPO" Type="TB_DIV_EQUIPAMENTO" />
+      <Association Name="TB_DIV_GRUPOPRODUTO_TB_DIV_ITEM" Member="TB_DIV_ITEMs" ThisKey="ID_GRUPO" OtherKey="ID_GRUPO" Type="TB_DIV_ITEM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_GRUPOUSUARIO" Member="TB_DIV_GRUPOUSUARIOs">
+    <Type Name="TB_DIV_GRUPOUSUARIO">
+      <Column Name="ID_GRUPOUSUARIO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_GRUPO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_GRUPOUSUARIO_TB_DIV_USUARIO_X_GRUPO" Member="TB_DIV_USUARIO_X_GRUPOs" ThisKey="ID_GRUPOUSUARIO" OtherKey="ID_GRUPOUSUARIO" Type="TB_DIV_USUARIO_X_GRUPO" />
+      <Association Name="TB_DIV_GRUPOUSUARIO_TB_DIV_ALOCACAORECURSO" Member="TB_DIV_ALOCACAORECURSOs" ThisKey="ID_GRUPOUSUARIO" OtherKey="ID_GRUPOUSUARIO" Type="TB_DIV_ALOCACAORECURSO" />
+      <Association Name="TB_DIV_GRUPOUSUARIO_TB_DIV_COMUNICADO_X_GRUPOUSUARIO" Member="TB_DIV_COMUNICADO_X_GRUPOUSUARIOs" ThisKey="ID_GRUPOUSUARIO" OtherKey="ID_GRUPOUSUARIO" Type="TB_DIV_COMUNICADO_X_GRUPOUSUARIO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_ITEM" Member="TB_DIV_ITEMs">
+    <Type Name="TB_DIV_ITEM">
+      <Column Name="ID_ITEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_GRUPO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_MODELO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_ITEM" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_ITEM_TB_DIV_EQUIPAMENTO_X_ITEM" Member="TB_DIV_EQUIPAMENTO_X_ITEMs" ThisKey="ID_ITEM" OtherKey="ID_ITEM" Type="TB_DIV_EQUIPAMENTO_X_ITEM" />
+      <Association Name="TB_DIV_GRUPOPRODUTO_TB_DIV_ITEM" Member="TB_DIV_GRUPOPRODUTO" ThisKey="ID_GRUPO" OtherKey="ID_GRUPO" Type="TB_DIV_GRUPOPRODUTO" IsForeignKey="true" />
+      <Association Name="TB_DIV_MODELO_TB_DIV_ITEM" Member="TB_DIV_MODELO" ThisKey="ID_MODELO" OtherKey="ID_MODELO" Type="TB_DIV_MODELO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_LOGIN_X_REGRAACESSO" Member="TB_DIV_LOGIN_X_REGRAACESSOs">
+    <Type Name="TB_DIV_LOGIN_X_REGRAACESSO">
+      <Column Name="ID_REGRAACESSO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_REGRAACESSO_TB_DIV_LOGIN_X_REGRAACESSO" Member="TB_DIV_REGRAACESSO" ThisKey="ID_REGRAACESSO" OtherKey="ID_REGRAACESSO" Type="TB_DIV_REGRAACESSO" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_LOGIN_X_REGRAACESSO" Member="TB_DIV_USUARIO" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_MARCA" Member="TB_DIV_MARCAs">
+    <Type Name="TB_DIV_MARCA">
+      <Column Name="ID_MARCA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_MARCA" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_MARCA_TB_DIV_MODELO" Member="TB_DIV_MODELOs" ThisKey="ID_MARCA" OtherKey="ID_MARCA" Type="TB_DIV_MODELO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_MENU" Member="TB_DIV_MENUs">
+    <Type Name="TB_DIV_MENU">
+      <Column Name="ID_MENU" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_MENU" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_MENU_TB_DIV_RELATORIO" Member="TB_DIV_RELATORIOs" ThisKey="ID_MENU" OtherKey="ID_MENU" Type="TB_DIV_RELATORIO" />
+      <Association Name="TB_DIV_MENU_TB_DIV_ACESSO" Member="TB_DIV_ACESSOs" ThisKey="ID_MENU" OtherKey="ID_MENU" Type="TB_DIV_ACESSO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_MODELO" Member="TB_DIV_MODELOs">
+    <Type Name="TB_DIV_MODELO">
+      <Column Name="ID_MODELO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_MARCA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_MODELO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_MODELO_TB_DIV_EQUIPAMENTO" Member="TB_DIV_EQUIPAMENTOs" ThisKey="ID_MODELO" OtherKey="ID_MODELO" Type="TB_DIV_EQUIPAMENTO" />
+      <Association Name="TB_DIV_MODELO_TB_DIV_ITEM" Member="TB_DIV_ITEMs" ThisKey="ID_MODELO" OtherKey="ID_MODELO" Type="TB_DIV_ITEM" />
+      <Association Name="TB_DIV_MARCA_TB_DIV_MODELO" Member="TB_DIV_MARCA" ThisKey="ID_MARCA" OtherKey="ID_MARCA" Type="TB_DIV_MARCA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_REGRAACESSO" Member="TB_DIV_REGRAACESSOs">
+    <Type Name="TB_DIV_REGRAACESSO">
+      <Column Name="ID_REGRAACESSO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_REGRA" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_REGRAACESSO_TB_DIV_LOGIN_X_REGRAACESSO" Member="TB_DIV_LOGIN_X_REGRAACESSOs" ThisKey="ID_REGRAACESSO" OtherKey="ID_REGRAACESSO" Type="TB_DIV_LOGIN_X_REGRAACESSO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_RELATORIO" Member="TB_DIV_RELATORIOs">
+    <Type Name="TB_DIV_RELATORIO">
+      <Column Name="ID_RELATORIO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_MENU" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="DS_RELATORIO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="ARQUIVO" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_MENU_TB_DIV_RELATORIO" Member="TB_DIV_MENU" ThisKey="ID_MENU" OtherKey="ID_MENU" Type="TB_DIV_MENU" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_SALVASENHA" Member="TB_DIV_SALVASENHAs">
+    <Type Name="TB_DIV_SALVASENHA">
+      <Column Name="ID_SALVASENHA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="SENHA" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_SALVASENHA" Member="TB_DIV_USUARIO" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_STATUS" Member="TB_DIV_STATUS">
+    <Type Name="TB_DIV_STATUS">
+      <Column Name="SIGLA_STATUS" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_STATUS" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ST_TEMPORIZAR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_AUTORIZAR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_INICIAR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_FINALIZAR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_INTERNO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_SOLICITANTE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_STATUS_TB_DIV_EVENTO" Member="TB_DIV_EVENTOs" ThisKey="SIGLA_STATUS" OtherKey="SIGLA_STATUS" Type="TB_DIV_EVENTO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_TRANSF_CATEGORIA" Member="TB_DIV_TRANSF_CATEGORIAs">
+    <Type Name="TB_DIV_TRANSF_CATEGORIA">
+      <Column Name="ID_CHAMADO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_TRANSF_CATEGORIA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ID_CATEGORIA_OLD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CATEGORIA_NEW" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CATEGORIA_TB_DIV_TRANSF_CATEGORIA" Member="TB_DIV_CATEGORIA" ThisKey="ID_CATEGORIA_NEW" OtherKey="ID_CATEGORIA" Type="TB_DIV_CATEGORIA" IsForeignKey="true" />
+      <Association Name="TB_DIV_CATEGORIA_TB_DIV_TRANSF_CATEGORIA1" Member="TB_DIV_CATEGORIA1" ThisKey="ID_CATEGORIA_OLD" OtherKey="ID_CATEGORIA" Type="TB_DIV_CATEGORIA" IsForeignKey="true" />
+      <Association Name="TB_DIV_CHAMADO_TB_DIV_TRANSF_CATEGORIA" Member="TB_DIV_CHAMADO" ThisKey="ID_CHAMADO" OtherKey="ID_CHAMADO" Type="TB_DIV_CHAMADO" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_TRANSF_CATEGORIA" Member="TB_DIV_USUARIO" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_USUARIO" Member="TB_DIV_USUARIOs">
+    <Type Name="TB_DIV_USUARIO">
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CARGO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_DEPARTAMENTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="NM_USUARIO" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="NR_CELULAR" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="NR_TELEFONE" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="SENHA" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="SKYPE" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="ST_ADMIN" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_USUARIO_X_GRUPO" Member="TB_DIV_USUARIO_X_GRUPOs" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_USUARIO_X_GRUPO" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_CHAMADO" Member="TB_DIV_CHAMADOs" ThisKey="LOGIN" OtherKey="LOGIN_SOLICITANTE" Type="TB_DIV_CHAMADO" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_CHAMADO1" Member="TB_DIV_CHAMADOs1" ThisKey="LOGIN" OtherKey="LOGIN_ATENDENTE" Type="TB_DIV_CHAMADO" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_COMUNICADO" Member="TB_DIV_COMUNICADOs" ThisKey="LOGIN" OtherKey="LOGIN_COMUNICADOR" Type="TB_DIV_COMUNICADO" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_COMUNICADO_X_USUARIO" Member="TB_DIV_COMUNICADO_X_USUARIOs" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_COMUNICADO_X_USUARIO" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_CONHECIMENTO" Member="TB_DIV_CONHECIMENTOs" ThisKey="LOGIN" OtherKey="LOGIN_CAD" Type="TB_DIV_CONHECIMENTO" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_EQUIPAMENTO_X_USUARIO" Member="TB_DIV_EQUIPAMENTO_X_USUARIOs" ThisKey="LOGIN" OtherKey="LOGIN_CANCELAMENTO" Type="TB_DIV_EQUIPAMENTO_X_USUARIO" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_EQUIPAMENTO_X_USUARIO1" Member="TB_DIV_EQUIPAMENTO_X_USUARIOs1" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_EQUIPAMENTO_X_USUARIO" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_LOGIN_X_REGRAACESSO" Member="TB_DIV_LOGIN_X_REGRAACESSOs" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_LOGIN_X_REGRAACESSO" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_SALVASENHA" Member="TB_DIV_SALVASENHAs" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_SALVASENHA" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_TRANSF_CATEGORIA" Member="TB_DIV_TRANSF_CATEGORIAs" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_TRANSF_CATEGORIA" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_ACESSO" Member="TB_DIV_ACESSOs" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_ACESSO" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_USUARIO" Member="TB_DIV_CLIFOR" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR" IsForeignKey="true" />
+      <Association Name="TB_DIV_CARGO_TB_DIV_USUARIO" Member="TB_DIV_CARGO" ThisKey="ID_CARGO" OtherKey="ID_CARGO" Type="TB_DIV_CARGO" IsForeignKey="true" />
+      <Association Name="TB_DIV_DEPARTAMENTO_TB_DIV_USUARIO" Member="TB_DIV_DEPARTAMENTO" ThisKey="ID_DEPARTAMENTO" OtherKey="ID_DEPARTAMENTO" Type="TB_DIV_DEPARTAMENTO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_ACESSO" Member="TB_DIV_ACESSOs">
+    <Type Name="TB_DIV_ACESSO">
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_MENU" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ST_CADASTRAR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_ALTERAR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_DELETAR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ST_RELATORIO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Association Name="TB_DIV_MENU_TB_DIV_ACESSO" Member="TB_DIV_MENU" ThisKey="ID_MENU" OtherKey="ID_MENU" Type="TB_DIV_MENU" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_ACESSO" Member="TB_DIV_USUARIO" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_EVENTOS" Member="TB_DIV_EVENTOs">
+    <Type Name="TB_DIV_EVENTO">
+      <Column Name="ID_EVENTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CHAMADO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SIGLA_STATUS" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="TP_EVENTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DS_EVENTO" Type="System.String" DbType="VarChar(1052)" CanBeNull="true" />
+      <Column Name="DT_EVENTO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LOGIN_ATENDENTE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LOGIN_FINALIZADOR" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="TB_DIV_EVENTO_TB_DIV_EVENTO_X_ANEXO" Member="TB_DIV_EVENTO_X_ANEXOs" ThisKey="ID_EVENTO,ID_CHAMADO" OtherKey="ID_EVENTO,ID_CHAMADO" Type="TB_DIV_EVENTO_X_ANEXO" />
+      <Association Name="TB_DIV_CHAMADO_TB_DIV_EVENTO" Member="TB_DIV_CHAMADO" ThisKey="ID_CHAMADO" OtherKey="ID_CHAMADO" Type="TB_DIV_CHAMADO" IsForeignKey="true" />
+      <Association Name="TB_DIV_STATUS_TB_DIV_EVENTO" Member="TB_DIV_STATUS" ThisKey="SIGLA_STATUS" OtherKey="SIGLA_STATUS" Type="TB_DIV_STATUS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.CAD_DIV_USUARIO_X_GRUPO" Method="CAD_DIV_USUARIO_X_GRUPO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_GRUPOUSUARIO" Parameter="iD_GRUPOUSUARIO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="LOGIN" Parameter="lOGIN" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_ALOCACAORECURSO" Method="CAD_DIV_ALOCACAORECURSO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_ALOCACAO" Parameter="iD_ALOCACAO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ID_GRUPOUSUARIO" Parameter="iD_GRUPOUSUARIO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_EQUIPAMENTO" Parameter="iD_EQUIPAMENTO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DS_OBSERVACAO" Parameter="dS_OBSERVACAO" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="DT_INICIO_HMS" Parameter="dT_INICIO_HMS" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="DT_FINAL_HMS" Parameter="dT_FINAL_HMS" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ST_REGISTRO" Parameter="sT_REGISTRO" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_ANEXO" Method="CAD_DIV_ANEXO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_ANEXO" Parameter="iD_ANEXO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ANEXO" Parameter="aNEXO" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="NM_ANEXO" Parameter="nM_ANEXO" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="EXTENSAO" Parameter="eXTENSAO" Type="System.String" DbType="VarChar(5)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_ANEXO_X_CHAMADO" Method="CAD_DIV_ANEXO_X_CHAMADO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_CHAMADO" Parameter="iD_CHAMADO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_ANEXO" Parameter="iD_ANEXO" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_CARGO" Method="CAD_DIV_CARGO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_CARGO" Parameter="iD_CARGO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="DS_CARGO" Parameter="dS_CARGO" Type="System.String" DbType="VarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_CATEGORIA" Method="CAD_DIV_CATEGORIA">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_CATEGORIA" Parameter="iD_CATEGORIA" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ID_DEPARTAMENTO" Parameter="iD_DEPARTAMENTO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DS_CATEGORIA" Parameter="dS_CATEGORIA" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="CLASSIFICACAO" Parameter="cLASSIFICACAO" Type="System.String" DbType="VarChar(14)" />
+    <Parameter Name="GRAVIDADE" Parameter="gRAVIDADE" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="TEMPO_HORA_MIN" Parameter="tEMPO_HORA_MIN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TEMPO_HORA_MAX" Parameter="tEMPO_HORA_MAX" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TIPO" Parameter="tIPO" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_CHAMADO" Method="CAD_DIV_CHAMADO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_CHAMADO" Parameter="iD_CHAMADO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ID_CATEGORIA" Parameter="iD_CATEGORIA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="LOGIN_SOLICITANTE" Parameter="lOGIN_SOLICITANTE" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="LOGIN_ATENDENTE" Parameter="lOGIN_ATENDENTE" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="ID_DEPARTAMENTO" Parameter="iD_DEPARTAMENTO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DS_CHAMADO" Parameter="dS_CHAMADO" Type="System.String" DbType="VarChar(1024)" />
+    <Parameter Name="DS_OBSERVACAO" Parameter="dS_OBSERVACAO" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DS_SOLUCAO" Parameter="dS_SOLUCAO" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DS_RESUMO" Parameter="dS_RESUMO" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DS_SUGESTAO" Parameter="dS_SUGESTAO" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="NOTA" Parameter="nOTA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ESTIMATIVA_TEMPO" Parameter="eSTIMATIVA_TEMPO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PRIORIDADE" Parameter="pRIORIDADE" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ST_CHAMADO" Parameter="sT_CHAMADO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="DT_CHAMADO" Parameter="dT_CHAMADO" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="DT_PREVISTA" Parameter="dT_PREVISTA" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="DT_FINALIZADO" Parameter="dT_FINALIZADO" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="DT_ATENDIMENTO" Parameter="dT_ATENDIMENTO" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="DT_REQUERIDO" Parameter="dT_REQUERIDO" Type="System.DateTime" DbType="DateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_CLIFOR" Method="CAD_DIV_CLIFOR">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_CLIFOR" Parameter="iD_CLIFOR" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="NM_CLIFOR" Parameter="nM_CLIFOR" Type="System.String" DbType="VarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_COMUNICADO" Method="CAD_DIV_COMUNICADO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_COMUNICADO" Parameter="iD_COMUNICADO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="LOGIN_COMUNICADOR" Parameter="lOGIN_COMUNICADOR" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="DS_COMUNICADO" Parameter="dS_COMUNICADO" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="ST_REGISTRO" Parameter="sT_REGISTRO" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_COMUNICADO_X_ANEXO" Method="CAD_DIV_COMUNICADO_X_ANEXO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_COMUNICADO" Parameter="iD_COMUNICADO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_ANEXO" Parameter="iD_ANEXO" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_COMUNICADO_X_GRUPOUSUARIO" Method="CAD_DIV_COMUNICADO_X_GRUPOUSUARIO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_COMUNICADO" Parameter="iD_COMUNICADO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_GRUPOUSUARIO" Parameter="iD_GRUPOUSUARIO" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_COMUNICADO_X_USUARIO" Method="CAD_DIV_COMUNICADO_X_USUARIO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_COMUNICADO" Parameter="iD_COMUNICADO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="LOGIN" Parameter="lOGIN" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_CONHECIMENTO" Method="CAD_DIV_CONHECIMENTO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_CONHECIMENTO" Parameter="iD_CONHECIMENTO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ID_CATEGORIA" Parameter="iD_CATEGORIA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="LOGIN_CAD" Parameter="lOGIN_CAD" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="DS_CONHECIMENTO" Parameter="dS_CONHECIMENTO" Type="System.String" DbType="VarChar(1024)" />
+    <Parameter Name="DS_TITULO" Parameter="dS_TITULO" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="ST_REGISTRO" Parameter="sT_REGISTRO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="DT_LANCTO" Parameter="dT_LANCTO" Type="System.DateTime" DbType="DateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_CONHECIMENTO_X_ANEXO" Method="CAD_DIV_CONHECIMENTO_X_ANEXO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_CONHECIMENTO" Parameter="iD_CONHECIMENTO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_ANEXO" Parameter="iD_ANEXO" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_DEPARTAMENTO" Method="CAD_DIV_DEPARTAMENTO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_DEPARTAMENTO" Parameter="iD_DEPARTAMENTO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="DS_DEPARTAMENTO" Parameter="dS_DEPARTAMENTO" Type="System.String" DbType="VarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_EQUIPAMENTO_X_ANEXO" Method="CAD_DIV_EQUIPAMENTO_X_ANEXO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_EQUIPAMENTO" Parameter="iD_EQUIPAMENTO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_ANEXO" Parameter="iD_ANEXO" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_EQUIPAMENTO_X_ITEM" Method="CAD_DIV_EQUIPAMENTO_X_ITEM">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_ITEM" Parameter="iD_ITEM" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_EQUIPAMENTO" Parameter="iD_EQUIPAMENTO" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_EVENTO_X_ANEXO" Method="CAD_DIV_EVENTO_X_ANEXO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_EVENTO" Parameter="iD_EVENTO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_CHAMADO" Parameter="iD_CHAMADO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_ANEXO" Parameter="iD_ANEXO" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_GRUPOPRODUTO" Method="CAD_DIV_GRUPOPRODUTO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_GRUPO" Parameter="iD_GRUPO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="DS_GRUPOPRODUTO" Parameter="dS_GRUPOPRODUTO" Type="System.String" DbType="VarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_GRUPOUSUARIO" Method="CAD_DIV_GRUPOUSUARIO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_GRUPOUSUARIO" Parameter="iD_GRUPOUSUARIO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="DS_GRUPOUSUARIO" Parameter="dS_GRUPOUSUARIO" Type="System.String" DbType="VarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_ITEM" Method="CAD_DIV_ITEM">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_ITEM" Parameter="iD_ITEM" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ID_GRUPO" Parameter="iD_GRUPO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_MODELO" Parameter="iD_MODELO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DS_ITEM" Parameter="dS_ITEM" Type="System.String" DbType="VarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_LOGIN_X_REGRAACESSO" Method="CAD_DIV_LOGIN_X_REGRAACESSO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_REGRAACESSO" Parameter="iD_REGRAACESSO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="LOGIN" Parameter="lOGIN" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_MARCA" Method="CAD_DIV_MARCA">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_MARCA" Parameter="iD_MARCA" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="DS_MARCA" Parameter="dS_MARCA" Type="System.String" DbType="VarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_MENU" Method="CAD_DIV_MENU">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_MENU" Parameter="iD_MENU" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="DS_MENU" Parameter="dS_MENU" Type="System.String" DbType="VarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_MODELO" Method="CAD_DIV_MODELO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_MODELO" Parameter="iD_MODELO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ID_MARCA" Parameter="iD_MARCA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DS_MODELO" Parameter="dS_MODELO" Type="System.String" DbType="VarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_REGRAACESSO" Method="CAD_DIV_REGRAACESSO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_REGRAACESSO" Parameter="iD_REGRAACESSO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="DS_REGRA" Parameter="dS_REGRA" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="DS_OBSERVACAO" Parameter="dS_OBSERVACAO" Type="System.String" DbType="VarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_RELATORIO" Method="CAD_DIV_RELATORIO">
+    <Parameter Name="ID_RELATORIO" Parameter="iD_RELATORIO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_MENU" Parameter="iD_MENU" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="DS_RELATORIO" Parameter="dS_RELATORIO" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="ARQUIVO" Parameter="aRQUIVO" Type="System.String" DbType="Text" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_SALVASENHA" Method="CAD_DIV_SALVASENHA">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_SALVASENHA" Parameter="iD_SALVASENHA" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="LOGIN" Parameter="lOGIN" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="DS_OBSERVACAO" Parameter="dS_OBSERVACAO" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="SENHA" Parameter="sENHA" Type="System.String" DbType="VarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_TRANSF_ATENDENTE" Method="CAD_DIV_TRANSF_ATENDENTE">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_CHAMADO" Parameter="iD_CHAMADO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_TRANSF_ATENDENTE" Parameter="iD_TRANSF_ATENDENTE" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="LOGIN_ATENDENTE_OLD" Parameter="lOGIN_ATENDENTE_OLD" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="LOGIN_ATENDENTE_NEW" Parameter="lOGIN_ATENDENTE_NEW" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="DS_MOTIVO" Parameter="dS_MOTIVO" Type="System.String" DbType="VarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_TRANSF_CATEGORIA" Method="CAD_DIV_TRANSF_CATEGORIA">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_CHAMADO" Parameter="iD_CHAMADO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_TRANSF_CATEGORIA" Parameter="iD_TRANSF_CATEGORIA" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="LOGIN" Parameter="lOGIN" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="ID_CATEGORIA_OLD" Parameter="iD_CATEGORIA_OLD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_CATEGORIA_NEW" Parameter="iD_CATEGORIA_NEW" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_STATUS" Method="CAD_DIV_STATUS">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="SIGLA_STATUS" Parameter="sIGLA_STATUS" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="DS_STATUS" Parameter="dS_STATUS" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="ST_TEMPORIZAR" Parameter="sT_TEMPORIZAR" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ST_AUTORIZAR" Parameter="sT_AUTORIZAR" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ST_INICIAR" Parameter="sT_INICIAR" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ST_FINALIZAR" Parameter="sT_FINALIZAR" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ST_REGISTRO" Parameter="sT_REGISTRO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ST_INTERNO" Parameter="sT_INTERNO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ST_SOLICITANTE" Parameter="sT_SOLICITANTE" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_USUARIO" Method="CAD_DIV_USUARIO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="LOGIN" Parameter="lOGIN" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="ID_CARGO" Parameter="iD_CARGO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_CLIFOR" Parameter="iD_CLIFOR" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_DEPARTAMENTO" Parameter="iD_DEPARTAMENTO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DS_OBSERVACAO" Parameter="dS_OBSERVACAO" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="NM_USUARIO" Parameter="nM_USUARIO" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="NR_CELULAR" Parameter="nR_CELULAR" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="NR_TELEFONE" Parameter="nR_TELEFONE" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="SENHA" Parameter="sENHA" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="EMAIL" Parameter="eMAIL" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="SKYPE" Parameter="sKYPE" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="ST_REGISTRO" Parameter="sT_REGISTRO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ST_ADMINISTRADOR" Parameter="sT_ADMINISTRADOR" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_EQUIPAMENTO" Method="CAD_DIV_EQUIPAMENTO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_EQUIPAMENTO" Parameter="iD_EQUIPAMENTO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ID_GRUPO" Parameter="iD_GRUPO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NR_IDENTIFICACAO" Parameter="nR_IDENTIFICACAO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DS_OBSERVACAO" Parameter="dS_OBSERVACAO" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="ST_ATIVO" Parameter="sT_ATIVO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="DT_VALIDADE" Parameter="dT_VALIDADE" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="DT_AQUISICAO" Parameter="dT_AQUISICAO" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ID_MODELO" Parameter="iD_MODELO" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_CONFIG_EMAIL" Method="CAD_DIV_CONFIG_EMAIL">
+    <Parameter Name="DS_CONFIGURACAO" Parameter="dS_CONFIGURACAO" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="SMTP" Parameter="sMTP" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="PORTA" Parameter="pORTA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SSL" Parameter="sSL" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="LOGIN" Parameter="lOGIN" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="SENHA" Parameter="sENHA" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="ST_ENVIAR" Parameter="sT_ENVIAR" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_EQUIPAMENTO_X_USUARIO" Method="CAD_DIV_EQUIPAMENTO_X_USUARIO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="LOGIN" Parameter="lOGIN" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="ID_EQUIPAMENTO" Parameter="iD_EQUIPAMENTO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DS_OBSERVACAO" Parameter="dS_OBSERVACAO" Type="System.String" DbType="VarChar(1024)" />
+    <Parameter Name="ST_USOCOMPARTILHADO" Parameter="sT_USOCOMPARTILHADO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ST_REGISTRO" Parameter="sT_REGISTRO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="LOGIN_CANCELAMENTO" Parameter="lOGIN_CANCELAMENTO" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="DS_CANCELAMENTO" Parameter="dS_CANCELAMENTO" Type="System.String" DbType="VarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_ACESSO" Method="CAD_DIV_ACESSO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="LOGIN" Parameter="lOGIN" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="ID_MENU" Parameter="iD_MENU" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="ST_CADASTRAR" Parameter="sT_CADASTRAR" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ST_ALTERAR" Parameter="sT_ALTERAR" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ST_DELETAR" Parameter="sT_DELETAR" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ST_VISUALIZAR_RELATORIO" Parameter="sT_VISUALIZAR_RELATORIO" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CAD_DIV_EVENTO" Method="CAD_DIV_EVENTO">
+    <Parameter Name="OPERACAO" Parameter="oPERACAO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="ID_EVENTO" Parameter="iD_EVENTO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ID_CHAMADO" Parameter="iD_CHAMADO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SIGLA_STATUS" Parameter="sIGLA_STATUS" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="DT_EVENTO" Parameter="dT_EVENTO" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="DS_EVENTO" Parameter="dS_EVENTO" Type="System.String" DbType="VarChar(1052)" />
+    <Parameter Name="TP_EVENTO" Parameter="tP_EVENTO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="LOGIN_ATENDENTE" Parameter="lOGIN_ATENDENTE" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="LOGIN_FINALIZADOR" Parameter="lOGIN_FINALIZADOR" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

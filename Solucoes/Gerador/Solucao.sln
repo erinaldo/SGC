@@ -1,0 +1,107 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplicativo", "Aplicativo\Aplicativo.csproj", "{82D0A250-053E-48B9-A78C-777228A7CFD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extras", "Extras\Extras.csproj", "{DAA501D1-BD1D-48C2-846C-CB1C3EB959EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Componentes", "..\Padrao\Componentes\Componentes.csproj", "{587F1754-0A23-4275-A463-A7FB751969C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formas", "..\Padrao\Formas\Formas.csproj", "{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilidades", "..\Padrao\Utilidades\Utilidades.csproj", "{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "..\SGC\Entidades\Entidades.csproj", "{B9E15BEE-1056-4763-9B78-37DCA0289C4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consultas", "..\SGC\Consultas\Consultas.csproj", "{CA521FE9-E62B-4467-816D-708F48721446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "..\SGC\Modelo\Modelo.csproj", "{B9AFA29D-5763-4C7E-8208-ABD134C4B06F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://lorensoft-srv:8080/tfs/lorensoft
+		SccProjectUniqueName0 = Aplicativo\\Aplicativo.csproj
+		SccProjectName0 = Aplicativo
+		SccAuxPath0 = http://lorensoft-srv:8080/tfs/lorensoft
+		SccLocalPath0 = Aplicativo
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = Extras\\Extras.csproj
+		SccProjectName1 = Extras
+		SccAuxPath1 = http://lorensoft-srv:8080/tfs/lorensoft
+		SccLocalPath1 = Extras
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = ..\\Padrao\\Componentes\\Componentes.csproj
+		SccProjectName2 = ../Padrao/Componentes
+		SccAuxPath2 = http://lorensoft-srv:8080/tfs/lorensoft
+		SccLocalPath2 = ..\\Padrao\\Componentes
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = ..\\Padrao\\Formas\\Formas.csproj
+		SccProjectName3 = ../Padrao/Formas
+		SccAuxPath3 = http://lorensoft-srv:8080/tfs/lorensoft
+		SccLocalPath3 = ..\\Padrao\\Formas
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName4 = ..\\Padrao\\Utilidades\\Utilidades.csproj
+		SccProjectName4 = ../Padrao/Utilidades
+		SccAuxPath4 = http://lorensoft-srv:8080/tfs/lorensoft
+		SccLocalPath4 = ..\\Padrao\\Utilidades
+		SccProvider4 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName5 = ..\\SGC\\Entidades\\Entidades.csproj
+		SccProjectName5 = ../SGC/Entidades
+		SccAuxPath5 = http://lorensoft-srv:8080/tfs/lorensoft
+		SccLocalPath5 = ..\\SGC\\Entidades
+		SccProvider5 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName6 = ..\\SGC\\Consultas\\Consultas.csproj
+		SccProjectName6 = ../SGC/Consultas
+		SccAuxPath6 = http://lorensoft-srv:8080/tfs/lorensoft
+		SccLocalPath6 = ..\\SGC\\Consultas
+		SccProvider6 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName7 = ..\\SGC\\Modelo\\Modelo.csproj
+		SccProjectName7 = ../SGC/Modelo
+		SccAuxPath7 = http://lorensoft-srv:8080/tfs/lorensoft
+		SccLocalPath7 = ..\\SGC\\Modelo
+		SccProvider7 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82D0A250-053E-48B9-A78C-777228A7CFD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D0A250-053E-48B9-A78C-777228A7CFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D0A250-053E-48B9-A78C-777228A7CFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D0A250-053E-48B9-A78C-777228A7CFD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA501D1-BD1D-48C2-846C-CB1C3EB959EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA501D1-BD1D-48C2-846C-CB1C3EB959EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA501D1-BD1D-48C2-846C-CB1C3EB959EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA501D1-BD1D-48C2-846C-CB1C3EB959EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{587F1754-0A23-4275-A463-A7FB751969C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587F1754-0A23-4275-A463-A7FB751969C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587F1754-0A23-4275-A463-A7FB751969C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587F1754-0A23-4275-A463-A7FB751969C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E15BEE-1056-4763-9B78-37DCA0289C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E15BEE-1056-4763-9B78-37DCA0289C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E15BEE-1056-4763-9B78-37DCA0289C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E15BEE-1056-4763-9B78-37DCA0289C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA521FE9-E62B-4467-816D-708F48721446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA521FE9-E62B-4467-816D-708F48721446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA521FE9-E62B-4467-816D-708F48721446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA521FE9-E62B-4467-816D-708F48721446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9AFA29D-5763-4C7E-8208-ABD134C4B06F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9AFA29D-5763-4C7E-8208-ABD134C4B06F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9AFA29D-5763-4C7E-8208-ABD134C4B06F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9AFA29D-5763-4C7E-8208-ABD134C4B06F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

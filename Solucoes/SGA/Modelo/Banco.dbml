@@ -1,0 +1,1270 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SGA" Class="BancoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\LUCAS;Initial Catalog=SGA;Integrated Security=True" SettingsObjectName="Modelo.Properties.Settings" SettingsPropertyName="SGAConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TB_DIV_ACESSO" Member="TB_DIV_ACESSOs">
+    <Type Name="TB_DIV_ACESSO">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_MENU" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ST_ALTERAR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_EXCLUIR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_INCLUIR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_ACESSO_TB_DIV_REGRAESPECIAL" Member="TB_DIV_REGRAESPECIALs" ThisKey="ID_MENU,LOGIN,ID_EMPRESA" OtherKey="ID_MENU,LOGIN,ID_EMPRESA" Type="TB_DIV_REGRAESPECIAL" />
+      <Association Name="TB_DIV_USUARIO_X_EMPRESA_TB_DIV_ACESSO" Member="TB_DIV_USUARIO_X_EMPRESA" ThisKey="LOGIN,ID_EMPRESA" OtherKey="LOGIN,ID_EMPRESA" Type="TB_DIV_USUARIO_X_EMPRESA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLO" Member="TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLOs">
+    <Type Name="TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLO">
+      <Column Name="ID_CONFIGPROTOCOLO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_TIPOPESAGEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CONFIGPROTOCOLO_TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLO" Member="TB_DIV_CONFIGPROTOCOLO" ThisKey="ID_CONFIGPROTOCOLO" OtherKey="ID_CONFIGPROTOCOLO" Type="TB_DIV_CONFIGPROTOCOLO" IsForeignKey="true" />
+      <Association Name="TB_GRA_TIPOPESAGEM_TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLO" Member="TB_GRA_TIPOPESAGEM" ThisKey="ID_TIPOPESAGEM" OtherKey="ID_TIPOPESAGEM" Type="TB_GRA_TIPOPESAGEM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CIDADE" Member="TB_DIV_CIDADEs">
+    <Type Name="TB_DIV_CIDADE">
+      <Column Name="CD_CIDADE" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UF" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="DS_CIDADE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CIDADE_TB_DIV_ENDERECO" Member="TB_DIV_ENDERECOs" ThisKey="CD_CIDADE" OtherKey="CD_CIDADE" Type="TB_DIV_ENDERECO" />
+      <Association Name="TB_DIV_UF_TB_DIV_CIDADE" Member="TB_DIV_UF" ThisKey="UF" OtherKey="UF" Type="TB_DIV_UF" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CLFOR_PJ" Member="TB_DIV_CLFOR_PJs">
+    <Type Name="TB_DIV_CLFOR_PJ">
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NM_RAZAOSOCIAL" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="NM_FANTASIA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="NR_CNPJ" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_CLFOR_PJ" Member="TB_DIV_CLIFOR" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CLIFOR" Member="TB_DIV_CLIFORs">
+    <Type Name="TB_DIV_CLIFOR">
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CATEGORIAFISCAL_CLIFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NM_CLIFOR" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TP_PESSOA" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="TP_CLIFOR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_CLFOR_PJ" Member="TB_DIV_CLFOR_PJ" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLFOR_PJ" Cardinality="One" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_CLIFOR_DADOSBANCARIO" Member="TB_DIV_CLIFOR_DADOSBANCARIOs" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR_DADOSBANCARIO" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_CLIFOR_PF" Member="TB_DIV_CLIFOR_PF" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR_PF" Cardinality="One" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_CONTATO" Member="TB_DIV_CONTATOs" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CONTATO" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_EMPRESA" Member="TB_DIV_EMPRESAs" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_EMPRESA" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_ENDERECO" Member="TB_DIV_ENDERECOs" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_ENDERECO" />
+      <Association Name="TB_DIV_CLIFOR_TB_FIN_CHEQUETED" Member="TB_FIN_CHEQUETEDs" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_FIN_CHEQUETED" />
+      <Association Name="TB_DIV_CLIFOR_TB_FIN_DUPLICATA" Member="TB_FIN_DUPLICATAs" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_FIN_DUPLICATA" />
+      <Association Name="TB_DIV_CLIFOR_TB_FIS_CONTRATO" Member="TB_FIS_CONTRATOs" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_FIS_CONTRATO" />
+      <Association Name="TB_DIV_CLIFOR_TB_FIS_NOTAFISCAL" Member="TB_FIS_NOTAFISCALs" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_FIS_NOTAFISCAL" />
+      <Association Name="TB_DIV_CLIFOR_TB_GRA_PESAGEM" Member="TB_GRA_PESAGEMs" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_GRA_PESAGEM" />
+      <Association Name="TB_FIS_CATEGORIAFISCAL_CLIFOR_TB_DIV_CLIFOR" Member="TB_FIS_CATEGORIAFISCAL_CLIFOR" ThisKey="ID_CATEGORIAFISCAL_CLIFOR" OtherKey="ID_CATEGORIAFISCAL_CLIFOR" Type="TB_FIS_CATEGORIAFISCAL_CLIFOR" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CLIFOR_DADOSBANCARIOS" Member="TB_DIV_CLIFOR_DADOSBANCARIOs">
+    <Type Name="TB_DIV_CLIFOR_DADOSBANCARIO">
+      <Column Name="ID_DADOSBANCARIOS" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_BANCO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NR_AGENCIA" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="NR_CONTA" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_CLIFOR_DADOSBANCARIO" Member="TB_DIV_CLIFOR" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR" IsForeignKey="true" />
+      <Association Name="TB_FIN_BANCO_TB_DIV_CLIFOR_DADOSBANCARIO" Member="TB_FIN_BANCO" ThisKey="ID_BANCO" OtherKey="ID_BANCO" Type="TB_FIN_BANCO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CLIFOR_PF" Member="TB_DIV_CLIFOR_PFs">
+    <Type Name="TB_DIV_CLIFOR_PF">
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NR_CPF" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="RG" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="NR_PIS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_CLIFOR_PF" Member="TB_DIV_CLIFOR" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CONFIGPROTOCOLO" Member="TB_DIV_CONFIGPROTOCOLOs">
+    <Type Name="TB_DIV_CONFIGPROTOCOLO">
+      <Column Name="ID_CONFIGPROTOCOLO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_CONFIGPROTOCOLO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TP_LEITURA" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DS_PORTA" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="BITS_POR_SEG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DATA_BITS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="PARIDADE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="STOP_BITS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FLOW_CONTROL" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="SOMENTENUM" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="PALAVRACHAVE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="POSICAO_INI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="POSICAO_FIN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CONFIGPROTOCOLO_TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLO" Member="TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLOs" ThisKey="ID_CONFIGPROTOCOLO" OtherKey="ID_CONFIGPROTOCOLO" Type="TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_CONTATO" Member="TB_DIV_CONTATOs">
+    <Type Name="TB_DIV_CONTATO">
+      <Column Name="ID_CONTATO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TELEFONE" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="NOME" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ST_PRINCIPAL" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_CONTATO" Member="TB_DIV_CLIFOR" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_EMPRESA" Member="TB_DIV_EMPRESAs">
+    <Type Name="TB_DIV_EMPRESA">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_ENDERECO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_EMPRESA_MATRIZ" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NM_EMPRESA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CRC_CONTADOR" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NM_CONTADOR" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_NIRE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RENASEM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CNAE_FISCAL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="TB_DIV_EMPRESA_TB_DIV_EMPRESA" Member="TB_DIV_EMPRESAs" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA_MATRIZ" Type="TB_DIV_EMPRESA" />
+      <Association Name="TB_DIV_EMPRESA_TB_DIV_USUARIO_X_EMPRESA" Member="TB_DIV_USUARIO_X_EMPRESAs" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_DIV_USUARIO_X_EMPRESA" />
+      <Association Name="TB_DIV_EMPRESA_TB_EST_ESTOQUE" Member="TB_EST_ESTOQUEs" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_EST_ESTOQUE" />
+      <Association Name="TB_DIV_EMPRESA_TB_FIN_DUPLICATA" Member="TB_FIN_DUPLICATAs" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_FIN_DUPLICATA" />
+      <Association Name="TB_DIV_EMPRESA_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_CONFIGURACAO_IMPOSTOs" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <Association Name="TB_DIV_EMPRESA_TB_FIS_CONTRATO" Member="TB_FIS_CONTRATOs" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_FIS_CONTRATO" />
+      <Association Name="TB_DIV_EMPRESA_TB_FIS_MODELO" Member="TB_FIS_MODELOs" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_FIS_MODELO" />
+      <Association Name="TB_DIV_EMPRESA_TB_FIS_OBSERVACAOFISCAL" Member="TB_FIS_OBSERVACAOFISCALs" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_FIS_OBSERVACAOFISCAL" />
+      <Association Name="TB_DIV_EMPRESA_TB_FIS_SERIE" Member="TB_FIS_SERIEs" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_FIS_SERIE" />
+      <Association Name="TB_DIV_EMPRESA_TB_GRA_PESAGEM" Member="TB_GRA_PESAGEMs" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_GRA_PESAGEM" />
+      <Association Name="TB_DIV_EMPRESA_TB_GRA_TAXAPADRAO" Member="TB_GRA_TAXAPADRAOs" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_GRA_TAXAPADRAO" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_EMPRESA" Member="TB_DIV_CLIFOR" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR" IsForeignKey="true" />
+      <Association Name="TB_DIV_EMPRESA_TB_DIV_EMPRESA" Member="TB_DIV_EMPRESA1" ThisKey="ID_EMPRESA_MATRIZ" OtherKey="ID_EMPRESA" Type="TB_DIV_EMPRESA" IsForeignKey="true" />
+      <Association Name="TB_DIV_ENDERECO_TB_DIV_EMPRESA" Member="TB_DIV_ENDERECO" ThisKey="ID_CLIFOR,ID_ENDERECO" OtherKey="ID_CLIFOR,ID_ENDERECO" Type="TB_DIV_ENDERECO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_ENDERECO" Member="TB_DIV_ENDERECOs">
+    <Type Name="TB_DIV_ENDERECO">
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_ENDERECO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CD_CIDADE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_PAIS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_ENDERECO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="INSC_ESTADUAL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="INSC_MUNICIPAL" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="INSC_SUFRAMA" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NUMERO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CX_POSTAL" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CEP" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="DS_COMPLEMENTO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="BAIRRO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_ENDERECO_TB_DIV_EMPRESA" Member="TB_DIV_EMPRESAs" ThisKey="ID_CLIFOR,ID_ENDERECO" OtherKey="ID_CLIFOR,ID_ENDERECO" Type="TB_DIV_EMPRESA" />
+      <Association Name="TB_DIV_ENDERECO_TB_FIN_DUPLICATA" Member="TB_FIN_DUPLICATAs" ThisKey="ID_CLIFOR,ID_ENDERECO" OtherKey="ID_CLIFOR,ID_ENDERECO" Type="TB_FIN_DUPLICATA" />
+      <Association Name="TB_DIV_ENDERECO_TB_FIS_NOTAFISCAL" Member="TB_FIS_NOTAFISCALs" ThisKey="ID_CLIFOR,ID_ENDERECO" OtherKey="ID_CLIFOR_TRANSP,ID_ENDERECO_TRANSP" Type="TB_FIS_NOTAFISCAL" />
+      <Association Name="TB_DIV_ENDERECO_TB_FIS_NOTAFISCAL1" Member="TB_FIS_NOTAFISCALs1" ThisKey="ID_CLIFOR,ID_ENDERECO" OtherKey="ID_CLIFOR,ID_ENDERECO" Type="TB_FIS_NOTAFISCAL" />
+      <Association Name="TB_DIV_CIDADE_TB_DIV_ENDERECO" Member="TB_DIV_CIDADE" ThisKey="CD_CIDADE" OtherKey="CD_CIDADE" Type="TB_DIV_CIDADE" IsForeignKey="true" />
+      <Association Name="TB_DIV_CLIFOR_TB_DIV_ENDERECO" Member="TB_DIV_CLIFOR" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR" IsForeignKey="true" />
+      <Association Name="TB_DIV_PAI_TB_DIV_ENDERECO" Member="TB_DIV_PAI" ThisKey="ID_PAIS" OtherKey="ID_PAIS" Type="TB_DIV_PAI" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_PAIS" Member="TB_DIV_PAIs">
+    <Type Name="TB_DIV_PAI">
+      <Column Name="ID_PAIS" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NM_PAIS" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_PAI_TB_DIV_ENDERECO" Member="TB_DIV_ENDERECOs" ThisKey="ID_PAIS" OtherKey="ID_PAIS" Type="TB_DIV_ENDERECO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_REGRAESPECIAL" Member="TB_DIV_REGRAESPECIALs">
+    <Type Name="TB_DIV_REGRAESPECIAL">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_REGRA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_MENU" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="NM_REGRA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="OBS_REGRA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_ACESSO_TB_DIV_REGRAESPECIAL" Member="TB_DIV_ACESSO" ThisKey="ID_MENU,LOGIN,ID_EMPRESA" OtherKey="ID_MENU,LOGIN,ID_EMPRESA" Type="TB_DIV_ACESSO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_UF" Member="TB_DIV_UFs">
+    <Type Name="TB_DIV_UF">
+      <Column Name="UF" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_UF" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CD_UF" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_UF_TB_DIV_CIDADE" Member="TB_DIV_CIDADEs" ThisKey="UF" OtherKey="UF" Type="TB_DIV_CIDADE" />
+      <Association Name="TB_DIV_UF_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_CONFIGURACAO_IMPOSTOs" ThisKey="UF" OtherKey="UF_ORIG" Type="TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <Association Name="TB_DIV_UF_TB_FIS_CONFIGURACAO_IMPOSTO1" Member="TB_FIS_CONFIGURACAO_IMPOSTOs1" ThisKey="UF" OtherKey="UF_DEST" Type="TB_FIS_CONFIGURACAO_IMPOSTO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_USUARIO" Member="TB_DIV_USUARIOs">
+    <Type Name="TB_DIV_USUARIO">
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SENHA" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NM_USUARIO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TELEFONE" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_USUARIO_X_EMPRESA" Member="TB_DIV_USUARIO_X_EMPRESAs" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_USUARIO_X_EMPRESA" />
+      <Association Name="TB_DIV_USUARIO_TB_FIN_DUPLICATA" Member="TB_FIN_DUPLICATAs" ThisKey="LOGIN" OtherKey="LOGIN_LANCTO" Type="TB_FIN_DUPLICATA" />
+      <Association Name="TB_DIV_USUARIO_TB_FIN_LIQUIDACAO" Member="TB_FIN_LIQUIDACAOs" ThisKey="LOGIN" OtherKey="LOGIN_LANCTO" Type="TB_FIN_LIQUIDACAO" />
+      <Association Name="TB_DIV_USUARIO_TB_FIN_PROGRAMACAO" Member="TB_FIN_PROGRAMACAOs" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_FIN_PROGRAMACAO" />
+      <Association Name="TB_DIV_USUARIO_TB_FIS_CONTRATO" Member="TB_FIS_CONTRATOs" ThisKey="LOGIN" OtherKey="LOGIN_LANCTO" Type="TB_FIS_CONTRATO" />
+      <Association Name="TB_DIV_USUARIO_TB_FIS_CONTRATOACOMPANHAMENTO" Member="TB_FIS_CONTRATOACOMPANHAMENTOs" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_FIS_CONTRATOACOMPANHAMENTO" />
+      <Association Name="TB_DIV_USUARIO_TB_FIS_NOTAFISCAL" Member="TB_FIS_NOTAFISCALs" ThisKey="LOGIN" OtherKey="LOGIN_EMISSOR" Type="TB_FIS_NOTAFISCAL" />
+      <Association Name="TB_DIV_USUARIO_TB_GRA_PESAGEM" Member="TB_GRA_PESAGEMs" ThisKey="LOGIN" OtherKey="LOGIN_AUTORIZ" Type="TB_GRA_PESAGEM" />
+      <Association Name="TB_DIV_USUARIO_TB_GRA_PESAGEM1" Member="TB_GRA_PESAGEMs1" ThisKey="LOGIN" OtherKey="LOGIN_BRUTO" Type="TB_GRA_PESAGEM" />
+      <Association Name="TB_DIV_USUARIO_TB_GRA_PESAGEM2" Member="TB_GRA_PESAGEMs2" ThisKey="LOGIN" OtherKey="LOGIN_TARA" Type="TB_GRA_PESAGEM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_DIV_USUARIO_X_EMPRESA" Member="TB_DIV_USUARIO_X_EMPRESAs">
+    <Type Name="TB_DIV_USUARIO_X_EMPRESA">
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_USUARIO_X_EMPRESA_TB_DIV_ACESSO" Member="TB_DIV_ACESSOs" ThisKey="LOGIN,ID_EMPRESA" OtherKey="LOGIN,ID_EMPRESA" Type="TB_DIV_ACESSO" />
+      <Association Name="TB_DIV_EMPRESA_TB_DIV_USUARIO_X_EMPRESA" Member="TB_DIV_EMPRESA" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_DIV_EMPRESA" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_DIV_USUARIO_X_EMPRESA" Member="TB_DIV_USUARIO" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_EST_CONTRATOITEM_X_ESTOQUE" Member="TB_EST_CONTRATOITEM_X_ESTOQUEs">
+    <Type Name="TB_EST_CONTRATOITEM_X_ESTOQUE">
+      <Column Name="ID_LANCTOESTOQUE" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PRODUTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_ITEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NR_CONTRATO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_EST_CONTRATOITEM_X_ESTOQUE_TB_EST_TRANSFERENCIA_X_ESTOQUE" Member="TB_EST_TRANSFERENCIA_X_ESTOQUEs" ThisKey="ID_LANCTOESTOQUE,ID_EMPRESA,ID_PRODUTO,ID_ITEM,NR_CONTRATO" OtherKey="ID_LANCTOESTOQUE,ID_EMPRESA,ID_PRODUTO,ID_ITEM,NR_CONTRATO" Type="TB_EST_TRANSFERENCIA_X_ESTOQUE" />
+      <Association Name="TB_EST_ESTOQUE_TB_EST_CONTRATOITEM_X_ESTOQUE" Member="TB_EST_ESTOQUE" ThisKey="ID_LANCTOESTOQUE,ID_EMPRESA,ID_PRODUTO" OtherKey="ID_LANCTOESTOQUE,ID_EMPRESA,ID_PRODUTO" Type="TB_EST_ESTOQUE" IsForeignKey="true" />
+      <Association Name="TB_FIS_CONTRATO_ITEM_TB_EST_CONTRATOITEM_X_ESTOQUE" Member="TB_FIS_CONTRATO_ITEM" ThisKey="ID_ITEM,NR_CONTRATO,ID_EMPRESA" OtherKey="ID_ITEM,NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATO_ITEM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_EST_CONVERSAOUNID" Member="TB_EST_CONVERSAOUNIDs">
+    <Type Name="TB_EST_CONVERSAOUNID">
+      <Column Name="ID_UNIDADE_ORIGEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_UNIDADE_DESTINO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TP_FATOR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="VL_FATOR" Type="System.Decimal" DbType="Decimal(15,5)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_EST_UNIDADE_TB_EST_CONVERSAOUNID" Member="TB_EST_UNIDADE" ThisKey="ID_UNIDADE_DESTINO" OtherKey="ID_UNIDADE" Type="TB_EST_UNIDADE" IsForeignKey="true" />
+      <Association Name="TB_EST_UNIDADE_TB_EST_CONVERSAOUNID1" Member="TB_EST_UNIDADE1" ThisKey="ID_UNIDADE_ORIGEM" OtherKey="ID_UNIDADE" Type="TB_EST_UNIDADE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_EST_ESTOQUE" Member="TB_EST_ESTOQUEs">
+    <Type Name="TB_EST_ESTOQUE">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PRODUTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTOESTOQUE" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="QUANTIDADE" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VL_SUBTOTAL" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VL_UNIT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="TP_MOVIMENTO" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_EST_ESTOQUE_TB_EST_CONTRATOITEM_X_ESTOQUE" Member="TB_EST_CONTRATOITEM_X_ESTOQUEs" ThisKey="ID_LANCTOESTOQUE,ID_EMPRESA,ID_PRODUTO" OtherKey="ID_LANCTOESTOQUE,ID_EMPRESA,ID_PRODUTO" Type="TB_EST_CONTRATOITEM_X_ESTOQUE" />
+      <Association Name="TB_EST_ESTOQUE_TB_FIS_NF_X_ESTOQUE" Member="TB_FIS_NF_X_ESTOQUEs" ThisKey="ID_LANCTOESTOQUE,ID_EMPRESA,ID_PRODUTO" OtherKey="ID_LANCTOESTOQUE,ID_EMPRESA,ID_PRODUTO" Type="TB_FIS_NF_X_ESTOQUE" />
+      <Association Name="TB_DIV_EMPRESA_TB_EST_ESTOQUE" Member="TB_DIV_EMPRESA" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_DIV_EMPRESA" IsForeignKey="true" />
+      <Association Name="TB_EST_PRODUTO_TB_EST_ESTOQUE" Member="TB_EST_PRODUTO" ThisKey="ID_PRODUTO" OtherKey="ID_PRODUTO" Type="TB_EST_PRODUTO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_EST_GENERO" Member="TB_EST_GENEROs">
+    <Type Name="TB_EST_GENERO">
+      <Column Name="ID_GENERO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_GENERO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_EST_GENERO_TB_EST_PRODUTO" Member="TB_EST_PRODUTOs" ThisKey="ID_GENERO" OtherKey="ID_GENERO" Type="TB_EST_PRODUTO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_EST_GRUPOPRODUTO" Member="TB_EST_GRUPOPRODUTOs">
+    <Type Name="TB_EST_GRUPOPRODUTO">
+      <Column Name="ID_GRUPOPRODUTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_GRUPO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_EST_GRUPOPRODUTO_TB_EST_PRODUTO" Member="TB_EST_PRODUTOs" ThisKey="ID_GRUPOPRODUTO" OtherKey="ID_GRUPOPRODUTO" Type="TB_EST_PRODUTO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_EST_LOCAL" Member="TB_EST_LOCALs">
+    <Type Name="TB_EST_LOCAL">
+      <Column Name="ID_LOCAL" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_LOCAL" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_EST_LOCAL_TB_GRA_PESAGEM" Member="TB_GRA_PESAGEMs" ThisKey="ID_LOCAL" OtherKey="ID_LOCAL" Type="TB_GRA_PESAGEM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_EST_MARCA" Member="TB_EST_MARCAs">
+    <Type Name="TB_EST_MARCA">
+      <Column Name="ID_MARCA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_MARCA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_EST_MARCA_TB_EST_PRODUTO" Member="TB_EST_PRODUTOs" ThisKey="ID_MARCA" OtherKey="ID_MARCA" Type="TB_EST_PRODUTO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_EST_MODELO" Member="TB_EST_MODELOs">
+    <Type Name="TB_EST_MODELO">
+      <Column Name="ID_MODELO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_MODELO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_EST_MODELO_TB_EST_PRODUTO" Member="TB_EST_PRODUTOs" ThisKey="ID_MODELO" OtherKey="ID_MODELO" Type="TB_EST_PRODUTO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_EST_PRODUTO" Member="TB_EST_PRODUTOs">
+    <Type Name="TB_EST_PRODUTO">
+      <Column Name="ID_PRODUTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_NCM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_UNIDADE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CATEGORIAFISCAL_PRODUTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_GRUPOPRODUTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_MARCA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_MODELO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_GENERO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_PRODUTO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TP_PRODUTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="QTD_MIN" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="QTD_MAX" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_EST_PRODUTO_TB_EST_ESTOQUE" Member="TB_EST_ESTOQUEs" ThisKey="ID_PRODUTO" OtherKey="ID_PRODUTO" Type="TB_EST_ESTOQUE" />
+      <Association Name="TB_EST_PRODUTO_TB_FIS_CONTRATO_ITEM" Member="TB_FIS_CONTRATO_ITEMs" ThisKey="ID_PRODUTO" OtherKey="ID_PRODUTO" Type="TB_FIS_CONTRATO_ITEM" />
+      <Association Name="TB_EST_PRODUTO_TB_FIS_NOTAFISCAL_ITEM" Member="TB_FIS_NOTAFISCAL_ITEMs" ThisKey="ID_PRODUTO" OtherKey="ID_PRODUTO" Type="TB_FIS_NOTAFISCAL_ITEM" />
+      <Association Name="TB_EST_PRODUTO_TB_GRA_PESAGEM" Member="TB_GRA_PESAGEMs" ThisKey="ID_PRODUTO" OtherKey="ID_PRODUTO" Type="TB_GRA_PESAGEM" />
+      <Association Name="TB_EST_PRODUTO_TB_GRA_TABELA_X_AMOSTRA" Member="TB_GRA_TABELA_X_AMOSTRAs" ThisKey="ID_PRODUTO" OtherKey="ID_PRODUTO" Type="TB_GRA_TABELA_X_AMOSTRA" />
+      <Association Name="TB_EST_GENERO_TB_EST_PRODUTO" Member="TB_EST_GENERO" ThisKey="ID_GENERO" OtherKey="ID_GENERO" Type="TB_EST_GENERO" IsForeignKey="true" />
+      <Association Name="TB_EST_GRUPOPRODUTO_TB_EST_PRODUTO" Member="TB_EST_GRUPOPRODUTO" ThisKey="ID_GRUPOPRODUTO" OtherKey="ID_GRUPOPRODUTO" Type="TB_EST_GRUPOPRODUTO" IsForeignKey="true" />
+      <Association Name="TB_EST_MODELO_TB_EST_PRODUTO" Member="TB_EST_MODELO" ThisKey="ID_MODELO" OtherKey="ID_MODELO" Type="TB_EST_MODELO" IsForeignKey="true" />
+      <Association Name="TB_EST_MARCA_TB_EST_PRODUTO" Member="TB_EST_MARCA" ThisKey="ID_MARCA" OtherKey="ID_MARCA" Type="TB_EST_MARCA" IsForeignKey="true" />
+      <Association Name="TB_EST_UNIDADE_TB_EST_PRODUTO" Member="TB_EST_UNIDADE" ThisKey="ID_UNIDADE" OtherKey="ID_UNIDADE" Type="TB_EST_UNIDADE" IsForeignKey="true" />
+      <Association Name="TB_FIS_CATEGORIAFISCAL_PRODUTO_TB_EST_PRODUTO" Member="TB_FIS_CATEGORIAFISCAL_PRODUTO" ThisKey="ID_CATEGORIAFISCAL_PRODUTO" OtherKey="ID_CATEGORIAFISCAL_PRODUTO" Type="TB_FIS_CATEGORIAFISCAL_PRODUTO" IsForeignKey="true" />
+      <Association Name="TB_FIS_NCM_TB_EST_PRODUTO" Member="TB_FIS_NCM" ThisKey="ID_NCM" OtherKey="ID_NCM" Type="TB_FIS_NCM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_EST_TRANSFERENCIA_X_ESTOQUE" Member="TB_EST_TRANSFERENCIA_X_ESTOQUEs">
+    <Type Name="TB_EST_TRANSFERENCIA_X_ESTOQUE">
+      <Column Name="ID_TRANSF" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTOESTOQUE" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PRODUTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_ITEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NR_CONTRATO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_EST_CONTRATOITEM_X_ESTOQUE_TB_EST_TRANSFERENCIA_X_ESTOQUE" Member="TB_EST_CONTRATOITEM_X_ESTOQUE" ThisKey="ID_LANCTOESTOQUE,ID_EMPRESA,ID_PRODUTO,ID_ITEM,NR_CONTRATO" OtherKey="ID_LANCTOESTOQUE,ID_EMPRESA,ID_PRODUTO,ID_ITEM,NR_CONTRATO" Type="TB_EST_CONTRATOITEM_X_ESTOQUE" IsForeignKey="true" />
+      <Association Name="TB_EST_TRANSFERENCIASALDO_TB_EST_TRANSFERENCIA_X_ESTOQUE" Member="TB_EST_TRANSFERENCIASALDO" ThisKey="ID_TRANSF" OtherKey="ID_TRANSF" Type="TB_EST_TRANSFERENCIASALDO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_EST_TRANSFERENCIASALDO" Member="TB_EST_TRANSFERENCIASALDOs">
+    <Type Name="TB_EST_TRANSFERENCIASALDO">
+      <Column Name="ID_TRANSF" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_ITEM_ORIGEM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NR_CONTRATO_ORIGEM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_ITEM_DESTINO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NR_CONTRATO_DESTINO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_HISTORICO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QTD_TRANSF" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_TRANSF" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_EST_TRANSFERENCIASALDO_TB_EST_TRANSFERENCIA_X_ESTOQUE" Member="TB_EST_TRANSFERENCIA_X_ESTOQUEs" ThisKey="ID_TRANSF" OtherKey="ID_TRANSF" Type="TB_EST_TRANSFERENCIA_X_ESTOQUE" />
+      <Association Name="TB_FIN_HISTORICO_TB_EST_TRANSFERENCIASALDO" Member="TB_FIN_HISTORICO" ThisKey="ID_HISTORICO" OtherKey="ID_HISTORICO" Type="TB_FIN_HISTORICO" IsForeignKey="true" />
+      <Association Name="TB_FIS_CONTRATO_ITEM_TB_EST_TRANSFERENCIASALDO" Member="TB_FIS_CONTRATO_ITEM" ThisKey="ID_ITEM_DESTINO,NR_CONTRATO_DESTINO,ID_EMPRESA" OtherKey="ID_ITEM,NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATO_ITEM" IsForeignKey="true" />
+      <Association Name="TB_FIS_CONTRATO_ITEM_TB_EST_TRANSFERENCIASALDO1" Member="TB_FIS_CONTRATO_ITEM1" ThisKey="ID_ITEM_ORIGEM,NR_CONTRATO_ORIGEM,ID_EMPRESA" OtherKey="ID_ITEM,NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATO_ITEM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_EST_UNIDADE" Member="TB_EST_UNIDADEs">
+    <Type Name="TB_EST_UNIDADE">
+      <Column Name="ID_UNIDADE" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_UNIDADE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SIGLA" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_EST_UNIDADE_TB_EST_CONVERSAOUNID" Member="TB_EST_CONVERSAOUNIDs" ThisKey="ID_UNIDADE" OtherKey="ID_UNIDADE_DESTINO" Type="TB_EST_CONVERSAOUNID" />
+      <Association Name="TB_EST_UNIDADE_TB_EST_CONVERSAOUNID1" Member="TB_EST_CONVERSAOUNIDs1" ThisKey="ID_UNIDADE" OtherKey="ID_UNIDADE_ORIGEM" Type="TB_EST_CONVERSAOUNID" />
+      <Association Name="TB_EST_UNIDADE_TB_EST_PRODUTO" Member="TB_EST_PRODUTOs" ThisKey="ID_UNIDADE" OtherKey="ID_UNIDADE" Type="TB_EST_PRODUTO" />
+      <Association Name="TB_EST_UNIDADE_TB_FIS_CONTRATO_ITEM" Member="TB_FIS_CONTRATO_ITEMs" ThisKey="ID_UNIDADE" OtherKey="ID_UNIDADE" Type="TB_FIS_CONTRATO_ITEM" />
+      <Association Name="TB_EST_UNIDADE_TB_FIS_NOTAFISCAL_ITEM" Member="TB_FIS_NOTAFISCAL_ITEMs" ThisKey="ID_UNIDADE" OtherKey="ID_UNIDADE" Type="TB_FIS_NOTAFISCAL_ITEM" />
+      <Association Name="TB_EST_UNIDADE_TB_GRA_TAXAPADRAO" Member="TB_GRA_TAXAPADRAOs" ThisKey="ID_UNIDADE" OtherKey="ID_UNIDADE" Type="TB_GRA_TAXAPADRAO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_BANCO" Member="TB_FIN_BANCOs">
+    <Type Name="TB_FIN_BANCO">
+      <Column Name="ID_BANCO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="COD_BANCO" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="NM_BANCO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_BANCO_TB_DIV_CLIFOR_DADOSBANCARIO" Member="TB_DIV_CLIFOR_DADOSBANCARIOs" ThisKey="ID_BANCO" OtherKey="ID_BANCO" Type="TB_DIV_CLIFOR_DADOSBANCARIO" />
+      <Association Name="TB_FIN_BANCO_TB_FIN_CHEQUETED" Member="TB_FIN_CHEQUETEDs" ThisKey="ID_BANCO" OtherKey="ID_BANCO" Type="TB_FIN_CHEQUETED" />
+      <Association Name="TB_FIN_BANCO_TB_FIN_CONTAGERENCIAL" Member="TB_FIN_CONTAGERENCIALs" ThisKey="ID_BANCO" OtherKey="ID_BANCO" Type="TB_FIN_CONTAGERENCIAL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_CENTROCUSTO" Member="TB_FIN_CENTROCUSTOs">
+    <Type Name="TB_FIN_CENTROCUSTO">
+      <Column Name="ID_CENTROCUSTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CENTROCUSTO_PAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_CENTROCUSTO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_CENTROCUSTO_TB_FIN_CENTROCUSTO" Member="TB_FIN_CENTROCUSTOs" ThisKey="ID_CENTROCUSTO" OtherKey="ID_CENTROCUSTO_PAI" Type="TB_FIN_CENTROCUSTO" />
+      <Association Name="TB_FIN_CENTROCUSTO_TB_FIN_DUPLICATA" Member="TB_FIN_DUPLICATAs" ThisKey="ID_CENTROCUSTO" OtherKey="ID_CENTROCUSTO" Type="TB_FIN_DUPLICATA" />
+      <Association Name="TB_FIN_CENTROCUSTO_TB_FIN_CENTROCUSTO" Member="TB_FIN_CENTROCUSTO1" ThisKey="ID_CENTROCUSTO_PAI" OtherKey="ID_CENTROCUSTO" Type="TB_FIN_CENTROCUSTO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_CHEQUETED" Member="TB_FIN_CHEQUETEDs">
+    <Type Name="TB_FIN_CHEQUETED">
+      <Column Name="ID_CHEQUETED" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_BANCO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NR_CHEQUE" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VL_CHEQUETED" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="TP_MOVIMENTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="TP_CHEQUE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_COMPENSACAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_EMISSAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_BOMPARA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_CHEQUETED_TB_FIN_CHEQUETED_X_LIQUIDACAO" Member="TB_FIN_CHEQUETED_X_LIQUIDACAOs" ThisKey="ID_CHEQUETED" OtherKey="ID_CHEQUETED" Type="TB_FIN_CHEQUETED_X_LIQUIDACAO" />
+      <Association Name="TB_DIV_CLIFOR_TB_FIN_CHEQUETED" Member="TB_DIV_CLIFOR" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR" IsForeignKey="true" />
+      <Association Name="TB_FIN_BANCO_TB_FIN_CHEQUETED" Member="TB_FIN_BANCO" ThisKey="ID_BANCO" OtherKey="ID_BANCO" Type="TB_FIN_BANCO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_CHEQUETED_X_LIQUIDACAO" Member="TB_FIN_CHEQUETED_X_LIQUIDACAOs">
+    <Type Name="TB_FIN_CHEQUETED_X_LIQUIDACAO">
+      <Column Name="ID_LIQUIDACAO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PARCELA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PROGRAMACAO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CHEQUETED" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_CHEQUETED_TB_FIN_CHEQUETED_X_LIQUIDACAO" Member="TB_FIN_CHEQUETED" ThisKey="ID_CHEQUETED" OtherKey="ID_CHEQUETED" Type="TB_FIN_CHEQUETED" IsForeignKey="true" />
+      <Association Name="TB_FIN_LIQUIDACAO_TB_FIN_CHEQUETED_X_LIQUIDACAO" Member="TB_FIN_LIQUIDACAO" ThisKey="ID_EMPRESA,ID_LANCTO,ID_PARCELA,ID_PROGRAMACAO,ID_LIQUIDACAO" OtherKey="ID_EMPRESA,ID_LANCTO,ID_PARCELA,ID_PROGRAMACAO,ID_LIQUIDACAO" Type="TB_FIN_LIQUIDACAO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_CONDICAOPAGTO" Member="TB_FIN_CONDICAOPAGTOs">
+    <Type Name="TB_FIN_CONDICAOPAGTO">
+      <Column Name="ID_CONDICAOPAGTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_CONDICAO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="QTD_PARCELA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PC_JUROS_AD" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_CONDICAOPAGTO_TB_FIN_DUPLICATA" Member="TB_FIN_DUPLICATAs" ThisKey="ID_CONDICAOPAGTO" OtherKey="ID_CONDICAOPAGTO" Type="TB_FIN_DUPLICATA" />
+      <Association Name="TB_FIN_CONDICAOPAGTO_TB_FIS_NOTAFISCAL" Member="TB_FIS_NOTAFISCALs" ThisKey="ID_CONDICAOPAGTO" OtherKey="ID_CONDICAOPAGTO" Type="TB_FIS_NOTAFISCAL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_CONTAGERENCIAL" Member="TB_FIN_CONTAGERENCIALs">
+    <Type Name="TB_FIN_CONTAGERENCIAL">
+      <Column Name="ID_CONTA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_BANCO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_CONTAGERENCIAL" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="AGENCIA" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="NR_CONTA" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NR_SEQUENCIAL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_CONTAGERENCIAL_TB_FIN_FECHAMENTOCAIXA" Member="TB_FIN_FECHAMENTOCAIXAs" ThisKey="ID_CONTA" OtherKey="ID_CONTA" Type="TB_FIN_FECHAMENTOCAIXA" />
+      <Association Name="TB_FIN_CONTAGERENCIAL_TB_FIN_LIQUIDACAO" Member="TB_FIN_LIQUIDACAOs" ThisKey="ID_CONTA" OtherKey="ID_CONTA" Type="TB_FIN_LIQUIDACAO" />
+      <Association Name="TB_FIN_BANCO_TB_FIN_CONTAGERENCIAL" Member="TB_FIN_BANCO" ThisKey="ID_BANCO" OtherKey="ID_BANCO" Type="TB_FIN_BANCO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_DUPLICATA" Member="TB_FIN_DUPLICATAs">
+    <Type Name="TB_FIN_DUPLICATA">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NR_CONTRATO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NR_DOCTO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ID_CONDICAOPAGTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_HISTORICO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_TIPODUP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOGIN_LANCTO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_ENDERECO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CENTROCUSTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VL_DOCTO" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_EMISSAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_DUPLICATA_TB_FIN_NF_X_DUP" Member="TB_FIN_NF_X_DUPs" ThisKey="ID_LANCTO,ID_EMPRESA" OtherKey="ID_LANCTO,ID_EMPRESA" Type="TB_FIN_NF_X_DUP" />
+      <Association Name="TB_FIN_DUPLICATA_TB_FIN_PARCELA" Member="TB_FIN_PARCELAs" ThisKey="ID_LANCTO,ID_EMPRESA" OtherKey="ID_LANCTO,ID_EMPRESA" Type="TB_FIN_PARCELA" />
+      <Association Name="TB_DIV_CLIFOR_TB_FIN_DUPLICATA" Member="TB_DIV_CLIFOR" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR" IsForeignKey="true" />
+      <Association Name="TB_DIV_ENDERECO_TB_FIN_DUPLICATA" Member="TB_DIV_ENDERECO" ThisKey="ID_CLIFOR,ID_ENDERECO" OtherKey="ID_CLIFOR,ID_ENDERECO" Type="TB_DIV_ENDERECO" IsForeignKey="true" />
+      <Association Name="TB_DIV_EMPRESA_TB_FIN_DUPLICATA" Member="TB_DIV_EMPRESA" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_DIV_EMPRESA" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_FIN_DUPLICATA" Member="TB_DIV_USUARIO" ThisKey="LOGIN_LANCTO" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+      <Association Name="TB_FIN_CENTROCUSTO_TB_FIN_DUPLICATA" Member="TB_FIN_CENTROCUSTO" ThisKey="ID_CENTROCUSTO" OtherKey="ID_CENTROCUSTO" Type="TB_FIN_CENTROCUSTO" IsForeignKey="true" />
+      <Association Name="TB_FIN_CONDICAOPAGTO_TB_FIN_DUPLICATA" Member="TB_FIN_CONDICAOPAGTO" ThisKey="ID_CONDICAOPAGTO" OtherKey="ID_CONDICAOPAGTO" Type="TB_FIN_CONDICAOPAGTO" IsForeignKey="true" />
+      <Association Name="TB_FIN_HISTORICO_TB_FIN_DUPLICATA" Member="TB_FIN_HISTORICO" ThisKey="ID_HISTORICO" OtherKey="ID_HISTORICO" Type="TB_FIN_HISTORICO" IsForeignKey="true" />
+      <Association Name="TB_FIN_TIPODUP_TB_FIN_DUPLICATA" Member="TB_FIN_TIPODUP" ThisKey="ID_TIPODUP" OtherKey="ID_TIPODUP" Type="TB_FIN_TIPODUP" IsForeignKey="true" />
+      <Association Name="TB_FIS_CONTRATO_TB_FIN_DUPLICATA" Member="TB_FIS_CONTRATO" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_FECHAMENTOCAIXA" Member="TB_FIN_FECHAMENTOCAIXAs">
+    <Type Name="TB_FIN_FECHAMENTOCAIXA">
+      <Column Name="ID_FECHAMENTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CONTA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_FECHAMENTO" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="VL_ANTERIOR" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VL_ATUAL" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_CONTAGERENCIAL_TB_FIN_FECHAMENTOCAIXA" Member="TB_FIN_CONTAGERENCIAL" ThisKey="ID_CONTA" OtherKey="ID_CONTA" Type="TB_FIN_CONTAGERENCIAL" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_HISTORICO" Member="TB_FIN_HISTORICOs">
+    <Type Name="TB_FIN_HISTORICO">
+      <Column Name="ID_HISTORICO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_HISTORICO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_HISTORICO_TB_EST_TRANSFERENCIASALDO" Member="TB_EST_TRANSFERENCIASALDOs" ThisKey="ID_HISTORICO" OtherKey="ID_HISTORICO" Type="TB_EST_TRANSFERENCIASALDO" />
+      <Association Name="TB_FIN_HISTORICO_TB_FIN_DUPLICATA" Member="TB_FIN_DUPLICATAs" ThisKey="ID_HISTORICO" OtherKey="ID_HISTORICO" Type="TB_FIN_DUPLICATA" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_LIQUIDACAO" Member="TB_FIN_LIQUIDACAOs">
+    <Type Name="TB_FIN_LIQUIDACAO">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PARCELA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PROGRAMACAO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LIQUIDACAO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_TIPODOCTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CONTA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOGIN_LANCTO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ID_PORTADOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DT_LIQUIDACAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VL_LIQUIDACAO" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_LIQUIDACAO_TB_FIN_CHEQUETED_X_LIQUIDACAO" Member="TB_FIN_CHEQUETED_X_LIQUIDACAOs" ThisKey="ID_EMPRESA,ID_LANCTO,ID_PARCELA,ID_PROGRAMACAO,ID_LIQUIDACAO" OtherKey="ID_EMPRESA,ID_LANCTO,ID_PARCELA,ID_PROGRAMACAO,ID_LIQUIDACAO" Type="TB_FIN_CHEQUETED_X_LIQUIDACAO" />
+      <Association Name="TB_DIV_USUARIO_TB_FIN_LIQUIDACAO" Member="TB_DIV_USUARIO" ThisKey="LOGIN_LANCTO" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+      <Association Name="TB_FIN_CONTAGERENCIAL_TB_FIN_LIQUIDACAO" Member="TB_FIN_CONTAGERENCIAL" ThisKey="ID_CONTA" OtherKey="ID_CONTA" Type="TB_FIN_CONTAGERENCIAL" IsForeignKey="true" />
+      <Association Name="TB_FIN_PORTADOR_TB_FIN_LIQUIDACAO" Member="TB_FIN_PORTADOR" ThisKey="ID_PORTADOR" OtherKey="ID_PORTADOR" Type="TB_FIN_PORTADOR" IsForeignKey="true" />
+      <Association Name="TB_FIN_PROGRAMACAO_TB_FIN_LIQUIDACAO" Member="TB_FIN_PROGRAMACAO" ThisKey="ID_EMPRESA,ID_LANCTO,ID_PARCELA,ID_PROGRAMACAO" OtherKey="ID_EMPRESA,ID_LANCTO,ID_PARCELA,ID_PROGRAMACAO" Type="TB_FIN_PROGRAMACAO" IsForeignKey="true" />
+      <Association Name="TB_FIN_TIPODOCTO_TB_FIN_LIQUIDACAO" Member="TB_FIN_TIPODOCTO" ThisKey="ID_TIPODOCTO" OtherKey="ID_TIPODOCTO" Type="TB_FIN_TIPODOCTO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_NF_X_DUP" Member="TB_FIN_NF_X_DUPs">
+    <Type Name="TB_FIN_NF_X_DUP">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTONF" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_DUPLICATA_TB_FIN_NF_X_DUP" Member="TB_FIN_DUPLICATA" ThisKey="ID_LANCTO,ID_EMPRESA" OtherKey="ID_LANCTO,ID_EMPRESA" Type="TB_FIN_DUPLICATA" IsForeignKey="true" />
+      <Association Name="TB_FIS_NOTAFISCAL_TB_FIN_NF_X_DUP" Member="TB_FIS_NOTAFISCAL" ThisKey="ID_EMPRESA,ID_LANCTONF" OtherKey="ID_EMPRESA,ID_LANCTONF" Type="TB_FIS_NOTAFISCAL" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_PARCELA" Member="TB_FIN_PARCELAs">
+    <Type Name="TB_FIN_PARCELA">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PARCELA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="VL_PARCELA" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_VENCTO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_PARCELA_TB_FIN_PROGRAMACAO" Member="TB_FIN_PROGRAMACAOs" ThisKey="ID_PARCELA,ID_LANCTO,ID_EMPRESA" OtherKey="ID_PARCELA,ID_LANCTO,ID_EMPRESA" Type="TB_FIN_PROGRAMACAO" />
+      <Association Name="TB_FIN_DUPLICATA_TB_FIN_PARCELA" Member="TB_FIN_DUPLICATA" ThisKey="ID_LANCTO,ID_EMPRESA" OtherKey="ID_LANCTO,ID_EMPRESA" Type="TB_FIN_DUPLICATA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_PORTADOR" Member="TB_FIN_PORTADORs">
+    <Type Name="TB_FIN_PORTADOR">
+      <Column Name="ID_PORTADOR" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_PORTADOR" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TP_PORTADOR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_PORTADOR_TB_FIN_LIQUIDACAO" Member="TB_FIN_LIQUIDACAOs" ThisKey="ID_PORTADOR" OtherKey="ID_PORTADOR" Type="TB_FIN_LIQUIDACAO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_PROGRAMACAO" Member="TB_FIN_PROGRAMACAOs">
+    <Type Name="TB_FIN_PROGRAMACAO">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PARCELA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PROGRAMACAO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="VL_PROGRAMADO" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="ST_PROGRAMACAO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_PROGRAMACAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_PROGRAMACAO_TB_FIN_LIQUIDACAO" Member="TB_FIN_LIQUIDACAOs" ThisKey="ID_EMPRESA,ID_LANCTO,ID_PARCELA,ID_PROGRAMACAO" OtherKey="ID_EMPRESA,ID_LANCTO,ID_PARCELA,ID_PROGRAMACAO" Type="TB_FIN_LIQUIDACAO" />
+      <Association Name="TB_DIV_USUARIO_TB_FIN_PROGRAMACAO" Member="TB_DIV_USUARIO" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+      <Association Name="TB_FIN_PARCELA_TB_FIN_PROGRAMACAO" Member="TB_FIN_PARCELA" ThisKey="ID_PARCELA,ID_LANCTO,ID_EMPRESA" OtherKey="ID_PARCELA,ID_LANCTO,ID_EMPRESA" Type="TB_FIN_PARCELA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_TIPODOCTO" Member="TB_FIN_TIPODOCTOs">
+    <Type Name="TB_FIN_TIPODOCTO">
+      <Column Name="ID_TIPODOCTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_TIPODOCTO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TP_DOCTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_TIPODOCTO_TB_FIN_LIQUIDACAO" Member="TB_FIN_LIQUIDACAOs" ThisKey="ID_TIPODOCTO" OtherKey="ID_TIPODOCTO" Type="TB_FIN_LIQUIDACAO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIN_TIPODUP" Member="TB_FIN_TIPODUPs">
+    <Type Name="TB_FIN_TIPODUP">
+      <Column Name="ID_TIPODUP" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_TIPO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIN_TIPODUP_TB_FIN_DUPLICATA" Member="TB_FIN_DUPLICATAs" ThisKey="ID_TIPODUP" OtherKey="ID_TIPODUP" Type="TB_FIN_DUPLICATA" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_CATEGORIAFISCAL_CLIFOR" Member="TB_FIS_CATEGORIAFISCAL_CLIFORs">
+    <Type Name="TB_FIS_CATEGORIAFISCAL_CLIFOR">
+      <Column Name="ID_CATEGORIAFISCAL_CLIFOR" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_CATEGORIA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_CATEGORIAFISCAL_CLIFOR_TB_DIV_CLIFOR" Member="TB_DIV_CLIFORs" ThisKey="ID_CATEGORIAFISCAL_CLIFOR" OtherKey="ID_CATEGORIAFISCAL_CLIFOR" Type="TB_DIV_CLIFOR" />
+      <Association Name="TB_FIS_CATEGORIAFISCAL_CLIFOR_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_CONFIGURACAO_IMPOSTOs" ThisKey="ID_CATEGORIAFISCAL_CLIFOR" OtherKey="ID_CATEGORIAFISCAL_CLIFOR" Type="TB_FIS_CONFIGURACAO_IMPOSTO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_CATEGORIAFISCAL_PRODUTO" Member="TB_FIS_CATEGORIAFISCAL_PRODUTOs">
+    <Type Name="TB_FIS_CATEGORIAFISCAL_PRODUTO">
+      <Column Name="ID_CATEGORIAFISCAL_PRODUTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_CATEGORIA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_CATEGORIAFISCAL_PRODUTO_TB_EST_PRODUTO" Member="TB_EST_PRODUTOs" ThisKey="ID_CATEGORIAFISCAL_PRODUTO" OtherKey="ID_CATEGORIAFISCAL_PRODUTO" Type="TB_EST_PRODUTO" />
+      <Association Name="TB_FIS_CATEGORIAFISCAL_PRODUTO_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_CONFIGURACAO_IMPOSTOs" ThisKey="ID_CATEGORIAFISCAL_PRODUTO" OtherKey="ID_CATEGORIAFISCAL_PRODUTO" Type="TB_FIS_CONFIGURACAO_IMPOSTO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_CFOP" Member="TB_FIS_CFOPs">
+    <Type Name="TB_FIS_CFOP">
+      <Column Name="CD_CFOP" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_CFOP" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_CFOP_TB_FIS_NOTAFISCAL" Member="TB_FIS_NOTAFISCALs" ThisKey="CD_CFOP" OtherKey="CD_CFOP" Type="TB_FIS_NOTAFISCAL" />
+      <Association Name="TB_FIS_CFOP_TB_FIS_OPERACAO" Member="TB_FIS_OPERACAOs" ThisKey="CD_CFOP" OtherKey="CD_CFOP_DENTROUF" Type="TB_FIS_OPERACAO" />
+      <Association Name="TB_FIS_CFOP_TB_FIS_OPERACAO1" Member="TB_FIS_OPERACAOs1" ThisKey="CD_CFOP" OtherKey="CD_CFOP_FORAUF" Type="TB_FIS_OPERACAO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_COMPDEVOL_NF" Member="TB_FIS_COMPDEVOL_NFs">
+    <Type Name="TB_FIS_COMPDEVOL_NF">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_COMPDEVOL" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTONF_ORIG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_ITEM_ORIG_ORIG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_LANCTONF_DEST" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_ITEM_DEST" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TP_LANCTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="VL_LANCTO" Type="System.Decimal" DbType="Decimal(15,5)" CanBeNull="true" />
+      <Column Name="QTD_LANCTO" Type="System.Decimal" DbType="Decimal(15,5)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_NOTAFISCAL_ITEM_TB_FIS_COMPDEVOL_NF" Member="TB_FIS_NOTAFISCAL_ITEM" ThisKey="ID_EMPRESA,ID_LANCTONF_DEST,ID_ITEM_DEST" OtherKey="ID_EMPRESA,ID_LANCTONF,ID_ITEM" Type="TB_FIS_NOTAFISCAL_ITEM" IsForeignKey="true" />
+      <Association Name="TB_FIS_NOTAFISCAL_ITEM_TB_FIS_COMPDEVOL_NF1" Member="TB_FIS_NOTAFISCAL_ITEM1" ThisKey="ID_EMPRESA,ID_LANCTONF_ORIG,ID_ITEM_ORIG_ORIG" OtherKey="ID_EMPRESA,ID_LANCTONF,ID_ITEM" Type="TB_FIS_NOTAFISCAL_ITEM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_CONFIGCONTRATO" Member="TB_FIS_CONFIGCONTRATOs">
+    <Type Name="TB_FIS_CONFIGCONTRATO">
+      <Column Name="ID_CONFIGURACAOCONTRATO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_CONFIGURACAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TP_MOVIMENTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_VERIFICASALDO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_GRAOS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_COMPRA" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_FIXO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_DEPOSITO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_SERVICO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_DIVERSOS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_CONFIGCONTRATO_TB_FIS_CONFIGCONTRATO_X_CONFIGFISCAL" Member="TB_FIS_CONFIGCONTRATO_X_CONFIGFISCALs" ThisKey="ID_CONFIGURACAOCONTRATO" OtherKey="ID_CONFIGURACAOCONTRATO" Type="TB_FIS_CONFIGCONTRATO_X_CONFIGFISCAL" />
+      <Association Name="TB_FIS_CONFIGCONTRATO_TB_FIS_CONTRATO" Member="TB_FIS_CONTRATOs" ThisKey="ID_CONFIGURACAOCONTRATO" OtherKey="CD_CONFIGURACAO" Type="TB_FIS_CONTRATO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_CONFIGCONTRATO_X_CONFIGFISCAL" Member="TB_FIS_CONFIGCONTRATO_X_CONFIGFISCALs">
+    <Type Name="TB_FIS_CONFIGCONTRATO_X_CONFIGFISCAL">
+      <Column Name="ID_CONFIGURACAOCONTRATO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CONFIGURACAOFISCAL" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_CONFIGCONTRATO_TB_FIS_CONFIGCONTRATO_X_CONFIGFISCAL" Member="TB_FIS_CONFIGCONTRATO" ThisKey="ID_CONFIGURACAOCONTRATO" OtherKey="ID_CONFIGURACAOCONTRATO" Type="TB_FIS_CONFIGCONTRATO" IsForeignKey="true" />
+      <Association Name="TB_FIS_CONFIGURACAOFISCAL_TB_FIS_CONFIGCONTRATO_X_CONFIGFISCAL" Member="TB_FIS_CONFIGURACAOFISCAL" ThisKey="ID_CONFIGURACAOFISCAL" OtherKey="ID_CONFIGURACAOFISCAL" Type="TB_FIS_CONFIGURACAOFISCAL" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_CONFIGURACAO_IMPOSTOs">
+    <Type Name="TB_FIS_CONFIGURACAO_IMPOSTO">
+      <Column Name="ID_LANCTOFISCAL" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CONFIGURACAOFISCAL" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_IMPOSTO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_CATEGORIAFISCAL_CLIFOR" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_CATEGORIAFISCAL_PRODUTO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UF_ORIG" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="UF_DEST" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ID_SITTRIBSPEAD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_SITTRIB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TP_PESSOA" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PC_ALIQ" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="PC_REDBASECALC" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="PC_BASECALC" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="TP_MOVIMENTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_EMPRESA_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_DIV_EMPRESA" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_DIV_EMPRESA" IsForeignKey="true" />
+      <Association Name="TB_DIV_UF_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_DIV_UF" ThisKey="UF_ORIG" OtherKey="UF" Type="TB_DIV_UF" IsForeignKey="true" />
+      <Association Name="TB_DIV_UF_TB_FIS_CONFIGURACAO_IMPOSTO1" Member="TB_DIV_UF1" ThisKey="UF_DEST" OtherKey="UF" Type="TB_DIV_UF" IsForeignKey="true" />
+      <Association Name="TB_FIS_CATEGORIAFISCAL_CLIFOR_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_CATEGORIAFISCAL_CLIFOR" ThisKey="ID_CATEGORIAFISCAL_CLIFOR" OtherKey="ID_CATEGORIAFISCAL_CLIFOR" Type="TB_FIS_CATEGORIAFISCAL_CLIFOR" IsForeignKey="true" />
+      <Association Name="TB_FIS_CATEGORIAFISCAL_PRODUTO_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_CATEGORIAFISCAL_PRODUTO" ThisKey="ID_CATEGORIAFISCAL_PRODUTO" OtherKey="ID_CATEGORIAFISCAL_PRODUTO" Type="TB_FIS_CATEGORIAFISCAL_PRODUTO" IsForeignKey="true" />
+      <Association Name="TB_FIS_CONFIGURACAOFISCAL_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_CONFIGURACAOFISCAL" ThisKey="ID_CONFIGURACAOFISCAL" OtherKey="ID_CONFIGURACAOFISCAL" Type="TB_FIS_CONFIGURACAOFISCAL" IsForeignKey="true" />
+      <Association Name="TB_FIS_IMPOSTO_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_IMPOSTO" ThisKey="ID_IMPOSTO" OtherKey="ID_IMPOSTO" Type="TB_FIS_IMPOSTO" IsForeignKey="true" />
+      <Association Name="TB_FIS_SIT_TRIB_SPEAD_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_SIT_TRIB_SPEAD" ThisKey="ID_SITTRIBSPEAD" OtherKey="ID_SITTRIBSPEAD" Type="TB_FIS_SIT_TRIB_SPEAD" IsForeignKey="true" />
+      <Association Name="TB_FIS_SITUACAOTRIBUTARIA_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_SITUACAOTRIBUTARIA" ThisKey="ID_SITTRIB" OtherKey="ID_SITTRIB" Type="TB_FIS_SITUACAOTRIBUTARIA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_CONFIGURACAO_X_OPERACAO" Member="TB_FIS_CONFIGURACAO_X_OPERACAOs">
+    <Type Name="TB_FIS_CONFIGURACAO_X_OPERACAO">
+      <Column Name="ID_CONFIGURACAOFISCAL" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_OPERACAO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_CONFIGURACAOFISCAL_TB_FIS_CONFIGURACAO_X_OPERACAO" Member="TB_FIS_CONFIGURACAOFISCAL" ThisKey="ID_CONFIGURACAOFISCAL" OtherKey="ID_CONFIGURACAOFISCAL" Type="TB_FIS_CONFIGURACAOFISCAL" IsForeignKey="true" />
+      <Association Name="TB_FIS_OPERACAO_TB_FIS_CONFIGURACAO_X_OPERACAO" Member="TB_FIS_OPERACAO" ThisKey="ID_OPERACAO" OtherKey="ID_OPERACAO" Type="TB_FIS_OPERACAO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_CONFIGURACAOFISCAL" Member="TB_FIS_CONFIGURACAOFISCALs">
+    <Type Name="TB_FIS_CONFIGURACAOFISCAL">
+      <Column Name="ID_CONFIGURACAOFISCAL" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_CONFIGURACAO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_CONFIGURACAOFISCAL_TB_FIS_CONFIGCONTRATO_X_CONFIGFISCAL" Member="TB_FIS_CONFIGCONTRATO_X_CONFIGFISCALs" ThisKey="ID_CONFIGURACAOFISCAL" OtherKey="ID_CONFIGURACAOFISCAL" Type="TB_FIS_CONFIGCONTRATO_X_CONFIGFISCAL" />
+      <Association Name="TB_FIS_CONFIGURACAOFISCAL_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_CONFIGURACAO_IMPOSTOs" ThisKey="ID_CONFIGURACAOFISCAL" OtherKey="ID_CONFIGURACAOFISCAL" Type="TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <Association Name="TB_FIS_CONFIGURACAOFISCAL_TB_FIS_CONFIGURACAO_X_OPERACAO" Member="TB_FIS_CONFIGURACAO_X_OPERACAOs" ThisKey="ID_CONFIGURACAOFISCAL" OtherKey="ID_CONFIGURACAOFISCAL" Type="TB_FIS_CONFIGURACAO_X_OPERACAO" />
+      <Association Name="TB_FIS_CONFIGURACAOFISCAL_TB_FIS_NOTAFISCAL" Member="TB_FIS_NOTAFISCALs" ThisKey="ID_CONFIGURACAOFISCAL" OtherKey="ID_CONFIGURACAOFISCAL" Type="TB_FIS_NOTAFISCAL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_CONTRATO" Member="TB_FIS_CONTRATOs">
+    <Type Name="TB_FIS_CONTRATO">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NR_CONTRATO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TP_MOVIMENTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CD_CONFIGURACAO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOGIN_LANCTO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_CONTRATO_TB_FIN_DUPLICATA" Member="TB_FIN_DUPLICATAs" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_FIN_DUPLICATA" />
+      <Association Name="TB_FIS_CONTRATO_TB_FIS_CONTRATO_DADOSGERAI" Member="TB_FIS_CONTRATO_DADOSGERAI" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATO_DADOSGERAI" Cardinality="One" />
+      <Association Name="TB_FIS_CONTRATO_TB_FIS_CONTRATO_ITEM" Member="TB_FIS_CONTRATO_ITEMs" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATO_ITEM" />
+      <Association Name="TB_FIS_CONTRATO_TB_FIS_CONTRATOACOMPANHAMENTO" Member="TB_FIS_CONTRATOACOMPANHAMENTOs" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATOACOMPANHAMENTO" />
+      <Association Name="TB_FIS_CONTRATO_TB_FIS_NOTAFISCAL" Member="TB_FIS_NOTAFISCALs" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_NOTAFISCAL" />
+      <Association Name="TB_FIS_CONTRATO_TB_GRA_FIXACAO" Member="TB_GRA_FIXACAOs" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_GRA_FIXACAO" />
+      <Association Name="TB_FIS_CONTRATO_TB_GRA_PESAGEM" Member="TB_GRA_PESAGEMs" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_GRA_PESAGEM" />
+      <Association Name="TB_DIV_CLIFOR_TB_FIS_CONTRATO" Member="TB_DIV_CLIFOR" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR" IsForeignKey="true" />
+      <Association Name="TB_DIV_EMPRESA_TB_FIS_CONTRATO" Member="TB_DIV_EMPRESA" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_DIV_EMPRESA" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_FIS_CONTRATO" Member="TB_DIV_USUARIO" ThisKey="LOGIN_LANCTO" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+      <Association Name="TB_FIS_CONFIGCONTRATO_TB_FIS_CONTRATO" Member="TB_FIS_CONFIGCONTRATO" ThisKey="CD_CONFIGURACAO" OtherKey="ID_CONFIGURACAOCONTRATO" Type="TB_FIS_CONFIGCONTRATO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_CONTRATO_DADOSGERAIS" Member="TB_FIS_CONTRATO_DADOSGERAIs">
+    <Type Name="TB_FIS_CONTRATO_DADOSGERAI">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NR_CONTRATO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_TABDESC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_SAFRA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(516)" CanBeNull="true" />
+      <Column Name="DT_CANCELAMENTO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_FECHAMENTO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ENCERRAMENTO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_INIENTREGA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_FINENTREGA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_CONTRATO_TB_FIS_CONTRATO_DADOSGERAI" Member="TB_FIS_CONTRATO" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATO" IsForeignKey="true" />
+      <Association Name="TB_GRA_SAFRA_TB_FIS_CONTRATO_DADOSGERAI" Member="TB_GRA_SAFRA" ThisKey="ID_SAFRA" OtherKey="ID_SAFRA" Type="TB_GRA_SAFRA" IsForeignKey="true" />
+      <Association Name="TB_GRA_TABDESCONTO_TB_FIS_CONTRATO_DADOSGERAI" Member="TB_GRA_TABDESCONTO" ThisKey="ID_TABDESC" OtherKey="ID_TABDESC" Type="TB_GRA_TABDESCONTO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_CONTRATO_ITEM" Member="TB_FIS_CONTRATO_ITEMs">
+    <Type Name="TB_FIS_CONTRATO_ITEM">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NR_CONTRATO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_ITEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PRODUTO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_UNIDADE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QUANTIDADE" Type="System.Decimal" DbType="Decimal(15,5)" CanBeNull="true" />
+      <Column Name="VL_UNIT" Type="System.Decimal" DbType="Decimal(15,5)" CanBeNull="true" />
+      <Column Name="VL_SUBTOTAL" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_CONTRATO_ITEM_TB_EST_CONTRATOITEM_X_ESTOQUE" Member="TB_EST_CONTRATOITEM_X_ESTOQUEs" ThisKey="ID_ITEM,NR_CONTRATO,ID_EMPRESA" OtherKey="ID_ITEM,NR_CONTRATO,ID_EMPRESA" Type="TB_EST_CONTRATOITEM_X_ESTOQUE" />
+      <Association Name="TB_FIS_CONTRATO_ITEM_TB_EST_TRANSFERENCIASALDO" Member="TB_EST_TRANSFERENCIASALDOs" ThisKey="ID_ITEM,NR_CONTRATO,ID_EMPRESA" OtherKey="ID_ITEM_DESTINO,NR_CONTRATO_DESTINO,ID_EMPRESA" Type="TB_EST_TRANSFERENCIASALDO" />
+      <Association Name="TB_FIS_CONTRATO_ITEM_TB_EST_TRANSFERENCIASALDO1" Member="TB_EST_TRANSFERENCIASALDOs1" ThisKey="ID_ITEM,NR_CONTRATO,ID_EMPRESA" OtherKey="ID_ITEM_ORIGEM,NR_CONTRATO_ORIGEM,ID_EMPRESA" Type="TB_EST_TRANSFERENCIASALDO" />
+      <Association Name="TB_FIS_CONTRATO_ITEM_TB_GRA_TAXASCONTRATO" Member="TB_GRA_TAXASCONTRATOs" ThisKey="ID_ITEM,NR_CONTRATO,ID_EMPRESA" OtherKey="ID_ITEM,NR_CONTRATO,ID_EMPRESA" Type="TB_GRA_TAXASCONTRATO" />
+      <Association Name="TB_EST_PRODUTO_TB_FIS_CONTRATO_ITEM" Member="TB_EST_PRODUTO" ThisKey="ID_PRODUTO" OtherKey="ID_PRODUTO" Type="TB_EST_PRODUTO" IsForeignKey="true" />
+      <Association Name="TB_EST_UNIDADE_TB_FIS_CONTRATO_ITEM" Member="TB_EST_UNIDADE" ThisKey="ID_UNIDADE" OtherKey="ID_UNIDADE" Type="TB_EST_UNIDADE" IsForeignKey="true" />
+      <Association Name="TB_FIS_CONTRATO_TB_FIS_CONTRATO_ITEM" Member="TB_FIS_CONTRATO" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_CONTRATOACOMPANHAMENTO" Member="TB_FIS_CONTRATOACOMPANHAMENTOs">
+    <Type Name="TB_FIS_CONTRATOACOMPANHAMENTO">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NR_CONTRATO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_OBSERVACAO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LOGIN" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_USUARIO_TB_FIS_CONTRATOACOMPANHAMENTO" Member="TB_DIV_USUARIO" ThisKey="LOGIN" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+      <Association Name="TB_FIS_CONTRATO_TB_FIS_CONTRATOACOMPANHAMENTO" Member="TB_FIS_CONTRATO" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_IMPOSTO" Member="TB_FIS_IMPOSTOs">
+    <Type Name="TB_FIS_IMPOSTO">
+      <Column Name="ID_IMPOSTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_IMPOSTO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ST_ICMS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_INSS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_PIS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_COFINS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_IRRF" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_SEST" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_SENAT" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_SENAR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_FUNRURAL" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_FUNDERSUL" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_IMPOSTO_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_CONFIGURACAO_IMPOSTOs" ThisKey="ID_IMPOSTO" OtherKey="ID_IMPOSTO" Type="TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <Association Name="TB_FIS_IMPOSTO_TB_FIS_NOTAFISCAL_IMPOSTO" Member="TB_FIS_NOTAFISCAL_IMPOSTOs" ThisKey="ID_IMPOSTO" OtherKey="ID_IMPOSTO" Type="TB_FIS_NOTAFISCAL_IMPOSTO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_MODELO" Member="TB_FIS_MODELOs">
+    <Type Name="TB_FIS_MODELO">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_MODELO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_MODELO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_MODELO_TB_FIS_NOTAFISCAL" Member="TB_FIS_NOTAFISCALs" ThisKey="ID_MODELO,ID_EMPRESA" OtherKey="ID_MODELO,ID_EMPRESA" Type="TB_FIS_NOTAFISCAL" />
+      <Association Name="TB_DIV_EMPRESA_TB_FIS_MODELO" Member="TB_DIV_EMPRESA" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_DIV_EMPRESA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_NCM" Member="TB_FIS_NCMs">
+    <Type Name="TB_FIS_NCM">
+      <Column Name="ID_NCM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="COD_NCM" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DS_NCM" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_NCM_TB_EST_PRODUTO" Member="TB_EST_PRODUTOs" ThisKey="ID_NCM" OtherKey="ID_NCM" Type="TB_EST_PRODUTO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_NF_X_ESTOQUE" Member="TB_FIS_NF_X_ESTOQUEs">
+    <Type Name="TB_FIS_NF_X_ESTOQUE">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PRODUTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTOESTOQUE" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTONF" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_ITEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_EST_ESTOQUE_TB_FIS_NF_X_ESTOQUE" Member="TB_EST_ESTOQUE" ThisKey="ID_LANCTOESTOQUE,ID_EMPRESA,ID_PRODUTO" OtherKey="ID_LANCTOESTOQUE,ID_EMPRESA,ID_PRODUTO" Type="TB_EST_ESTOQUE" IsForeignKey="true" />
+      <Association Name="TB_FIS_NOTAFISCAL_ITEM_TB_FIS_NF_X_ESTOQUE" Member="TB_FIS_NOTAFISCAL_ITEM" ThisKey="ID_EMPRESA,ID_LANCTONF,ID_ITEM" OtherKey="ID_EMPRESA,ID_LANCTONF,ID_ITEM" Type="TB_FIS_NOTAFISCAL_ITEM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_NOTAFISCAL" Member="TB_FIS_NOTAFISCALs">
+    <Type Name="TB_FIS_NOTAFISCAL">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTONF" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NR_NOTA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CONFIGURACAOFISCAL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_MODELO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NR_SERIE" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="NR_CONTRATO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CD_CFOP" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="LOGIN_EMISSOR" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ID_OPERACAO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_ENDERECO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CONDICAOPAGTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CLIFOR_TRANSP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_ENDERECO_TRANSP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TP_NOTA" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="TP_MOVIMENTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CHAVE_ACESSONFE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DT_EMISSAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ENTSAI" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DS_DADOSADC" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DS_OBSFISCAL" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="PS_BRUTO" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="PS_LIQUIDO" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VL_TOTALNOTA" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="PLACA" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+      <Column Name="TP_FRETE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="QTD_VOLUME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TB_FIS_NOTAFISCAL_TB_FIN_NF_X_DUP" Member="TB_FIN_NF_X_DUPs" ThisKey="ID_EMPRESA,ID_LANCTONF" OtherKey="ID_EMPRESA,ID_LANCTONF" Type="TB_FIN_NF_X_DUP" />
+      <Association Name="TB_FIS_NOTAFISCAL_TB_FIS_NOTAFISCAL_ITEM" Member="TB_FIS_NOTAFISCAL_ITEMs" ThisKey="ID_EMPRESA,ID_LANCTONF" OtherKey="ID_EMPRESA,ID_LANCTONF" Type="TB_FIS_NOTAFISCAL_ITEM" />
+      <Association Name="TB_DIV_CLIFOR_TB_FIS_NOTAFISCAL" Member="TB_DIV_CLIFOR" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR" IsForeignKey="true" />
+      <Association Name="TB_DIV_ENDERECO_TB_FIS_NOTAFISCAL" Member="TB_DIV_ENDERECO" ThisKey="ID_CLIFOR_TRANSP,ID_ENDERECO_TRANSP" OtherKey="ID_CLIFOR,ID_ENDERECO" Type="TB_DIV_ENDERECO" IsForeignKey="true" />
+      <Association Name="TB_DIV_ENDERECO_TB_FIS_NOTAFISCAL1" Member="TB_DIV_ENDERECO1" ThisKey="ID_CLIFOR,ID_ENDERECO" OtherKey="ID_CLIFOR,ID_ENDERECO" Type="TB_DIV_ENDERECO" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_FIS_NOTAFISCAL" Member="TB_DIV_USUARIO" ThisKey="LOGIN_EMISSOR" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+      <Association Name="TB_FIN_CONDICAOPAGTO_TB_FIS_NOTAFISCAL" Member="TB_FIN_CONDICAOPAGTO" ThisKey="ID_CONDICAOPAGTO" OtherKey="ID_CONDICAOPAGTO" Type="TB_FIN_CONDICAOPAGTO" IsForeignKey="true" />
+      <Association Name="TB_FIS_CONFIGURACAOFISCAL_TB_FIS_NOTAFISCAL" Member="TB_FIS_CONFIGURACAOFISCAL" ThisKey="ID_CONFIGURACAOFISCAL" OtherKey="ID_CONFIGURACAOFISCAL" Type="TB_FIS_CONFIGURACAOFISCAL" IsForeignKey="true" />
+      <Association Name="TB_FIS_CONTRATO_TB_FIS_NOTAFISCAL" Member="TB_FIS_CONTRATO" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATO" IsForeignKey="true" />
+      <Association Name="TB_FIS_CFOP_TB_FIS_NOTAFISCAL" Member="TB_FIS_CFOP" ThisKey="CD_CFOP" OtherKey="CD_CFOP" Type="TB_FIS_CFOP" IsForeignKey="true" />
+      <Association Name="TB_FIS_MODELO_TB_FIS_NOTAFISCAL" Member="TB_FIS_MODELO" ThisKey="ID_MODELO,ID_EMPRESA" OtherKey="ID_MODELO,ID_EMPRESA" Type="TB_FIS_MODELO" IsForeignKey="true" />
+      <Association Name="TB_FIS_OPERACAO_TB_FIS_NOTAFISCAL" Member="TB_FIS_OPERACAO" ThisKey="ID_OPERACAO" OtherKey="ID_OPERACAO" Type="TB_FIS_OPERACAO" IsForeignKey="true" />
+      <Association Name="TB_FIS_SERIE_TB_FIS_NOTAFISCAL" Member="TB_FIS_SERIE" ThisKey="NR_SERIE,ID_EMPRESA" OtherKey="NR_SERIE,ID_EMPRESA" Type="TB_FIS_SERIE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_NOTAFISCAL_IMPOSTOS" Member="TB_FIS_NOTAFISCAL_IMPOSTOs">
+    <Type Name="TB_FIS_NOTAFISCAL_IMPOSTO">
+      <Column Name="ID_ITEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_IMPOSTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTONF" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_SITTRIBSPEAD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_SITTRIB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PC_ALIQ" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="PC_RETENCAO" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VL_BASECALC" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VL_IMPOSTO" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VL_IMPOSTORETIDO" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_IMPOSTO_TB_FIS_NOTAFISCAL_IMPOSTO" Member="TB_FIS_IMPOSTO" ThisKey="ID_IMPOSTO" OtherKey="ID_IMPOSTO" Type="TB_FIS_IMPOSTO" IsForeignKey="true" />
+      <Association Name="TB_FIS_NOTAFISCAL_ITEM_TB_FIS_NOTAFISCAL_IMPOSTO" Member="TB_FIS_NOTAFISCAL_ITEM" ThisKey="ID_EMPRESA,ID_LANCTONF,ID_ITEM" OtherKey="ID_EMPRESA,ID_LANCTONF,ID_ITEM" Type="TB_FIS_NOTAFISCAL_ITEM" IsForeignKey="true" />
+      <Association Name="TB_FIS_SIT_TRIB_SPEAD_TB_FIS_NOTAFISCAL_IMPOSTO" Member="TB_FIS_SIT_TRIB_SPEAD" ThisKey="ID_SITTRIBSPEAD" OtherKey="ID_SITTRIBSPEAD" Type="TB_FIS_SIT_TRIB_SPEAD" IsForeignKey="true" />
+      <Association Name="TB_FIS_SITUACAOTRIBUTARIA_TB_FIS_NOTAFISCAL_IMPOSTO" Member="TB_FIS_SITUACAOTRIBUTARIA" ThisKey="ID_SITTRIB" OtherKey="ID_SITTRIB" Type="TB_FIS_SITUACAOTRIBUTARIA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_NOTAFISCAL_ITEM" Member="TB_FIS_NOTAFISCAL_ITEMs">
+    <Type Name="TB_FIS_NOTAFISCAL_ITEM">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_LANCTONF" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_ITEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PRODUTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_UNIDADE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QUANTIDADE" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VL_UNIT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VL_SUBTOTAL" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_NOTAFISCAL_ITEM_TB_FIS_COMPDEVOL_NF" Member="TB_FIS_COMPDEVOL_NFs" ThisKey="ID_EMPRESA,ID_LANCTONF,ID_ITEM" OtherKey="ID_EMPRESA,ID_LANCTONF_DEST,ID_ITEM_DEST" Type="TB_FIS_COMPDEVOL_NF" />
+      <Association Name="TB_FIS_NOTAFISCAL_ITEM_TB_FIS_COMPDEVOL_NF1" Member="TB_FIS_COMPDEVOL_NFs1" ThisKey="ID_EMPRESA,ID_LANCTONF,ID_ITEM" OtherKey="ID_EMPRESA,ID_LANCTONF_ORIG,ID_ITEM_ORIG_ORIG" Type="TB_FIS_COMPDEVOL_NF" />
+      <Association Name="TB_FIS_NOTAFISCAL_ITEM_TB_FIS_NF_X_ESTOQUE" Member="TB_FIS_NF_X_ESTOQUEs" ThisKey="ID_EMPRESA,ID_LANCTONF,ID_ITEM" OtherKey="ID_EMPRESA,ID_LANCTONF,ID_ITEM" Type="TB_FIS_NF_X_ESTOQUE" />
+      <Association Name="TB_FIS_NOTAFISCAL_ITEM_TB_FIS_NOTAFISCAL_IMPOSTO" Member="TB_FIS_NOTAFISCAL_IMPOSTOs" ThisKey="ID_EMPRESA,ID_LANCTONF,ID_ITEM" OtherKey="ID_EMPRESA,ID_LANCTONF,ID_ITEM" Type="TB_FIS_NOTAFISCAL_IMPOSTO" />
+      <Association Name="TB_EST_PRODUTO_TB_FIS_NOTAFISCAL_ITEM" Member="TB_EST_PRODUTO" ThisKey="ID_PRODUTO" OtherKey="ID_PRODUTO" Type="TB_EST_PRODUTO" IsForeignKey="true" />
+      <Association Name="TB_EST_UNIDADE_TB_FIS_NOTAFISCAL_ITEM" Member="TB_EST_UNIDADE" ThisKey="ID_UNIDADE" OtherKey="ID_UNIDADE" Type="TB_EST_UNIDADE" IsForeignKey="true" />
+      <Association Name="TB_FIS_NOTAFISCAL_TB_FIS_NOTAFISCAL_ITEM" Member="TB_FIS_NOTAFISCAL" ThisKey="ID_EMPRESA,ID_LANCTONF" OtherKey="ID_EMPRESA,ID_LANCTONF" Type="TB_FIS_NOTAFISCAL" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_OBSERVACAOFISCAL" Member="TB_FIS_OBSERVACAOFISCALs">
+    <Type Name="TB_FIS_OBSERVACAOFISCAL">
+      <Column Name="ID_OBS" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_OBSERVACAOFISCAL_TB_FIS_OPERACAO" Member="TB_FIS_OPERACAOs" ThisKey="ID_OBS" OtherKey="ID_OBS" Type="TB_FIS_OPERACAO" />
+      <Association Name="TB_DIV_EMPRESA_TB_FIS_OBSERVACAOFISCAL" Member="TB_DIV_EMPRESA" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_DIV_EMPRESA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_OPERACAO" Member="TB_FIS_OPERACAOs">
+    <Type Name="TB_FIS_OPERACAO">
+      <Column Name="ID_OPERACAO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_OBS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CD_CFOP_FORAUF" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="CD_CFOP_DENTROUF" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="DS_OPERACAO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ST_DEPOSITO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_DEVOLUCAO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_COMPLEMENTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_GERAESTOQUE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_REMESSA" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_MESTRA" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="TP_MOVIMENTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_OPERACAO_TB_FIS_CONFIGURACAO_X_OPERACAO" Member="TB_FIS_CONFIGURACAO_X_OPERACAOs" ThisKey="ID_OPERACAO" OtherKey="ID_OPERACAO" Type="TB_FIS_CONFIGURACAO_X_OPERACAO" />
+      <Association Name="TB_FIS_OPERACAO_TB_FIS_NOTAFISCAL" Member="TB_FIS_NOTAFISCALs" ThisKey="ID_OPERACAO" OtherKey="ID_OPERACAO" Type="TB_FIS_NOTAFISCAL" />
+      <Association Name="TB_FIS_CFOP_TB_FIS_OPERACAO" Member="TB_FIS_CFOP" ThisKey="CD_CFOP_DENTROUF" OtherKey="CD_CFOP" Type="TB_FIS_CFOP" IsForeignKey="true" />
+      <Association Name="TB_FIS_CFOP_TB_FIS_OPERACAO1" Member="TB_FIS_CFOP1" ThisKey="CD_CFOP_FORAUF" OtherKey="CD_CFOP" Type="TB_FIS_CFOP" IsForeignKey="true" />
+      <Association Name="TB_FIS_OBSERVACAOFISCAL_TB_FIS_OPERACAO" Member="TB_FIS_OBSERVACAOFISCAL" ThisKey="ID_OBS" OtherKey="ID_OBS" Type="TB_FIS_OBSERVACAOFISCAL" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_SERIE" Member="TB_FIS_SERIEs">
+    <Type Name="TB_FIS_SERIE">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NR_SERIE" Type="System.String" DbType="VarChar(3) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_SERIE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ST_PROPRIA" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="NR_INICIO" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_SERIE_TB_FIS_NOTAFISCAL" Member="TB_FIS_NOTAFISCALs" ThisKey="NR_SERIE,ID_EMPRESA" OtherKey="NR_SERIE,ID_EMPRESA" Type="TB_FIS_NOTAFISCAL" />
+      <Association Name="TB_DIV_EMPRESA_TB_FIS_SERIE" Member="TB_DIV_EMPRESA" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_DIV_EMPRESA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_SIT_TRIB_SPEAD" Member="TB_FIS_SIT_TRIB_SPEADs">
+    <Type Name="TB_FIS_SIT_TRIB_SPEAD">
+      <Column Name="ID_SITTRIBSPEAD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_SITTRIBSPEAD" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_SIT_TRIB_SPEAD_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_CONFIGURACAO_IMPOSTOs" ThisKey="ID_SITTRIBSPEAD" OtherKey="ID_SITTRIBSPEAD" Type="TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <Association Name="TB_FIS_SIT_TRIB_SPEAD_TB_FIS_NOTAFISCAL_IMPOSTO" Member="TB_FIS_NOTAFISCAL_IMPOSTOs" ThisKey="ID_SITTRIBSPEAD" OtherKey="ID_SITTRIBSPEAD" Type="TB_FIS_NOTAFISCAL_IMPOSTO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_FIS_SITUACAOTRIBUTARIA" Member="TB_FIS_SITUACAOTRIBUTARIAs">
+    <Type Name="TB_FIS_SITUACAOTRIBUTARIA">
+      <Column Name="ID_SITTRIB" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_SITUACAOTRIBUTARIA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_SITUACAOTRIBUTARIA_TB_FIS_CONFIGURACAO_IMPOSTO" Member="TB_FIS_CONFIGURACAO_IMPOSTOs" ThisKey="ID_SITTRIB" OtherKey="ID_SITTRIB" Type="TB_FIS_CONFIGURACAO_IMPOSTO" />
+      <Association Name="TB_FIS_SITUACAOTRIBUTARIA_TB_FIS_NOTAFISCAL_IMPOSTO" Member="TB_FIS_NOTAFISCAL_IMPOSTOs" ThisKey="ID_SITTRIB" OtherKey="ID_SITTRIB" Type="TB_FIS_NOTAFISCAL_IMPOSTO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_AMOSTRA" Member="TB_GRA_AMOSTRAs">
+    <Type Name="TB_GRA_AMOSTRA">
+      <Column Name="ID_AMOSTRA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_AMOSTRA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_GRA_AMOSTRA_TB_GRA_CLASSIFICACAO" Member="TB_GRA_CLASSIFICACAOs" ThisKey="ID_AMOSTRA" OtherKey="ID_AMOSTRA" Type="TB_GRA_CLASSIFICACAO" />
+      <Association Name="TB_GRA_AMOSTRA_TB_GRA_TABELA_X_AMOSTRA" Member="TB_GRA_TABELA_X_AMOSTRAs" ThisKey="ID_AMOSTRA" OtherKey="ID_AMOSTRA" Type="TB_GRA_TABELA_X_AMOSTRA" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_CLASSIFICACAO" Member="TB_GRA_CLASSIFICACAOs">
+    <Type Name="TB_GRA_CLASSIFICACAO">
+      <Column Name="ID_AMOSTRA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PESAGEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_TIPOPESAGEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PS_DESC" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="PC_DESC" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_GRA_AMOSTRA_TB_GRA_CLASSIFICACAO" Member="TB_GRA_AMOSTRA" ThisKey="ID_AMOSTRA" OtherKey="ID_AMOSTRA" Type="TB_GRA_AMOSTRA" IsForeignKey="true" />
+      <Association Name="TB_GRA_PESAGEM_TB_GRA_CLASSIFICACAO" Member="TB_GRA_PESAGEM" ThisKey="ID_PESAGEM,ID_EMPRESA,ID_TIPOPESAGEM" OtherKey="ID_PESAGEM,ID_EMPRESA,ID_TIPOPESAGEM" Type="TB_GRA_PESAGEM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_FAZENDA" Member="TB_GRA_FAZENDAs">
+    <Type Name="TB_GRA_FAZENDA">
+      <Column Name="ID_FAZENDA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NM_FAZENDA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_GRA_FAZENDA_TB_GRA_TALHAO" Member="TB_GRA_TALHAOs" ThisKey="ID_FAZENDA" OtherKey="ID_FAZENDA" Type="TB_GRA_TALHAO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_FIXACAO" Member="TB_GRA_FIXACAOs">
+    <Type Name="TB_GRA_FIXACAO">
+      <Column Name="ID_FIXACAO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NR_CONTRATO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="QTD_FIXADA" Type="System.Decimal" DbType="Decimal(15,5)" CanBeNull="true" />
+      <Column Name="VL_FIXADO" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VL_UNITFIXADO" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_CONTRATO_TB_GRA_FIXACAO" Member="TB_FIS_CONTRATO" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_MOEGA" Member="TB_GRA_MOEGAs">
+    <Type Name="TB_GRA_MOEGA">
+      <Column Name="ID_MOEGA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_MOEGA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_GRA_MOEGA_TB_GRA_PESAGEM" Member="TB_GRA_PESAGEMs" ThisKey="ID_MOEGA" OtherKey="ID_MOEGA" Type="TB_GRA_PESAGEM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_PERC_DESC" Member="TB_GRA_PERC_DESCs">
+    <Type Name="TB_GRA_PERC_DESC">
+      <Column Name="ID_TABDESC" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PRODUTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_AMOSTRA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PC_CLASSIF" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PC_DESC" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_GRA_TABELA_X_AMOSTRA_TB_GRA_PERC_DESC" Member="TB_GRA_TABELA_X_AMOSTRA" ThisKey="ID_TABDESC,ID_PRODUTO,ID_AMOSTRA" OtherKey="ID_TABDESC,ID_PRODUTO,ID_AMOSTRA" Type="TB_GRA_TABELA_X_AMOSTRA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_PESAGEM" Member="TB_GRA_PESAGEMs">
+    <Type Name="TB_GRA_PESAGEM">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_TIPOPESAGEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PESAGEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PRODUTO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TP_MOVIMENTO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ID_CLIFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_SAFRA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NR_CONTRATO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_TABDESC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_TALHAO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOGIN_AUTORIZ" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LOGIN_BRUTO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LOGIN_TARA" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ID_LOCAL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_MOEGA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PS_BRUTO" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="PS_TARA" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="NM_MOTORISTA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DS_OBSERVACAO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_AVULSO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ST_ENVIAREMAIL" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="TP_TARA" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="TP_BRUTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_GRA_PESAGEM_TB_GRA_CLASSIFICACAO" Member="TB_GRA_CLASSIFICACAOs" ThisKey="ID_PESAGEM,ID_EMPRESA,ID_TIPOPESAGEM" OtherKey="ID_PESAGEM,ID_EMPRESA,ID_TIPOPESAGEM" Type="TB_GRA_CLASSIFICACAO" />
+      <Association Name="TB_DIV_USUARIO_TB_GRA_PESAGEM" Member="TB_DIV_USUARIO" ThisKey="LOGIN_AUTORIZ" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_GRA_PESAGEM1" Member="TB_DIV_USUARIO1" ThisKey="LOGIN_BRUTO" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+      <Association Name="TB_DIV_CLIFOR_TB_GRA_PESAGEM" Member="TB_DIV_CLIFOR" ThisKey="ID_CLIFOR" OtherKey="ID_CLIFOR" Type="TB_DIV_CLIFOR" IsForeignKey="true" />
+      <Association Name="TB_DIV_EMPRESA_TB_GRA_PESAGEM" Member="TB_DIV_EMPRESA" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_DIV_EMPRESA" IsForeignKey="true" />
+      <Association Name="TB_DIV_USUARIO_TB_GRA_PESAGEM2" Member="TB_DIV_USUARIO2" ThisKey="LOGIN_TARA" OtherKey="LOGIN" Type="TB_DIV_USUARIO" IsForeignKey="true" />
+      <Association Name="TB_EST_LOCAL_TB_GRA_PESAGEM" Member="TB_EST_LOCAL" ThisKey="ID_LOCAL" OtherKey="ID_LOCAL" Type="TB_EST_LOCAL" IsForeignKey="true" />
+      <Association Name="TB_EST_PRODUTO_TB_GRA_PESAGEM" Member="TB_EST_PRODUTO" ThisKey="ID_PRODUTO" OtherKey="ID_PRODUTO" Type="TB_EST_PRODUTO" IsForeignKey="true" />
+      <Association Name="TB_FIS_CONTRATO_TB_GRA_PESAGEM" Member="TB_FIS_CONTRATO" ThisKey="NR_CONTRATO,ID_EMPRESA" OtherKey="NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATO" IsForeignKey="true" />
+      <Association Name="TB_GRA_MOEGA_TB_GRA_PESAGEM" Member="TB_GRA_MOEGA" ThisKey="ID_MOEGA" OtherKey="ID_MOEGA" Type="TB_GRA_MOEGA" IsForeignKey="true" />
+      <Association Name="TB_GRA_SAFRA_TB_GRA_PESAGEM" Member="TB_GRA_SAFRA" ThisKey="ID_SAFRA" OtherKey="ID_SAFRA" Type="TB_GRA_SAFRA" IsForeignKey="true" />
+      <Association Name="TB_GRA_TABDESCONTO_TB_GRA_PESAGEM" Member="TB_GRA_TABDESCONTO" ThisKey="ID_TABDESC" OtherKey="ID_TABDESC" Type="TB_GRA_TABDESCONTO" IsForeignKey="true" />
+      <Association Name="TB_GRA_TALHAO_TB_GRA_PESAGEM" Member="TB_GRA_TALHAO" ThisKey="ID_TALHAO" OtherKey="ID_TALHAO" Type="TB_GRA_TALHAO" IsForeignKey="true" />
+      <Association Name="TB_GRA_TIPOPESAGEM_TB_GRA_PESAGEM" Member="TB_GRA_TIPOPESAGEM" ThisKey="ID_TIPOPESAGEM" OtherKey="ID_TIPOPESAGEM" Type="TB_GRA_TIPOPESAGEM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_SAFRA" Member="TB_GRA_SAFRAs">
+    <Type Name="TB_GRA_SAFRA">
+      <Column Name="ID_SAFRA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_SAFRA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_GRA_SAFRA_TB_FIS_CONTRATO_DADOSGERAI" Member="TB_FIS_CONTRATO_DADOSGERAIs" ThisKey="ID_SAFRA" OtherKey="ID_SAFRA" Type="TB_FIS_CONTRATO_DADOSGERAI" />
+      <Association Name="TB_GRA_SAFRA_TB_GRA_PESAGEM" Member="TB_GRA_PESAGEMs" ThisKey="ID_SAFRA" OtherKey="ID_SAFRA" Type="TB_GRA_PESAGEM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_TABDESCONTO" Member="TB_GRA_TABDESCONTOs">
+    <Type Name="TB_GRA_TABDESCONTO">
+      <Column Name="ID_TABDESC" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_TABELADESCONTO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_GRA_TABDESCONTO_TB_FIS_CONTRATO_DADOSGERAI" Member="TB_FIS_CONTRATO_DADOSGERAIs" ThisKey="ID_TABDESC" OtherKey="ID_TABDESC" Type="TB_FIS_CONTRATO_DADOSGERAI" />
+      <Association Name="TB_GRA_TABDESCONTO_TB_GRA_PESAGEM" Member="TB_GRA_PESAGEMs" ThisKey="ID_TABDESC" OtherKey="ID_TABDESC" Type="TB_GRA_PESAGEM" />
+      <Association Name="TB_GRA_TABDESCONTO_TB_GRA_TABELA_X_AMOSTRA" Member="TB_GRA_TABELA_X_AMOSTRAs" ThisKey="ID_TABDESC" OtherKey="ID_TABDESC" Type="TB_GRA_TABELA_X_AMOSTRA" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_TABELA_X_AMOSTRA" Member="TB_GRA_TABELA_X_AMOSTRAs">
+    <Type Name="TB_GRA_TABELA_X_AMOSTRA">
+      <Column Name="ID_TABDESC" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PRODUTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_AMOSTRA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_GRA_TABELA_X_AMOSTRA_TB_GRA_PERC_DESC" Member="TB_GRA_PERC_DESCs" ThisKey="ID_TABDESC,ID_PRODUTO,ID_AMOSTRA" OtherKey="ID_TABDESC,ID_PRODUTO,ID_AMOSTRA" Type="TB_GRA_PERC_DESC" />
+      <Association Name="TB_GRA_TABDESCONTO_TB_GRA_TABELA_X_AMOSTRA" Member="TB_GRA_TABDESCONTO" ThisKey="ID_TABDESC" OtherKey="ID_TABDESC" Type="TB_GRA_TABDESCONTO" IsForeignKey="true" />
+      <Association Name="TB_EST_PRODUTO_TB_GRA_TABELA_X_AMOSTRA" Member="TB_EST_PRODUTO" ThisKey="ID_PRODUTO" OtherKey="ID_PRODUTO" Type="TB_EST_PRODUTO" IsForeignKey="true" />
+      <Association Name="TB_GRA_AMOSTRA_TB_GRA_TABELA_X_AMOSTRA" Member="TB_GRA_AMOSTRA" ThisKey="ID_AMOSTRA" OtherKey="ID_AMOSTRA" Type="TB_GRA_AMOSTRA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_TALHAO" Member="TB_GRA_TALHAOs">
+    <Type Name="TB_GRA_TALHAO">
+      <Column Name="ID_TALHAO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_FAZENDA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_TALHAO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_GRA_TALHAO_TB_GRA_PESAGEM" Member="TB_GRA_PESAGEMs" ThisKey="ID_TALHAO" OtherKey="ID_TALHAO" Type="TB_GRA_PESAGEM" />
+      <Association Name="TB_GRA_FAZENDA_TB_GRA_TALHAO" Member="TB_GRA_FAZENDA" ThisKey="ID_FAZENDA" OtherKey="ID_FAZENDA" Type="TB_GRA_FAZENDA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_TAXAPADRAO" Member="TB_GRA_TAXAPADRAOs">
+    <Type Name="TB_GRA_TAXAPADRAO">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_TAXAPADRAO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_UNIDADE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_TAXAPADRAO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TP_TAXA" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DIAS_CARENCIA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DIAS_FREQUENCIA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PC_TAXA" Type="System.Decimal" DbType="Decimal(15,5)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_DIV_EMPRESA_TB_GRA_TAXAPADRAO" Member="TB_DIV_EMPRESA" ThisKey="ID_EMPRESA" OtherKey="ID_EMPRESA" Type="TB_DIV_EMPRESA" IsForeignKey="true" />
+      <Association Name="TB_EST_UNIDADE_TB_GRA_TAXAPADRAO" Member="TB_EST_UNIDADE" ThisKey="ID_UNIDADE" OtherKey="ID_UNIDADE" Type="TB_EST_UNIDADE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_TAXASCONTRATO" Member="TB_GRA_TAXASCONTRATOs">
+    <Type Name="TB_GRA_TAXASCONTRATO">
+      <Column Name="ID_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_TAXACONTRATO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_ITEM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NR_CONTRATO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QTD_TAXA" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="TP_MOVIMENTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_FIS_CONTRATO_ITEM_TB_GRA_TAXASCONTRATO" Member="TB_FIS_CONTRATO_ITEM" ThisKey="ID_ITEM,NR_CONTRATO,ID_EMPRESA" OtherKey="ID_ITEM,NR_CONTRATO,ID_EMPRESA" Type="TB_FIS_CONTRATO_ITEM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_GRA_TIPOPESAGEM" Member="TB_GRA_TIPOPESAGEMs">
+    <Type Name="TB_GRA_TIPOPESAGEM">
+      <Column Name="ID_TIPOPESAGEM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_TIPOPESAGEM" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ST_REGISTRO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="TP_MOVIMENTO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DT_CAD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DT_ALT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TB_GRA_TIPOPESAGEM_TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLO" Member="TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLOs" ThisKey="ID_TIPOPESAGEM" OtherKey="ID_TIPOPESAGEM" Type="TB_GRA_TIPOPESAGEM_X_CONFIGPROTOCOLO" />
+      <Association Name="TB_GRA_TIPOPESAGEM_TB_GRA_PESAGEM" Member="TB_GRA_PESAGEMs" ThisKey="ID_TIPOPESAGEM" OtherKey="ID_TIPOPESAGEM" Type="TB_GRA_PESAGEM" />
+    </Type>
+  </Table>
+</Database>

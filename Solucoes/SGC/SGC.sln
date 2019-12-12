@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplicativo", "Aplicativo\Aplicativo.csproj", "{19A4C97A-5FFF-4E42-B9AD-160029B4D78D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{B9AFA29D-5763-4C7E-8208-ABD134C4B06F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Componentes", "..\Padrao\Componentes\Componentes.csproj", "{587F1754-0A23-4275-A463-A7FB751969C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formas", "..\Padrao\Formas\Formas.csproj", "{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilidades", "..\Padrao\Utilidades\Utilidades.csproj", "{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{B9E15BEE-1056-4763-9B78-37DCA0289C4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consultas", "Consultas\Consultas.csproj", "{CA521FE9-E62B-4467-816D-708F48721446}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.25.239:8080/tfs/lorensoft
+		SccProjectUniqueName0 = Modelo\\Modelo.csproj
+		SccProjectName0 = Modelo
+		SccLocalPath0 = Modelo
+		SccProjectUniqueName1 = ..\\Padrao\\Utilidades\\Utilidades.csproj
+		SccProjectName1 = ../Padrao/Utilidades
+		SccLocalPath1 = ..\\Padrao\\Utilidades
+		SccProjectUniqueName2 = ..\\Padrao\\Componentes\\Componentes.csproj
+		SccProjectName2 = ../Padrao/Componentes
+		SccLocalPath2 = ..\\Padrao\\Componentes
+		SccProjectUniqueName3 = ..\\Padrao\\Formas\\Formas.csproj
+		SccProjectName3 = ../Padrao/Formas
+		SccLocalPath3 = ..\\Padrao\\Formas
+		SccProjectUniqueName4 = Entidades\\Entidades.csproj
+		SccProjectName4 = Entidades
+		SccLocalPath4 = Entidades
+		SccProjectUniqueName5 = Consultas\\Consultas.csproj
+		SccProjectName5 = Consultas
+		SccLocalPath5 = Consultas
+		SccProjectUniqueName6 = Aplicativo\\Aplicativo.csproj
+		SccProjectName6 = Aplicativo
+		SccLocalPath6 = Aplicativo
+		SccLocalPath7 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Any|x86 = Any|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19A4C97A-5FFF-4E42-B9AD-160029B4D78D}.Any|x86.ActiveCfg = Any|x86
+		{19A4C97A-5FFF-4E42-B9AD-160029B4D78D}.Any|x86.Build.0 = Any|x86
+		{B9AFA29D-5763-4C7E-8208-ABD134C4B06F}.Any|x86.ActiveCfg = Any|x86
+		{B9AFA29D-5763-4C7E-8208-ABD134C4B06F}.Any|x86.Build.0 = Any|x86
+		{587F1754-0A23-4275-A463-A7FB751969C1}.Any|x86.ActiveCfg = Any|x86
+		{587F1754-0A23-4275-A463-A7FB751969C1}.Any|x86.Build.0 = Any|x86
+		{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}.Any|x86.ActiveCfg = Any|x86
+		{FDCB6CD0-BDBF-42A6-AE69-ECED36D7C42D}.Any|x86.Build.0 = Any|x86
+		{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}.Any|x86.ActiveCfg = Any|x86
+		{81F8317C-0E10-4BC8-A78F-510D61FCD4A4}.Any|x86.Build.0 = Any|x86
+		{B9E15BEE-1056-4763-9B78-37DCA0289C4A}.Any|x86.ActiveCfg = Any|x86
+		{B9E15BEE-1056-4763-9B78-37DCA0289C4A}.Any|x86.Build.0 = Any|x86
+		{CA521FE9-E62B-4467-816D-708F48721446}.Any|x86.ActiveCfg = Any|x86
+		{CA521FE9-E62B-4467-816D-708F48721446}.Any|x86.Build.0 = Any|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
